@@ -1,0 +1,38 @@
+****************************Lesson 1 ****************************
+
+****Printing****
+print(3)
+print(1+1)
+
+****Python Grammar for Arithmetic Expressions****
+Expression  ->  Expression Operator Expression
+Expression  ->  Number
+Operator    ->  +       - Terminal
+Operator    ->  *       - Terminal
+Number      ->  0,1,    - Terminal
+Expression  -> (Expression)
+
+# Sample 1
+       Expression
+       |
+Expression    Operator    Expression
+    |                 |                 |
+Number             +            Number
+    |                                   |
+    1                                   1
+    
+# Sample 2
+       Expression
+       |
+Expression             Operator            Expression
+       |                       |                        |
+Exp  Op   Exp              +                    Number
+  |    |     |                                         |
+  N    *  Exp Op Exp                              1
+  |         .......
+  2         3   +   3
+  
+****Variables****
+Name = Expression
+speed_of_light = 299792458
+= means assignments
