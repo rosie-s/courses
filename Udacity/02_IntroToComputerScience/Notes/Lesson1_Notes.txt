@@ -36,3 +36,29 @@ Exp  Op   Exp              +                    Number
 Name = Expression
 speed_of_light = 299792458
 = means assignments
+
+****Strings****
+Can use single quote or double quotes
+    - print('Hello')
+    - print("Hello")
+    
+Can use '+' with Strings
+<String> + <String> -> Concatenation of the two strings
+print("Hello " + "World!")  
+
+#String and numbers
+print "!" * 12
+
+#Indexing Strings
+<String> [<expression>] -> One-character string
+                Number
+'udacity'[0] -> 'u'
+'0123456'
+
+'udacity'[1+1] -> 'a''
+udacity'[-1] -> 'y'
+
+****Selecting Sub-Sequences
+    S           START           STOP
+<String> [<expression>:<expression] -> String that is a subsequence of the characters in S 
+                                                      starting from position START, and ending with position STOP-1
