@@ -1,8 +1,11 @@
 ****************************Lesson 1 ****************************
+*
+*How to Get Started
+*
 
 ****Printing****
 print(3)
-print(1+1)
+print(1 + 1)
 
 ****Python Grammar for Arithmetic Expressions****
 Expression  ->  Expression Operator Expression
@@ -29,13 +32,14 @@ Expression             Operator            Expression
 Exp  Op   Exp              +                    Number
   |    |     |                                         |
   N    *  Exp Op Exp                              1
-  |         .......
-  2         3   +   3
+  |            ...|...
+  2         3    +   3
   
 ****Variables****
-Name = Expression
+Assignment Statement:
+Name = Expression 
+
 speed_of_light = 299792458
-= means assignments
 
 ****Strings****
 Can use single quote or double quotes
@@ -47,37 +51,63 @@ Can use '+' with Strings
 print("Hello " + "World!")  
 
 #String and numbers
-print "!" * 12
+Print ! 12 times:
+    - print "!" * 12
 
 #Indexing Strings
 <String> [<expression>] -> One-character string
+                    |
                 Number
-'udacity'[0] -> 'u'
-'0123456'
+                
+##Examples of Indexing                
+    - print('udacity'[0])      # -> 'u'
+           #      |
+           # '0123456'
+    - print('udacity'[1 + 1]) # -> 'a'
+    - print('udacity'[-1])     # -> 'y'
 
-'udacity'[1+1] -> 'a''
-udacity'[-1] -> 'y'
-
-****Selecting Sub-Sequences ****
+#Selecting Sub-Sequences
     S           START           STOP
 <String> [<expression>:<expression] -> String that is a subsequence of the characters in S 
-                                                      starting from position START, and ending with position STOP-1
+                     |            |                   starting from position START, and ending with position STOP-1
+             Number       Number
 
-****Find Strings in Strings****
+#Find Strings in Strings
 <string>.find(<string>)                    -> Number that gives first position in search string where the target string appears   
                                                       If the target string is not found, output is -1
+##Examples of Finding Strings
+    - stark = "Winter is coming"
+    - print(stark.find("is"))        # 7
+    - print(stark[7:])               # is coming
+    - print(stark.find("W"))       # 0 
+    - print(stark.find("tyrell"))   # -1
 
-<string>.find(<string>,<number>)      -> Number that gives first position in search string where the target string appears   
-                                                       [at or after <number>]. If the target string is not found, output is -1
+#Finding with Numbers
+<string>.find(<string>,<number>)      -> Number that gives first position in search string where the target 
+                                                       string appears [at or after <number>]. 
+                                                       If the target string is not found, output is -1
+## Examples of Finding with Numbers
+    - lorry = "Red lorry, yellow lorry, red lorry, yellow lorry."
+    - print(lorry.find('lorry'))      # 4
+    - print(lorry.find('lorry', 0))   # 4
+    - print(lorry.find('lorry', 4))   # 4
+    - print(lorry.find('lorry', 6))   # 18
+    - print(lorry.find('lorry', 19))  # 29
+    - print(lorry.find('lorry', 30))  # 43
+    - print(lorry.find('lorry', 43))  # 43
+    - print(lorry.find('lorry', 44))  # -1
 
-****Hints****
+****Tips****
 #Rounding numbers
 str(<Number>) -> String
-str(89) -> '89'
+    - str(89) -> '89'
 
 #Length of a string
 len(string)
-string_length = len(name)
+    - name = "rosie-s"
+    - string_length = len(name)  #7
 
 #Read a string backwards
-string[::-1] - where the "-1" means one step back.
+    - name = "rosie-s"
+    - print(name[::-1]) #s-eisor
+ Where the "-1" means one step back.
