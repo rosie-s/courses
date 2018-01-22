@@ -10,15 +10,15 @@ Inputs -> |Procedure| -> Outputs
 Inputs           -> |Procedure| -> Outputs
 Number1, Number2 -> |    +    | -> Sum of inputs
 ````
-###Procedures in Python
-````
+### Procedures in Python
+````python
     Inputs ->(<name>,<name>,...),(<name>),()
       |
 def <name> (<parameters>):
     <block of code>
 ```` 
 ### Return Statement
-````
+````python
  return <expression>,<expression>,.... 
 ````
 Can have zero return expressions, meaning there's no output.
