@@ -33,3 +33,19 @@ Inputs  -> | Procedure  | -> Outputs
 * For example, if we printed something out, we would see that result happen. 
 We'd see everything that happens when the code and procedure runs. 
 But we would not get it as an output.
+
+## Using Procedures
+```
+<procedure> (<input>,<input>,....)
+                |
+        Operands/Arguments
+```
+### Define
+```python
+def rest_of_strings(s):  # s     = 'audacity'
+    return s[1:]         # s[1:] = 'udacity'
+```                            
+### Use 
+```python
+print (rest_of_strings('audacity')) # udacity   
+```
