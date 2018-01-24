@@ -101,9 +101,93 @@ def find_second(search, target):
 find_second_print = "Second target is:"
 
 danton = "De l'audace, encore de l'audace, toujours de l'audace"
-print(find_second_print, find_second(danton, 'audace'))
-# >>> 25
+print(find_second_print, find_second(danton, 'audace'))  # 25
 
 twister = "she sells seashells by the seashore"
-print(find_second_print, find_second(twister, 'she'))
-# >>> 13
+print(find_second_print, find_second(twister, 'she'))  # 13
+
+###
+# Comparisons
+###
+print("Is 2 < 3:", 2 < 3)  # True
+print("Is 21 < 3:", 21 < 3)  # False
+print("Is 7*3 < 21:", 7 * 3 < 21)  # False
+print("Is 7*3 != 21:", 7 * 3 != 21)  # False
+print("Is 7*3 == 21:", 7 * 3 == 21)  # True
+
+
+###
+# If
+###
+
+# Define a procedure, bigger, that takes in two numbers as inputs,
+# and returns the greater of the two inputs.
+def bigger(num1, num2):
+    if num1 > num2:
+        return num1
+    return num2
+
+
+# def bigger(num1, num2):
+#     if num1 < num2:
+#         num1 = num2
+#     return num1
+
+###
+# If-Else
+##
+def bigger_if_else(a, b):
+    if a > b:
+        r = a  # or return a
+    else:
+        r = b  # or return b
+    return r
+
+
+big_str = "The bigger number is:"
+print(big_str, bigger(2, 7))  # 7
+print(big_str, bigger(3, 2))  # 3
+print(big_str, bigger(3, 3))  # 3
+print(big_str, bigger_if_else(0, 8))  # 8
+
+
+# Define a procedure, is_friend, that takes a string as its input, and
+# returns a Boolean indicating if the input string is the name of a friend.
+# Assume I am friends with everyone whose name starts with D
+# and no one else. You do not need to check for the lower case 'd'
+
+def is_friend(name):
+    if name[0] == 'D':
+        return True
+    else:
+        return False
+
+
+def is_friend_one_line(name):
+    return name[0] == 'D'
+
+
+friends_str = "Are we friends? (D)"
+print(friends_str, is_friend('Diane'))  # True
+print(friends_str, is_friend('Fred'))  # False
+print(friends_str, is_friend_one_line('Amine'))  # False
+print(friends_str, is_friend_one_line('Drogo'))  # True
+
+
+# Assume I am friends with everyone whose name starts with either 'D' or 'N',
+# but no one else. You do not need to check for lower case 'd' or 'n'
+
+
+def is_friend(name):
+    if name[0] == 'D':
+        return True
+    if name[0] == 'N':
+        return True
+    else:
+        return False
+
+
+friends_str = "Are we friends? (D/N)"
+print(friends_str, is_friend('Diane'))  # True
+print(friends_str, is_friend('Fred'))  # False
+print(friends_str, is_friend('Nadia'))  # True
