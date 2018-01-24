@@ -49,3 +49,49 @@ def rest_of_strings(s):  # s     = 'audacity'
 ```python
 print (rest_of_strings('audacity')) # udacity   
 ```
+
+## Comparisons
+Python provides lots of different operators for doing comparisons, e.g
+ - `<`  : Less than 
+ - `>`  : Greater than
+ - `<=` : Less than or equal to
+ - `!=` : Not equal to
+ - `==` : Equality
+```
+<Numbers> <Operator> <Number>
+```
+Output of a comparison is boolean: `True` `False`
+
+### Sample 
+```python
+print (2 < 3) #True
+```
+
+## If
+```
+if <Test Expression>:
+    <Block>    
+```
+### Sample
+```python
+def absolute(x):
+    if x < 0:
+        x = -x
+    return x
+```
+## If-Else
+```
+if <Test Expression>:
+    <Block>   
+else:
+    <Block> 
+```
+### Sample
+```python
+def bigger_if_else(a, b):
+    if a > b:
+        r = a  # or return a
+    else:
+        r = b  # or return b
+    return r
+```
