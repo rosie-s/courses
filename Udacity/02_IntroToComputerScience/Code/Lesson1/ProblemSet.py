@@ -1,8 +1,18 @@
+###############################################
+#           Lesson 1 - Problem Set            #
+###############################################
+
+###
+# Hours in 7 weeks
+###
 # Write Python code that prints out the number of hours in 7 weeks.
 hours = "Hours in 7 weeks:"
 hours_in_7_weeks = 24 * 7 * 7
 print(hours, hours_in_7_weeks)
 
+###
+# Nano Distance
+###
 # Write Python code that stores the distance in meters that light travels in one
 # nanosecond in the variable, nano-distance.
 speed_of_light = 299800000.  # meters per second
@@ -10,17 +20,21 @@ nano_per_sec = 1000000000.  # 1 billion
 nano_distance = (speed_of_light / nano_per_sec)
 print("Distance light travels in 1 nanosecond:", nano_distance)
 
+###
+# Merge Strings
+###
 # Given the variables s and t defined as:
 s = 'udacity'
 t = 'bodacious'
-# write Python code that prints out udacious
-# without using any quote characters in
-# your code.
+# Write Python code that prints out udacious without using any quote characters in your code.
 udacious = (s[0] + t[2:])
 udacious2 = (s[:5] + t[6:])
 udacious3 = (s[:-2] + t[-3:])
 print("Print out 'udacious' from udacity and bodacious:", udacious3)
 
+###
+# First Occurrence of a Word
+###
 # Assume text is a variable that holds a string.
 # Write Python code that prints out the position
 # of the first occurrence of 'hoo' in the value of text,
@@ -30,6 +44,9 @@ text = "first hoo"
 hoo = text.find("hoo")
 print("First occurrence of 'hoo':", hoo)
 
+###
+# Second Occurrence of a Word
+###
 # Assume text is a variable that holds a string.
 # Write Python code that prints out the position
 # of the second occurrence of 'zip' in text, or -1 if it does not occur at least twice.
@@ -43,6 +60,9 @@ second_zip = text.find("zip", first_zip + 1)
 print("Second occurrence of 'zip':", second_zip)
 print("Alternative - Second occurrence of 'zip':", text.find('zip', text.find('zip') + 1))
 
+###
+# Nearest Whole Number
+###
 # Given a variable, x, that stores the  value of any decimal number,
 # write Python code that prints out the nearest whole number to x.
 # If x is exactly half way between two whole numbers, round up, so
@@ -59,7 +79,7 @@ dot = str_x.find('.')
 print("Nearest whole number of", x, "is:", str_x[:dot])
 
 ###############################################
-#       Optional                              #
+#           Lesson 1 - Optional               #
 ###############################################
 
 # Which will print out Udacity?
@@ -76,12 +96,9 @@ print("Udacity ->", b, d, f)
 ###
 # Text Replacement
 ###
-# To minimize errors when writing long texts with
-# complicated expressions you could replace
-# the tricky parts with a marker.
-# Write a program that takes a line of text and
-# finds the first occurrence of a certain marker
-# and replaces it with a replacement text.
+# To minimize errors when writing long texts with complicated expressions you could replace
+# the tricky parts with a marker. Write a program that takes a line of text and
+# finds the first occurrence of a certain marker and replaces it with a replacement text.
 # The resulting line of text should be stored in a variable.
 # All input data will be given as variables.
 
@@ -108,15 +125,13 @@ print("Replace '" + marker + "' with '" + replacement + "':", replaced)
 # Palindrome
 ###
 # Make a program that checks if a word is a palindrome.
-# If the word is a palindrome, print 0 to the terminal,
-# -1 otherwise. The word contains lowercase letters a-z and
-# will be at least one character long.
-#
+# If the word is a palindrome, print 0 to the terminal, -1 otherwise.
+# The word contains lowercase letters a-z and will be at least one character long.
+
 # HINT!
 # You can read a string backwards with the following syntax:
 # string[::-1] - where the "-1" means one step back.
-# This exercise can be solved with only unit 1 knowledge
-# (no loops or conditions)
+# This exercise can be solved with only unit 1 knowledge  (no loops or conditions)
 
 word = "madam"
 # word = "madman"  # uncomment this to test

@@ -1,4 +1,10 @@
-# Printing #
+###############################################
+#       Lesson 1 - How to Get Started         #
+###############################################
+
+###
+# Printing
+###
 print(3)
 print(1 + 1)
 print((52 * 3) + (12 * 9))
@@ -21,7 +27,9 @@ print(299792458 * 100 * (1.0 / 1000000000))
 # How many centimeters does light travel in the time a computer has for one cycle?
 print(299792458 * 100 * (1.0 / 1000000000) * 1 / 2.7)
 
-# Variables #
+###
+#  Variables
+###
 speed_of_light = 299792458
 billionth = 1.0 / 1000000000
 nano_stick = speed_of_light * billionth * 100  # centimeters
@@ -49,7 +57,9 @@ days_in_year = 365.25
 days_since_last_bday = 0
 print(age * days_in_year + days_since_last_bday)
 
-# Strings #
+###
+# Strings
+###
 print('Hello')
 print("Hello")
 hello = "Howdy"
@@ -66,7 +76,9 @@ print('udacity'[0])  # -> 'u'
 print('udacity'[1 + 1])  # -> 'a''
 print('udacity'[-1])  # -> # 'y'
 
-# Sub-Sequences #
+###
+# Sub-Sequences
+###
 word = "assume"
 print(word[3:4])  # u
 print(word[4:6])  # me
@@ -87,7 +99,9 @@ print(s + s[0:-1 + 1])
 print(s[0:])
 print(s[:3] + s[3:])
 
-# Find #
+###
+# Find
+###
 pythagoras = "There is geometry in the humming of the strings, there is music in the spacing of the spheres."
 print(pythagoras.find("string"))
 print(pythagoras[40:])
