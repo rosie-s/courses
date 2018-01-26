@@ -35,7 +35,6 @@ print("Procedure should return 'None':", sum(1, 1))
 ###
 # Square Procedure
 ###
-
 # Define a procedure, square, that takes one number
 # as its input, and returns the square of that
 # number (result of multiplying the number by itself).
@@ -51,7 +50,6 @@ print('The square root of', x, 'is :', square(5))  # 25
 ###
 # Sum 3 Procedure
 ###
-
 # Define a procedure, sum3, that takes three
 # inputs, and returns the sum of the three input numbers.
 
@@ -68,12 +66,9 @@ print('The sum of', n1, n2, n3, 'is :', sum3(1, 2, 3))  # 6
 ###
 # Abbaize
 ###
-
 # Define a procedure, abbaize, that takes two strings as its inputs,
 # and returns a string that is the first input,
-# followed by two repetitions of the second input,
-# followed by the first input.
-
+# followed by two repetitions of the second input, followed by the first input.
 def abbaize(s1, s2):
     return s1 + s2 + s2 + s1
 
@@ -86,7 +81,6 @@ print("Abbaize for " + word1, word2 + "is: ", abbaize(word1, word2))  # 'dogcatc
 ###
 # Find Second
 ###
-
 # Define a procedure, find_second, that takes two strings as its inputs: a search string
 # and a target string. It should return a number that is the position of the second
 # occurrence of the target string in the search string.
@@ -119,7 +113,6 @@ print("Is 7*3 == 21:", 7 * 3 == 21)  # True
 ###
 # If
 ###
-
 # Define a procedure, bigger, that takes in two numbers as inputs,
 # and returns the greater of the two inputs.
 def bigger(num1, num2):
@@ -155,7 +148,6 @@ print(big_str, bigger_if_else(0, 8))  # 8
 # returns a Boolean indicating if the input string is the name of a friend.
 # Assume I am friends with everyone whose name starts with D
 # and no one else. You do not need to check for the lower case 'd'
-
 def is_friend(name):
     if name[0] == 'D':
         return True
@@ -176,8 +168,6 @@ print(friends_str, is_friend_one_line('Drogo'))  # True
 
 # Assume I am friends with everyone whose name starts with either 'D' or 'N',
 # but no one else. You do not need to check for lower case 'd' or 'n'
-
-
 def is_friend(name):
     if name[0] == 'D':
         return True
@@ -191,3 +181,16 @@ friends_str = "Are we friends? (D/N)"
 print(friends_str, is_friend('Diane'))  # True
 print(friends_str, is_friend('Fred'))  # False
 print(friends_str, is_friend('Nadia'))  # True
+
+
+###
+# Or
+###
+
+def is_friend_or(name):
+    return name[0] == 'D' or name[0] == 'N'
+
+
+print(friends_str, is_friend('Nicole'))  # True
+
+
