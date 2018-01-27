@@ -102,15 +102,14 @@ def bigger_if_else(a, b):
 ```
 - If the 1st expression evaluates to **TRUE**, the value is **TRUE** and the second expression is not evaluated
 - If the 1st expression evaluates to **FALSE**, the value is the **value of the second expression** 
-```
 
 ```python
 def is_friend_or(name):
     return name[0] == 'D' or name[0] == 'N'
     
-print (True or False) # T
-print (False or True) # T
-print (True or True)  # T  
+print (True or False)  # T
+print (False or True)  # T
+print (True or True)   # T  
 print (False or False) # F 
 ```
 
