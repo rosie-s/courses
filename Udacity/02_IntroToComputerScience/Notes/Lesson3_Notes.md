@@ -102,8 +102,25 @@ while date1 is before date2:
     date1 = advance to next day
     days += 1
 ```
+
+### Calculation
+#### Question
+> Roughly how long will it take a Python program using this approach, to count days between 12 Dec 1912 and 12 Dec 2012?
+
+#### Solution
+```
+ Roughly 100 * 365 ~ 36,500 days
+ Processor         ~ 1B instructions per second
+                                |
+                     1nanosecond per instruction
+ Each day          ~ 1000 instructions
+ 1000 * 36500 days -> 36.5m instructions in total
+ 36.5m             ~ 36ms ~ 0.036 seconds
+```
+
 # Pythonista's Guide to All Problems in The Galaxy
 **Zeroth Rule - Don't Panic!!**
 1. What are the Possible Inputs?
 2. What are the Outputs?
 3. Solve the Problem!
+4. Simple Mechanical Solution -> Dont optimize prematurely! Simple & Correct
