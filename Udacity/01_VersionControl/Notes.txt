@@ -1,0 +1,106 @@
+https://www.udacity.com/wiki/ud775
+
+
+****************************Lesson 1 ****************************
+# Comparing Files
+Windows		- 	FC - File compare
+Mac/Linux	- 	diff -u old new
+
+# See more stats of log
+git log --stat
+
+# Global colour set up - Shows colours when using diff
+git config --global color.ui auto
+
+# Setting up workspace
+mv Desktop/git-completion.bash git-completion.bash
+mv Desktop/git-prompt.sh git-prompt.sh
+
+# Add notepad alias to bash_profile
+alias npp="/c/Program\ Files\ \(x86\)/Notepad++/notepad++.exe"
+
+git config --global push.default upstream
+git config --global merge.conflictstyle diff3
+git config --global user.email "rosie-s@users.noreply.github.com"
+
+
+**************************** Lesson 2 ****************************
+# New git directory 
+git init 
+
+# Shows changes since last commit
+git status
+
+# Add file to staging area
+git add
+
+# Commit to repository
+git commit
+git commit -m "Commit message"
+
+# Diff
+git diff 								- Compares between working directory and staging area
+git diff --staged				- Compares the staging area to most recent commit (commit1)
+git diff commit1 commit2	- Compares commit1 to commit2
+
+# Discard changes in either the working directory or staging area
+git reset --hard 
+
+# Delete coins branch
+git branch -d coins
+
+# Show only 1 commit
+git log -n 1 
+
+**************************** Lesson 3****************************
+# Show list of remotes
+git remote
+
+# Add origin
+git remote add origin  http....
+
+# Verbose
+git remote -v
+
+# Push to github
+git push origin master
+
+# Get github repo and local repo back in sync
+git pul
+
+# Update local copy
+git fetch
+
+# Merge branches
+git merge
+git merge master origin/master
+
+**************************** Important Commands Combined ****************************
+git log
+git init 
+git status
+git add
+git commit
+git commit -m "Commit message"
+git diff
+git diff --staged
+git reset --hard
+ 
+git branch
+git checkout
+git log --graph --oneline
+git show
+git branch -d 
+git log -n 1
+git remote -v
+
+
+git remote
+git remote add origin 
+git push origin master
+git fetch origin
+git log origin/master
+git diff origin/master master
+git merge master origin/master
+
+
