@@ -91,9 +91,9 @@ while year1 < year2:
     days   += days in year1    
 ```
 Doesn't handle:
-    - Input dates ni same month
-    - month2 < month1, year2 > year1
-    - Counting days in leap years
+- Input dates in same month
+- month2 < month1, year2 > year1
+- Counting days in leap years
 
 ## Simple Mechanical Algorithm
 ``` 
