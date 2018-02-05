@@ -101,11 +101,12 @@ days = 0
 while date1 is before date2:
     date1 = advance to next day
     days += 1
+return days    
 ```
 
 ### Calculation
 #### Question
-> Roughly how long will it take a Python program using this approach, to count days between 12 Dec 1912 and 12 Dec 2012?
+> Roughly how long will it take a Python program - using this approach - to count days between 12 Dec 1912 and 12 Dec 2012?
 
 #### Solution
 ```
@@ -120,7 +121,8 @@ while date1 is before date2:
 
 # Pythonista's Guide to All Problems in The Galaxy
 **Zeroth Rule - Don't Panic!!**
-1. What are the Possible Inputs?
-2. What are the Outputs?
-3. Solve the Problem!
-4. Simple Mechanical Solution -> Dont optimize prematurely! Simple & Correct
+1. What are the _possible Inputs_?
+2. What are the _Outputs_?
+3. Work through some examples by hand -> (Solve the problem).
+4. _Simple_ mechanical solution -> (Don't optimize prematurely! Simple & Correct).
+5. Develop _incrementally_ and _test_ as we go.
