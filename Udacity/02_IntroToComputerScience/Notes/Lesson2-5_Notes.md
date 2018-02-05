@@ -1,4 +1,4 @@
-# Lesson 3 - _How to Solve Problems_
+# Lesson 2.5 - _How to Solve Problems_
 
 
 ## The Problem
