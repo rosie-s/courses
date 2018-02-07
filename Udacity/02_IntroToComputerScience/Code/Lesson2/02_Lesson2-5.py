@@ -53,8 +53,10 @@ def next_day(year, month, day):
 
 # Define a procedure to check if date 1 is before date 2
 def date_is_before(year1, month1, day1, year2, month2, day2):
-    """Returns True if year1-month1-day1 is before
-       year2-month2-day2. Otherwise, return False."""
+    """
+    Returns True if year1-month1-day1 is before
+    year2-month2-day2. Otherwise, return False.
+    """
     if year1 < year2:
         return True
     if year1 == year2:
@@ -67,10 +69,12 @@ def date_is_before(year1, month1, day1, year2, month2, day2):
 
 # Define a procedure to return days between two dates
 def days_between_dates(year1, month1, day1, year2, month2, day2):
-    """Returns the number of days between year1/month1/day1
-       and year2/month2/day2. Assumes inputs are valid dates
-       in Gregorian calendar, and the first date is not after
-       the second."""
+    """
+    Returns the number of days between year1/month1/day1
+    and year2/month2/day2. Assumes inputs are valid dates 
+    in Gregorian calendar, and the first date is not after
+    the second.
+    """
     # program defensively! Add an assertion if the input is not valid!
     assert not date_is_before(year2, month2, day2, year1, month1, day1)
     days = 0
