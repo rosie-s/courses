@@ -66,3 +66,48 @@ print("Capital of India is:", countries[1][1])
 # by the population of Romania (21).
 
 print("What multiple of Romania is China?: ", countries[0][2] / countries[2][2])
+
+###
+# Mutation
+###
+p = ['H', 'e', 'l', 'l', 'o']
+q = p
+print("p is:", p, "\nq is: ", q)
+p[0] = 'Y'
+print("Change first value of p:", p, "\nq also changes:", q)
+
+###
+# Stooges 2
+###
+# Write one line of code that changes the value of stooges to be:
+# ['Moe','Larry','Shemp']
+stooges[2] = 'Shemp'
+print("Updated Stooges:", stooges)
+
+###
+# Aliasing
+###
+spies = [0, 0, 7]
+agents = spies
+print("Spies:", spies, "Agents:", agents)
+spies[2] = agents[2] + 1
+print("Spies:", spies, "Agents:", agents)
+
+
+###
+# Replace spy
+###
+# Define a procedure, replace_spy, that takes as its input a list of
+# three numbers, and modifies the value of the third element in the
+# input list to be one more than its  previous value.
+
+
+def replace_spy(s):
+    s[2] = s[2] + 1
+
+
+spy = [0, 0, 7]
+print("Spy:", spy)
+replace_spy(spy)
+print("Spy:", spy)
+# >>> [0,0,8]
