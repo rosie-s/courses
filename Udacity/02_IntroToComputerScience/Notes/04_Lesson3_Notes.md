@@ -17,13 +17,38 @@ Sequence of characters   Sequence of anything!
 - List with 1 element: `[3]`
 
 ## Nested Lists
-
 ``` python
 mixed_up = ['apple', 3, 'oranges', 27, [1, 2, ['alpha', 'beta']]]
 
 beatles = [['John', 1940],
            ['Paul', 1942],
            ['George', 1943],
-           ['Ringo', 1940]]
-              
+           ['Ringo', 1940]]              
+```
+
+## Mutation
+- Mutation _modifies_ an existing object
+- Mutation affects the value of other objects
+``` python
+s = 'Hello'                         p = ['H', 'e', 'l', 'l', 'o']
+s = 'Yello'                         p[0] = 'Y'
+s = s + 'w' #s is now Yellow        p is now ['Y', 'e', 'l', 'l', 'o']  - Didn't create a new list
+                                    q = p
+                                    q[4] = '!' # This will change the value of p
+```
+
+## Aliasing
+2 different ways to refer to the same object
+- If 2 variable names (p,q) refer to the same object, any change made to the object p refers to also affects
+the value that q refers to. 
+- If the value in the first position of p is changed, that also changes the value q refers to. 
+```python
+p = ['H', 'e', 'l', 'l', 'o']
+q = p
+p[0] = 'B' # q is also ['B', 'e', 'l', 'l', 'o']
+```
+- If p is assigned to a new value, this assignment will create a new object. The value of q is the same. 
+```python
+p = ['B','y','e'] 
+# q is still ['B', 'e', 'l', 'l', 'o']
 ```
