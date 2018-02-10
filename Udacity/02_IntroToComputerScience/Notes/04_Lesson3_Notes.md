@@ -52,3 +52,31 @@ p[0] = 'B' # q is also ['B', 'e', 'l', 'l', 'o']
 p = ['B','y','e'] 
 # q is still ['B', 'e', 'l', 'l', 'o']
 ```
+
+## List Operations
+### Append 
+```
+<list>.append(<element>)
+```
+- Example
+```python
+stooges = ['Moe', 'Larry', 'Curly']
+stooges.append('Shemp')
+# stooges is now stooges = ['Moe', 'Larry', 'Curly', 'Shemp']
+```
+### Plus
+```
+<list> + <list>
+```
+- Example
+```
+[0,1] + [2,3] -> [0,1,2,3]
+```
+### Len
+```
+len(<list>)
+```
+- Example
+```
+len([0,1]) -> 2
+```
