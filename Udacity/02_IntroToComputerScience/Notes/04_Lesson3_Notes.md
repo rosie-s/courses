@@ -55,6 +55,7 @@ p = ['B','y','e']
 
 ## List Operations
 ### Append 
+- Invoked on a list, and takes an element as a parameter, then adds the element to the end of the list.
 ```
 <list>.append(<element>)
 ```
@@ -65,6 +66,7 @@ stooges.append('Shemp')
 # stooges is now stooges = ['Moe', 'Larry', 'Curly', 'Shemp']
 ```
 ### Plus
+- Operates on 2 lists as its operands and produces a new list that consists of all the elements in the 2 lists put together.
 ```
 <list> + <list>
 ```
@@ -73,10 +75,13 @@ stooges.append('Shemp')
 [0,1] + [2,3] -> [0,1,2,3]
 ```
 ### Len
+- Takes a list as its input and produces as its output a number that is the length of the list.
 ```
 len(<list>)
 ```
 - Example
 ```
 len([0,1]) -> 2
+len(['a', ['b', ['c']]]) -> 2
+len("Udacity") -> 7
 ```
