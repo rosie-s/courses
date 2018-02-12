@@ -111,3 +111,31 @@ print("Spy:", spy)
 replace_spy(spy)
 print("Spy:", spy)
 # >>> [0,0,8]
+
+###
+# List operations
+###
+# Append
+stooges_four = ['Moe', 'Larry', 'Curly']
+print("Stooges Before:", stooges_four)
+stooges_four.append('Shemp')
+print("Stooges After append:", stooges_four)
+
+# Plus
+list_plus = [0, 1] + [2, 3]
+print("Add list:", list_plus)
+
+# Len
+print("Length of [0,1]:", len([0, 1]))
+print("Length of ['a', ['b', ['c']]]:", len(['a', ['b', ['c']]]))
+print("Length of Udacity:", len("Udacity"))
+print("Length of stooges_four:", len(stooges_four))
+print("Length of list_plus:", len(list_plus))
+
+# More append / length
+p = [1, 2]
+q = [3, 4]
+p.append(q)
+print("p:", p)
+q[1] = 5
+print("p:", p)
