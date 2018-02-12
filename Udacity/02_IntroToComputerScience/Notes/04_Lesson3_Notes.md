@@ -71,8 +71,8 @@ stooges.append('Shemp')
 <list> + <list>
 ```
 - Example
-```
-[0,1] + [2,3] -> [0,1,2,3]
+```python
+[0, 1] + [2, 3] # [0, 1, 2, 3]
 ```
 ### Len
 - Takes a list as its input and produces as its output a number that is the length of the list.
@@ -80,8 +80,12 @@ stooges.append('Shemp')
 len(<list>)
 ```
 - Example
+```python
+len([0, 1])    # 2
+len(['a', ['b', ['c']]]) # 2
+len("Udacity") # 7
 ```
-len([0,1]) -> 2
-len(['a', ['b', ['c']]]) -> 2
-len("Udacity") -> 7
-```
+
+## How Computers Store Data
+- **Register:** Holds the data that CPU is currently processing
+- **DRAM:** Holds program instruction and data that the program requires for execution
