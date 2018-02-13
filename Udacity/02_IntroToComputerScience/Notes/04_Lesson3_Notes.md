@@ -89,3 +89,22 @@ len("Udacity") # 7
 ## How Computers Store Data
 - **Register:** Holds the data that CPU is currently processing
 - **DRAM:** Holds program instruction and data that the program requires for execution
+
+### DRAM
+```python
+print(2 ** 10) # 1KB - 1024 
+print(2 ** 20) # 1MB - 1048576
+print(2 ** 30) # 1GB - 1073741824
+print(2 ** 40) # 1TB - 1099511627776
+```
+- 2gb of memory
+```
+2^30 * 2 * 8 ~ 17 billion light switches
+....
+1 byte = 8  bit
+1 bit ~ light switch
+```
+- Latency - Time to retrieve a value
+
+    Latency for 2GB DRAM is 12 nanosecond
+- Cost for 2GB DRAM - $10
