@@ -108,3 +108,25 @@ print(2 ** 40) # 1TB - 1099511627776
 
     Latency for 2GB DRAM is 12 nanosecond
 - Cost for 2GB DRAM - $10
+
+### Memory Hierarchy
+```
+          Cost per Bit    Latency     Latency-Distance
+--------|-------------|------------|-------------------
+Bit       $0.50           1sec        300,000 km
+CPU
+Register  $0.001          <0.4ns      0.12 m
+
+DRAM      n$0.58          12ns        3.6m
+```
+### Hard Drives
+- 1.0TB 
+```
+8 * 2^40 bits ~ 8.8 trillion bits ~ 8 trillion bits
+Latency -> 7milliseconds (1/1000th second)
+Cost    -> $100
+
+          Cost per Bit    Latency     Latency-Distance
+--------|-------------|------------|-------------------
+H.Drive       $0.01        7ms        2098km ~ 2100 km
+```
