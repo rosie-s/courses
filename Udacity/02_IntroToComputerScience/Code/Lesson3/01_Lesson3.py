@@ -139,3 +139,49 @@ p.append(q)
 print("p:", p)
 q[1] = 5
 print("p:", p)
+
+
+###
+# Loops
+###
+# Print out every element in a list
+
+
+# While
+def print_all_elements(l):
+    i = 0
+    while i < len(l):
+        print(l[i])
+        i = i + 1
+
+
+print("Print Beatles: ")
+print_all_elements(beatles)
+
+
+# For
+def print_all_elements_for(l):
+    for e in l:
+        print(e)
+
+
+print("Print Stooges: ")
+print_all_elements_for(stooges_four)
+
+
+###
+# Sum List
+###
+# Define a procedure, sum_list, that takes as its input a list of numbers,
+# and returns the sum of all the elements in the input list.
+
+def sum_list(s):
+    result = 0
+    for e in s:
+        result = result + e
+    return result
+
+
+print(sum_list([1, 7, 4]))  # 12
+print(sum_list([9, 4, 10]))  # 23
+print(sum_list([44, 14, 76]))  # 134
