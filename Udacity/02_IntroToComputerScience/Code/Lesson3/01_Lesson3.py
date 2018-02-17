@@ -204,3 +204,36 @@ def measure_udacity(l):
 
 print(measure_udacity(['Dave', 'Sebastian', 'Katy']))  # 0
 print(measure_udacity(['Umika', 'Umberto']))  # 2
+
+
+###
+# Find Element
+###
+# Define a procedure, find_element, that takes as its inputs a list
+# and a value of any type, and returns the index of the first
+# element in the input list that matches the value.
+# If there is no matching element, return -1.
+
+
+def find_element(input_list, value):
+    count = 0
+    for e in input_list:
+        if e == value:
+            return count
+        count = count + 1
+    return -1
+
+
+def find_element_while(input_list, value):
+    i = 0
+    while i < len(input_list):
+        if input_list[i] == value:
+            return i
+        i = i + 1
+    return -1
+
+
+print("Find Element 3 in [1, 2, 3]:", find_element([1, 2, 3], 3))  # 2
+print("Find Element 'gamma' in ['alpha', 'beta']:", find_element_while(['alpha', 'beta'], 'gamma'))  # -1
+
+print(p.index(2))
