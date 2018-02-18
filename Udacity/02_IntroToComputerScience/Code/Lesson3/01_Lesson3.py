@@ -214,7 +214,7 @@ print(measure_udacity(['Umika', 'Umberto']))  # 2
 # element in the input list that matches the value.
 # If there is no matching element, return -1.
 
-
+# For
 def find_element(input_list, value):
     count = 0
     for e in input_list:
@@ -224,6 +224,7 @@ def find_element(input_list, value):
     return -1
 
 
+# While
 def find_element_while(input_list, value):
     i = 0
     while i < len(input_list):
@@ -233,7 +234,48 @@ def find_element_while(input_list, value):
     return -1
 
 
+# Index
+def find_element_index(input_list, value):
+    if value in input_list:
+        return input_list.index(value)
+    else:
+        return -1
+
+
+# Not In
+def find_element_index_not(input_list, value):
+    if value not in input_list:
+        return -1
+    else:
+        return input_list.index(value)
+
+
 print("Find Element 3 in [1, 2, 3]:", find_element([1, 2, 3], 3))  # 2
 print("Find Element 'gamma' in ['alpha', 'beta']:", find_element_while(['alpha', 'beta'], 'gamma'))  # -1
+print("Find Element 'a' in ['x', 'y', 'z']:", find_element_index(['x', 'y', 'z'], 'a'))
+print("Find Element 'ed' in ['ed', 'edd', 'eddy']:", find_element_index_not(['ed', 'edd', 'eddy'], 'ed'))
 
-print(p.index(2))
+
+###
+# Union
+###
+# Define a procedure, union, that takes as inputs two lists.
+# It should modify the first input list to be the set union of the two
+# lists. You may assume the first list is a set, that is, it contains no
+# repeated elements.
+
+
+def union(l_a, l_b):
+    for e in l_b:
+        if e not in l_a:
+            l_a.append(e)
+
+
+list_a = [1, 2, 3]
+list_b = [2, 4, 6]
+
+print("Before: list_a =", list_a, "list_b =", list_b)
+union(list_a, list_b)
+
+print("After Union: list_a =", list_a, "list_b =", list_b)
+# list_a = [1,2,3,4,6] list_b [2,4,6]
