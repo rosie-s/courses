@@ -130,3 +130,67 @@ Cost    -> $100
 --------|-------------|------------|-------------------
 H.Drive       $0.01        7ms        2098km ~ 2100 km
 ```
+
+## Loops
+- While and For Loop
+
+### While
+```
+while <test>:
+    <Block>
+``` 
+### For
+```
+for <name> in <list>:
+    <Block>
+```
+
+## Index
+```
+<list>.index(<value>)
+```
+- If `<value>` is in the `1ist`, returns the first position where `<value>` is found in the `<list>`.
+- Otherwise, produces an error.
+
+## In and Not In
+```
+"<value> not in <list>" is exactly equivalent to saying "not <value> in <list>"
+```
+### In
+```
+<value> in <list>
+```
+- If `<value>` is in the `1ist`, output is `True`.  
+- Otherwise, output is `False`.
+
+### Not In
+```
+<value> not in <list>
+```
+- If `<value>` is not in the `1ist`, the result of value not in list is `True`.
+- If the value is in the list, then the result of value not in list is `False`.
+
+## Pop
+```
+<list>.pop() -> element
+```
+- Mutates the list by removing and returning it's last element
+
+```python
+a = [1, 2, 3]
+b = a
+x = a.pop() # x = 3
+```
+
+# Web Crawler
+## Crawling Process
+```
+start with tocrawl = [seed]
+crawled = []
+while there are more pages tocrawl:
+    pick a page from tocrawl 
+    check if we already crawled it
+    add that page to crawled
+    add all the link targets on this page tocrawl
+return crawled    
+```
