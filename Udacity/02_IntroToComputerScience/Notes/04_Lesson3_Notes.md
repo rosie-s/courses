@@ -39,7 +39,7 @@ s = s + 'w' #s is now Yellow        p is now ['Y', 'e', 'l', 'l', 'o']  - Didn't
 
 ## Aliasing
 2 different ways to refer to the same object
-- If 2 variable names (p,q) refer to the same object, any change made to the object p refers to also affects
+- If 2 variable names (p , q) refer to the same object, any change made to the object p refers to also affects
 the value that q refers to. 
 - If the value in the first position of p is changed, that also changes the value q refers to. 
 ```python
@@ -182,8 +182,7 @@ b = a
 x = a.pop() # x = 3
 ```
 
-# Web Crawler
-## Crawling Process
+## Web Crawler - Crawling Process
 ```
 start with tocrawl = [seed]
 crawled = []
