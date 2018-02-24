@@ -429,4 +429,80 @@ print(check, check_sudoku(correct))  # True
 print(check, check_sudoku(incorrect2))  # False
 print(check, check_sudoku(incorrect3))  # False
 print(check, check_sudoku(incorrect4))  # False
-print(check, check_sudoku(incorrect5))  # False
+print(check, check_sudoku(incorrect5), "\n")  # False
+
+###############################################
+#           Lesson 3 - Optional 1             #
+###############################################
+print("Problem Set (Optional 1)\n")
+
+
+###
+# Symmetric Square
+###
+# A list is symmetric if the first row is the same as the first column,
+# the second row is the same as the second column and so on. Write a
+# procedure, symmetric, which takes a list as input, and returns the
+# boolean True if the list is symmetric and False if it is not.
+def symmetric(check_list):
+    n = len(check_list)
+    # Check if it's a square
+    for row in check_list:
+        if len(row) != n:
+            return False
+    # Check if it's symmetric:
+    for i in range(n):
+        for j in range(n):
+            if check_list[i][j] != check_list[j][i]:
+                return False
+    return True
+
+
+print("***Symmetric Square***")
+check_sym = "Check if it's a symmetric square:"
+
+print(check_sym, symmetric([[1, 2, 3],
+                            [2, 3, 4],
+                            [3, 4, 1]]))  # True
+
+print(check_sym, symmetric([["cat", "dog", "fish"],
+                            ["dog", "dog", "fish"],
+                            ["fish", "fish", "cat"]]))  # True
+
+print(check_sym, symmetric([["cat", "dog", "fish"],
+                            ["dog", "dog", "dog"],
+                            ["fish", "fish", "cat"]]))  # False
+
+print(check_sym, symmetric([[1, 2],
+                            [2, 1]]))  # True
+
+print(check_sym, symmetric([[1, 2, 3, 4],
+                            [2, 3, 4, 5],
+                            [3, 4, 5, 6]]))  # False
+
+print(check_sym, symmetric([[1, 2, 3],
+                            [2, 3, 1]]), "\n")  # False
+
+
+###
+# Mean
+###
+# The mean of a set of numbers is the sum of the numbers divided by the
+# number of numbers. Write a procedure, list_mean, which takes a list of numbers
+# as its input and return the mean of the numbers in the list.
+def list_mean(list_input):
+    result = 0.0
+    if len(list_input) == 0:
+        return "List is empty, try again"
+    for e in list_input:
+        result = result + e
+    mean = result / len(list_input)
+    return mean
+
+
+print("***Mean***")
+mean_string = "Mean is:"
+print(mean_string, list_mean([1, 2, 3, 4]))  # 2.5
+print(mean_string, list_mean([1, 3, 4, 5, 2]))  # 3.0
+print(mean_string, list_mean([]))  # Return message
+print(mean_string, list_mean([2]))  # 2.0
