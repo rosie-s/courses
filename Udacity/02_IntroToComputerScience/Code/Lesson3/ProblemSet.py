@@ -121,24 +121,18 @@ print(print_total, total_enrollment_sol(usa_univs), "\n")  # (77285,3058581079)
 ###
 # Max Page
 ###
-# The web crawler we built at the end of Unit 3 has some serious
-# flaws if we were going to use it in a real crawler.
-# One problem is if we start with a good seed page, it might
-# run for an extremely long time (even forever, since the
-# number of URLS on the web is not actually finite). This
-# question and the following one explore two different ways
+# The web crawler we built at the end of Unit 3 has some serious flaws if we were going 
+# to use it in a real crawler. One problem is if we start with a good seed page, it might
+# run for an extremely long time (even forever, since the number of URLS on the web is not
+# actually finite). This question and the following one explore two different ways
 # to limit the pages that it can crawl.
-
-# Modify the crawl_web procedure to take a second parameter,
-# max_pages, that limits the number of pages to crawl.
-# Your procedure should terminate the crawl after
-# max_pages different pages have been crawled, or when
-# there are no more pages to crawl.
+# Modify the crawl_web procedure to take a second parameter, max_pages, that limits the number
+# of pages to crawl. Your procedure should terminate the crawl after max_pages different pages 
+# have been crawled, or when there are no more pages to crawl.
 
 # The following definition of get_page provides an interface
 # to the website found at http://www.udacity.com/cs101x/index.html
 
-# The function output order does not affect grading.
 
 def get_page(url):
     try:
@@ -233,26 +227,18 @@ print("")
 # to limit the pages that it can crawl.
 #
 #######
-# Modify the crawl_web procedure to take a second parameter,
-# max_depth, that limits the depth of the search.  We can
-# define the depth of a page as the number of links that must
-# be followed to reach that page starting from the seed page,
-# that is, the length of the shortest path from the seed to
-# the page.  No pages whose depth exceeds max_depth should be
+# Modify the crawl_web procedure to take a second parameter, max_depth, that limits the 
+# depth of the search. We can define the depth of a page as the number of links that must
+# be followed to reach that page starting from the seed page, that is, the length of the 
+# shortest path from the seed to the page.  No pages whose depth exceeds max_depth should be
 # included in the crawl.
-#
-# For example, if max_depth is 0, the only page that should
-# be crawled is the seed page. If max_depth is 1, the pages
-# that should be crawled are the seed page and every page that
-# it links to directly. If max_depth is 2, the crawl should
-# also include all pages that are linked to by these pages.
-#
+# For example, if max_depth is 0, the only page that should be crawled is the seed page. 
+# If max_depth is 1, the pages that should be crawled are the seed page and every page that
+# it links to directly. If max_depth is 2, the crawl should Also include all pages that are 
+# linked to by these pages.
 # Note that the pages in the crawl may be in any order.
-#
 # The following definition of get_page provides an interface
 # to the website found at http://www.udacity.com/cs101x/index.html
-
-# The function output order does not affect grading.
 
 
 def get_page_2(url):
@@ -358,17 +344,12 @@ print(crawl_web("A1", 3), "\n")
 ###
 # Define a procedure, check_sudoku, that takes as input a square list
 # of lists representing an n x n  sudoku puzzle solution and returns the boolean
-# True if the input is a valid sudoku square and returns the boolean False
-# otherwise.
-
+# True if the input is a valid sudoku square and returns the boolean False otherwise.
 # A valid sudoku square satisfies these two properties:
-
 #   1. Each column of the square contains
 #       each of the whole numbers from 1 to n exactly once.
-
 #   2. Each row of the square contains each
 #       of the whole numbers from 1 to n exactly once.
-
 # You may assume the the input is square and contains at
 # least one row and column.
 
