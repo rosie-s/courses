@@ -22,8 +22,6 @@ print("p is :", p, "\n")
 ###
 # Define a procedure, product_list, that takes as input a list of numbers,
 # and returns a number that is the result of multiplying all those numbers together.
-
-
 def product_list(list_of_numbers):
     result = 1
     for e in list_of_numbers:
@@ -43,7 +41,6 @@ print("Product list of [9]:", product_list([]), "\n")  # 1
 # Define a procedure, greatest, that takes as input a list
 # of positive numbers, and returns the greatest number
 # in that list. If the input list is empty, the output should be 0.
-
 def greatest(list_of_numbers):
     result = 0
     i = 0
@@ -69,6 +66,7 @@ print("Greatest of [4,23,25]:", greatest_for([4, 23, 25]))  # 25
 print("Greatest of [24,82,7]:", greatest_for([24, 82, 7]))  # 82
 print("Greatest of []:", greatest_for([]), "\n")  # 0
 
+
 ###
 # List of Lists
 ###
@@ -80,18 +78,6 @@ print("Greatest of []:", greatest_for([]), "\n")  # 0
 # giving the total number of students enrolled at all of the universities in the list,
 # and the total tuition fees (which is the sum of the number
 # of students enrolled times the tuition fees for each university).
-
-udacious_univs = [['Udacity', 90000, 0]]
-
-usa_univs = [['California Institute of Technology', 2175, 37704],
-             ['Harvard', 19627, 39849],
-             ['Massachusetts Institute of Technology', 10566, 40732],
-             ['Princeton', 7802, 37000],
-             ['Rice', 5879, 35551],
-             ['Stanford', 19535, 40569],
-             ['Yale', 11701, 40500]]
-
-
 def total_enrollment(list_of_elements):
     total_students = 0
     total_fees = 0
@@ -109,6 +95,16 @@ def total_enrollment_sol(list_of_elements):
         total_tuition = total_tuition + students * price
     return total_students, total_tuition
 
+
+udacious_univs = [['Udacity', 90000, 0]]
+
+usa_univs = [['California Institute of Technology', 2175, 37704],
+             ['Harvard', 19627, 39849],
+             ['Massachusetts Institute of Technology', 10566, 40732],
+             ['Princeton', 7802, 37000],
+             ['Rice', 5879, 35551],
+             ['Stanford', 19535, 40569],
+             ['Yale', 11701, 40500]]
 
 print("***List of Lists***")
 print_total = "(total_students, total_fees)"
@@ -132,8 +128,6 @@ print(print_total, total_enrollment_sol(usa_univs), "\n")  # (77285,3058581079)
 
 # The following definition of get_page provides an interface
 # to the website found at http://www.udacity.com/cs101x/index.html
-
-
 def get_page(url):
     try:
         if url == "http://www.udacity.com/cs101x/index.html":
@@ -239,8 +233,6 @@ print("")
 # Note that the pages in the crawl may be in any order.
 # The following definition of get_page provides an interface
 # to the website found at http://www.udacity.com/cs101x/index.html
-
-
 def get_page_2(url):
     try:
         if url == "http://www.udacity.com/cs101x/index.html":
@@ -336,6 +328,8 @@ print(crawl_web("http://top.contributors/forbiddenvoid.html", 2))
 #  'http://top.contributors/charlzz.html']
 
 print(crawl_web("A1", 3), "\n")
+
+
 # ['A1', 'C1', 'B1', 'E1', 'D1', 'F1'] # (May be in any order)
 
 
@@ -352,6 +346,27 @@ print(crawl_web("A1", 3), "\n")
 #       of the whole numbers from 1 to n exactly once.
 # You may assume the the input is square and contains at
 # least one row and column.
+def check_sudoku(sudoku_list):
+    length_of_list = len(sudoku_list)
+    digit = 1
+    while digit <= length_of_list:
+        i = 0
+        while i < length_of_list:
+            row_count = 0
+            column_count = 0
+            j = 0
+            while j < length_of_list:
+                if sudoku_list[i][j] == digit:
+                    row_count = row_count + 1
+                if sudoku_list[j][i] == digit:
+                    column_count = column_count + 1
+                j = j + 1
+            if row_count != 1 or column_count != 1:
+                return False
+            i = i + 1  # next row/column
+        digit = digit + 1  # next digit
+    return True
+
 
 correct = [[1, 2, 3],
            [2, 3, 1],
@@ -379,29 +394,6 @@ incorrect4 = [['a', 'b', 'c'],
 
 incorrect5 = [[1, 1.5],
               [1.5, 1]]
-
-
-def check_sudoku(sudoku_list):
-    length_of_list = len(sudoku_list)
-    digit = 1
-    while digit <= length_of_list:
-        i = 0
-        while i < length_of_list:
-            row_count = 0
-            column_count = 0
-            j = 0
-            while j < length_of_list:
-                if sudoku_list[i][j] == digit:
-                    row_count = row_count + 1
-                if sudoku_list[j][i] == digit:
-                    column_count = column_count + 1
-                j = j + 1
-            if row_count != 1 or column_count != 1:
-                return False
-            i = i + 1  # next row/column
-        digit = digit + 1  # next digit
-    return True
-
 
 print("***Sudoku***")
 check = "Check if Sudoku:"
@@ -486,4 +478,105 @@ mean_string = "Mean is:"
 print(mean_string, list_mean([1, 2, 3, 4]))  # 2.5
 print(mean_string, list_mean([1, 3, 4, 5, 2]))  # 3.0
 print(mean_string, list_mean([]))  # Return message
-print(mean_string, list_mean([2]))  # 2.0
+print(mean_string, list_mean([2]), "\n")  # 2.0
+
+
+###
+# Anti-Symmetric
+###
+# Modify Problem Set Symmetric Square to return True if the given square is antisymmetric
+# and False otherwise. An nxn square is called antisymmetric if A[i][j]=-A[j][i]
+# for each i=0,1,...,n-1 and for each j=0,1,...,n-1.
+def antisymmetric(check_list):
+    n = len(check_list)
+    # Check if it's a square
+    for row in check_list:
+        if len(row) != n:
+            return False
+    # Check if it's antisymmetric:
+    for i in range(n):
+        for j in range(n):
+            if check_list[i][j] != -check_list[j][i]:
+                return False
+    return True
+
+
+print("***Anti-Symmetric Square***")
+check_antisym = "Check if it's an antisymmetric square:"
+print(check_antisym, antisymmetric([[0, 1, 2],
+                                    [-1, 0, 3],
+                                    [-2, -3, 0]]))  # True
+
+print(check_antisym, antisymmetric([[0, 0, 0],
+                                    [0, 0, 0],
+                                    [0, 0, 0]]))  # True
+
+print(check_antisym, antisymmetric([[0, 1, 2],
+                                    [-1, 0, -2],
+                                    [2, 2, 3]]))  # False
+
+print(check_antisym, antisymmetric([[1, 2, 5],
+                                    [0, 1, -9],
+                                    [0, 0, 1]]), "\n")  # False
+
+
+###
+# Identity Matrix
+###
+# Given a list of lists representing a n * n matrix as input, define a procedure that
+# returns True if the input is an identity matrix and False otherwise.
+# An IDENTITY matrix is a square matrix in which all the elements on the principal/main diagonal
+# are 1 and all the elements outside the principal diagonal are 0.
+def is_identity_matrix(check_identity):
+    n = len(check_identity)
+    # Check if it's a square
+    for row in check_identity:
+        if len(row) != n:
+            return False
+    # Check if it's antisymmetric:
+    for i in range(n):
+        for j in range(n):
+            if i == j and check_identity[i][j] != 1:
+                return False
+            elif i != j and check_identity[i][j] != 0:
+                return False
+    return True
+
+
+matrix1 = [[1, 0, 0, 0],
+           [0, 1, 0, 0],
+           [0, 0, 1, 0],
+           [0, 0, 0, 1]]
+
+matrix2 = [[1, 0, 0],
+           [0, 1, 0],
+           [0, 0, 0]]
+
+matrix3 = [[2, 0, 0],
+           [0, 2, 0],
+           [0, 0, 2]]
+
+matrix4 = [[1, 0, 0, 0],
+           [0, 1, 1, 0],
+           [0, 0, 0, 1]]
+
+matrix5 = [[1, 0, 0, 0, 0, 0, 0, 0, 0]]
+
+matrix6 = [[1, 0, 0, 0],
+           [0, 1, 0, 1],
+           [0, 0, 1, 0],
+           [0, 0, 0, 1]]
+
+matrix7 = [[1, -1, 1],
+           [0, 1, 0],
+           [0, 0, 1]]
+
+print("***Identity Matrix***")
+check_iden = "Check if it's an identity matrix:"
+print(check_iden, is_identity_matrix(matrix1))  # True
+print(check_iden, is_identity_matrix(matrix2))  # False
+print(check_iden, is_identity_matrix(matrix3))  # False
+print(check_iden, is_identity_matrix(matrix4))  # False
+print(check_iden, is_identity_matrix(matrix5))  # False
+print(check_iden, is_identity_matrix(matrix6))  # False
+print(check_iden, is_identity_matrix(matrix7))  # False
