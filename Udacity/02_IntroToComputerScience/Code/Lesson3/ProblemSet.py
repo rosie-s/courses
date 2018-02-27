@@ -480,6 +480,11 @@ print(mean_string, list_mean([1, 3, 4, 5, 2]))  # 3.0
 print(mean_string, list_mean([]))  # Return message
 print(mean_string, list_mean([2]), "\n")  # 2.0
 
+###############################################
+#           Lesson 3 - Optional 2             #
+###############################################
+print("Problem Set (Optional 2)\n")
+
 
 ###
 # Anti-Symmetric
@@ -579,4 +584,30 @@ print(check_iden, is_identity_matrix(matrix3))  # False
 print(check_iden, is_identity_matrix(matrix4))  # False
 print(check_iden, is_identity_matrix(matrix5))  # False
 print(check_iden, is_identity_matrix(matrix6))  # False
-print(check_iden, is_identity_matrix(matrix7))  # False
+print(check_iden, is_identity_matrix(matrix7), "\n")  # False
+
+
+###
+# Numbers in Lists
+###
+# Define a procedure that takes in a string of numbers from 1-9 and
+# outputs a list with the following parameters:
+# Every number in the string should be inserted into the list. If a number x in the string
+# is less than or equal to the preceding number y, the number x should be inserted into a sublist.
+# Continue adding the following numbers to the sublist until reaching a number z that
+# is greater than the number y. Then add this number z to the normal list and continue.
+# Hint - "int()" turns a string's element into a number
+
+def numbers_in_lists(string_numbers):
+    int_list = []
+    for e in string_numbers:
+        int_list.append(e)
+    return int_list
+
+
+print("***Numbers in Lists***")
+string = '543987'
+
+# Check string is converted to list
+print("String is:", string)
+print("List is:", numbers_in_lists(string))
