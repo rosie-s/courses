@@ -597,17 +597,47 @@ print(check_iden, is_identity_matrix(matrix7), "\n")  # False
 # Continue adding the following numbers to the sublist until reaching a number z that
 # is greater than the number y. Then add this number z to the normal list and continue.
 # Hint - "int()" turns a string's element into a number
-
 def numbers_in_lists(string_numbers):
     int_list = []
+    final_list = []
+    sub_list = []
+    num = 0
     for e in string_numbers:
-        int_list.append(e)
-    return int_list
+        int_list.append(int(e))
+    for e in int_list:
+        if e <= num:
+            sub_list.append(e)
+        if e > num:
+            if not sub_list == []:
+                final_list.append(sub_list)
+                sub_list = []
+            final_list.append(e)
+            num = e
+    if not sub_list == []:
+        final_list.append(sub_list)
+    return final_list
 
 
 print("***Numbers in Lists***")
-string = '543987'
+check_nil = "Does string match result?:"
+nil_output = "Result:"
 
-# Check string is converted to list
-print("String is:", string)
-print("List is:", numbers_in_lists(string))
+string = '543987'
+result = [5, [4, 3], 9, [8, 7]]
+print(check_nil, repr(string), numbers_in_lists(string) == result)
+print(nil_output, numbers_in_lists('543987'))
+
+string = '987654321'
+result = [9, [8, 7, 6, 5, 4, 3, 2, 1]]
+print(check_nil, repr(string), numbers_in_lists(string) == result)
+print(nil_output, numbers_in_lists('987654321'))
+
+string = '455532123266'
+result = [4, 5, [5, 5, 3, 2, 1, 2, 3, 2], 6, [6]]
+print(check_nil, repr(string), numbers_in_lists(string) == result)
+print(nil_output, numbers_in_lists('455532123266'))
+
+string = '123456789'
+result = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+print(check_nil, repr(string), numbers_in_lists(string) == result)
+print(nil_output, numbers_in_lists('123456789'))
