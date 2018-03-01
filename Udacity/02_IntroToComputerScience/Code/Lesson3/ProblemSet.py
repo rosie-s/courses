@@ -413,9 +413,8 @@ print("Problem Set (Optional 1)\n")
 ###
 # Symmetric Square
 ###
-# A list is symmetric if the first row is the same as the first column,
-# the second row is the same as the second column and so on. Write a
-# procedure, symmetric, which takes a list as input, and returns the
+# A list is symmetric if the first row is the same as the first column, the second row is the same as the 
+# second column and so on. Write a procedure, symmetric, which takes a list as input, and returns the
 # boolean True if the list is symmetric and False if it is not.
 def symmetric(check_list):
     n = len(check_list)
@@ -460,9 +459,8 @@ print(check_sym, symmetric([[1, 2, 3],
 ###
 # Mean
 ###
-# The mean of a set of numbers is the sum of the numbers divided by the
-# number of numbers. Write a procedure, list_mean, which takes a list of numbers
-# as its input and return the mean of the numbers in the list.
+# The mean of a set of numbers is the sum of the numbers divided by the number of numbers. Write a procedure, 
+# list_mean, which takes a list of numbers as its input and return the mean of the numbers in the list.
 def list_mean(list_input):
     result = 0.0
     if len(list_input) == 0:
@@ -489,9 +487,8 @@ print("Problem Set (Optional 2)\n")
 ###
 # Anti-Symmetric
 ###
-# Modify Problem Set Symmetric Square to return True if the given square is antisymmetric
-# and False otherwise. An nxn square is called antisymmetric if A[i][j]=-A[j][i]
-# for each i=0,1,...,n-1 and for each j=0,1,...,n-1.
+# Modify Problem Set Symmetric Square to return True if the given square is antisymmetric and False otherwise. 
+# An nxn square is called antisymmetric if A[i][j]=-A[j][i] for each i=0,1,...,n-1 and for each j=0,1,...,n-1.
 def antisymmetric(check_list):
     n = len(check_list)
     # Check if it's a square
@@ -528,10 +525,9 @@ print(check_antisym, antisymmetric([[1, 2, 5],
 ###
 # Identity Matrix
 ###
-# Given a list of lists representing a n * n matrix as input, define a procedure that
-# returns True if the input is an identity matrix and False otherwise.
-# An IDENTITY matrix is a square matrix in which all the elements on the principal/main diagonal
-# are 1 and all the elements outside the principal diagonal are 0.
+# Given a list of lists representing a n * n matrix as input, define a procedure that returns True if the 
+# input is an identity matrix and False otherwise. An IDENTITY matrix is a square matrix in which all the elements 
+# on the principal/main diagonal are 1 and all the elements outside the principal diagonal are 0.
 def is_identity_matrix(check_identity):
     n = len(check_identity)
     # Check if it's a square
@@ -590,13 +586,11 @@ print(check_iden, is_identity_matrix(matrix7), "\n")  # False
 ###
 # Numbers in Lists
 ###
-# Define a procedure that takes in a string of numbers from 1-9 and
-# outputs a list with the following parameters:
-# Every number in the string should be inserted into the list. If a number x in the string
-# is less than or equal to the preceding number y, the number x should be inserted into a sublist.
-# Continue adding the following numbers to the sublist until reaching a number z that
-# is greater than the number y. Then add this number z to the normal list and continue.
-# Hint - "int()" turns a string's element into a number
+# Define a procedure that takes in a string of numbers from 1-9 and outputs a list with the following parameters:
+# Every number in the string should be inserted into the list. If a number x in the string is less than or equal 
+# to the preceding number y, the number x should be inserted into a sublist. Continue adding the following numbers 
+# to the sublist until reaching a number z that is greater than the number y. Then add this number z to the normal 
+# list and continue. Hint - "int()" turns a string's element into a number
 def numbers_in_lists(string_numbers):
     int_list = []
     final_list = []
