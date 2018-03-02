@@ -38,9 +38,8 @@ print("Product list of [9]:", product_list([]), "\n")  # 1
 ###
 # Greatest
 ###
-# Define a procedure, greatest, that takes as input a list
-# of positive numbers, and returns the greatest number
-# in that list. If the input list is empty, the output should be 0.
+# Define a procedure, greatest, that takes as input a list of positive numbers, 
+# and returns the greatest number in that list. If the input list is empty, the output should be 0.
 def greatest(list_of_numbers):
     result = 0
     i = 0
@@ -70,14 +69,11 @@ print("Greatest of []:", greatest_for([]), "\n")  # 0
 ###
 # List of Lists
 ###
-# Define a procedure, total_enrollment, that takes as an input a list of elements,
-# where each element is a list containing three elements: a university name,
-# the total number of students enrolled, and the annual tuition fees.
-
-# The procedure should return two numbers, not a string,
-# giving the total number of students enrolled at all of the universities in the list,
-# and the total tuition fees (which is the sum of the number
-# of students enrolled times the tuition fees for each university).
+# Define a procedure, total_enrollment, that takes as an input a list of elements, where each element is a list 
+# containing three elements: a university name, the total number of students enrolled, and the annual tuition fees.
+# The procedure should return two numbers, not a string, giving the total number of students enrolled at all of the
+# universities in the list, and the total tuition fees (which is the sum of the number of students enrolled times the 
+# tuition fees for each university).
 def total_enrollment(list_of_elements):
     total_students = 0
     total_fees = 0
@@ -117,14 +113,13 @@ print(print_total, total_enrollment_sol(usa_univs), "\n")  # (77285,3058581079)
 ###
 # Max Page
 ###
-# The web crawler we built at the end of Unit 3 has some serious flaws if we were going 
-# to use it in a real crawler. One problem is if we start with a good seed page, it might
-# run for an extremely long time (even forever, since the number of URLS on the web is not
-# actually finite). This question and the following one explore two different ways
+# The web crawler we built at the end of Unit 3 has some serious flaws if we were going to use it in a real crawler. 
+# One problem is if we start with a good seed page, it mightrun for an extremely long time (even forever, since the 
+# number of URLS on the web is not actually finite). This question and the following one explore two different ways
 # to limit the pages that it can crawl.
-# Modify the crawl_web procedure to take a second parameter, max_pages, that limits the number
-# of pages to crawl. Your procedure should terminate the crawl after max_pages different pages 
-# have been crawled, or when there are no more pages to crawl.
+# Modify the crawl_web procedure to take a second parameter, max_pages, that limits the number of pages to crawl. 
+# Your procedure should terminate the crawl after max_pages different pages have been crawled, or when there are no
+# more pages to crawl.
 
 # The following definition of get_page provides an interface
 # to the website found at http://www.udacity.com/cs101x/index.html
@@ -219,20 +214,15 @@ print("")
 #
 # This question explores a different way (from the previous question)
 # to limit the pages that it can crawl.
-#
-#######
-# Modify the crawl_web procedure to take a second parameter, max_depth, that limits the 
-# depth of the search. We can define the depth of a page as the number of links that must
-# be followed to reach that page starting from the seed page, that is, the length of the 
-# shortest path from the seed to the page.  No pages whose depth exceeds max_depth should be
-# included in the crawl.
-# For example, if max_depth is 0, the only page that should be crawled is the seed page. 
-# If max_depth is 1, the pages that should be crawled are the seed page and every page that
-# it links to directly. If max_depth is 2, the crawl should Also include all pages that are 
-# linked to by these pages.
-# Note that the pages in the crawl may be in any order.
-# The following definition of get_page provides an interface
-# to the website found at http://www.udacity.com/cs101x/index.html
+###
+# Modify the crawl_web procedure to take a second parameter, max_depth, that limits the depth of the search.
+# We can define the depth of a page as the number of links that must be followed to reach that page starting from the 
+# seed page, that is, the length of the shortest path from the seed to the page.  No pages whose depth exceeds max_depth 
+# should be included in the crawl.
+# For example, if max_depth is 0, the only page that should be crawled is the seed page. If max_depth is 1, the pages
+# that should be crawled are the seed page and every page that it links to directly. If max_depth is 2, the crawl should 
+# also include all pages that are linked to by these pages. Note that the pages in the crawl may be in any order.
+# The following definition of get_page provides an interface to the website found at http://www.udacity.com/cs101x/index.html
 def get_page_2(url):
     try:
         if url == "http://www.udacity.com/cs101x/index.html":
@@ -336,16 +326,13 @@ print(crawl_web("A1", 3), "\n")
 ###
 # Sudoku
 ###
-# Define a procedure, check_sudoku, that takes as input a square list
-# of lists representing an n x n  sudoku puzzle solution and returns the boolean
-# True if the input is a valid sudoku square and returns the boolean False otherwise.
+# Define a procedure, check_sudoku, that takes as input a square list of lists representing an n x n 
+# sudoku puzzle solution and returns the booleanTrue if the input is a valid sudoku square and returns 
+# the boolean False otherwise.
 # A valid sudoku square satisfies these two properties:
-#   1. Each column of the square contains
-#       each of the whole numbers from 1 to n exactly once.
-#   2. Each row of the square contains each
-#       of the whole numbers from 1 to n exactly once.
-# You may assume the the input is square and contains at
-# least one row and column.
+#   1. Each column of the square contains each of the whole numbers from 1 to n exactly once.
+#   2. Each row of the square contains each of the whole numbers from 1 to n exactly once.
+# You may assume the the input is square and contains at least one row and column.
 def check_sudoku(sudoku_list):
     length_of_list = len(sudoku_list)
     digit = 1
