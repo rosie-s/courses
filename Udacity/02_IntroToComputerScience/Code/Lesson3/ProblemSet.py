@@ -217,12 +217,13 @@ print("")
 ###
 # Modify the crawl_web procedure to take a second parameter, max_depth, that limits the depth of the search.
 # We can define the depth of a page as the number of links that must be followed to reach that page starting from the 
-# seed page, that is, the length of the shortest path from the seed to the page.  No pages whose depth exceeds max_depth 
+# seed page, that is, the length of the shortest path from the seed to the page. No pages whose depth exceeds max_depth
 # should be included in the crawl.
 # For example, if max_depth is 0, the only page that should be crawled is the seed page. If max_depth is 1, the pages
 # that should be crawled are the seed page and every page that it links to directly. If max_depth is 2, the crawl should 
 # also include all pages that are linked to by these pages. Note that the pages in the crawl may be in any order.
-# The following definition of get_page provides an interface to the website found at http://www.udacity.com/cs101x/index.html
+# The following definition of get_page provides an interface to the website found at
+# http://www.udacity.com/cs101x/index.html
 def get_page_2(url):
     try:
         if url == "http://www.udacity.com/cs101x/index.html":
@@ -622,3 +623,35 @@ string = '123456789'
 result = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 print(check_nil, repr(string), numbers_in_lists(string) == result)
 print(nil_output, numbers_in_lists('123456789'))
+
+
+###
+# Crypto Analysis: Frequency Analysis
+###
+# To analyze encrypted messages, to find out information about the possible algorithm or even language of the clear
+# text message, one could perform frequency analysis. This process could be described as simply counting the number of
+# times a certain symbol occurs in the given text. For example: For the text "test" the frequency of 'e' is 1, 's' is 1
+# and 't' is 2.
+# The input to the function will be an encrypted body of text that only contains the lowercase letters a-z. As output
+# you should return a list of the normalized frequency for each of the letters a-z. The normalized frequency is simply
+# the number of occurrences, i, divided by the total number of characters in the message, n.
+def freq_analysis(message):
+    alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u',
+                'v', 'w', 'x', 'y', 'z']
+    freq_list = [0.0] * 26
+    for e in message:
+        if e in alphabet:
+            freq_list[alphabet.index(e)] += 1
+    for e in freq_list:
+        if e > 0.0:
+            freq_list[freq_list.index(e)] = e / len(message)
+    return freq_list
+
+
+print("***Frequency Analysis***")
+freq = "Frequency Analysis of"
+print(freq, "abcd is:", freq_analysis("abcd"))  # [0.25, 0.25, 0.25, 0.25, 0.0, ..., 0.0]
+print(freq, "adca is:", freq_analysis("adca"))  # [0.5, 0.0, 0.25, 0.25, 0.0, ..., 0.0]
+print(freq, "bewarethebunnies is:", freq_analysis('bewarethebunnies'))  # [0.0625, 0.125, 0.0, 0.0, ..., 0.0]
+print(freq, "abcdefghijklmnopqrstuvwxyz is:", freq_analysis('abcdefghijklmnopqrstuvwxyz'))
+# [0.038461538461538464, 0.038461538461538464,...0.038461538461538464]
