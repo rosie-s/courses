@@ -32,8 +32,8 @@ print("Index is:\n", ind,
 ###
 # Define a procedure, lookup, that takes two inputs:
 # - an index - keyword
-# The procedure should return a list of the urls associated with the keyword. If the keyword
-# is not in the index, the procedure should return an empty list.
+# The procedure should return a list of the urls associated with the keyword. If the keyword is not in the index, 
+# the procedure should return an empty list.
 def lookup(index, keyword):
     for e in index:
         if e[0] == keyword:
@@ -68,10 +68,8 @@ print("Split quote:", quote2.split())
 ###
 # Define a procedure, add_page_to_index, that takes three inputs:
 #   - index - url (String) - content (String)
-# It should update the index to include all of the word occurences found in the
-# page content by adding the url to the word's associated url list.
-
-
+# It should update the index to include all of the word occurences found in the page content by adding the url to the word's 
+# associated url list.
 def add_page_to_index(index, url, content):
     split_to_words = content.split()
     for word in split_to_words:
