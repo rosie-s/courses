@@ -19,10 +19,10 @@ def get_page(url):
         return ""
 ```
 
-### Networks
+## Networks
 > A **network** is a group of entities that can communicate, even though they are not all directly connected
 
-#### Making a Network
+### Making a Network
 - Way to encode and interpret messages:  
 Greeks: "Agamennon is arriving" -> Smoke signal  
 Internet: Message -> bits -> electrons/photons
@@ -35,24 +35,24 @@ Internet: Routers figure out next hops
 Greeks: Generals have priority  
 Internet: Best effort service
 
-### Measuring Networks
+## Measuring Networks
 - Latency
 - Bandwidth
 
-#### Latency
+### Latency
 Time it takes message to get from source to destination
 - Measured in milliseconds  
 1000 ms  = 1 second
 
-#### Bandwidth
+### Bandwidth
 Amount of information that can be transmitted per unit time 
 - Measured in bits per second  
 Mbps
 
-##### Bit
+#### Bit
 1 bit = Smallest unit of information  
 0 and 1
 
-### Protocol Used
+## Protocol Used
 HTTP - Hypertext Transfer Protocol 
 >  HTTP is the set of rules for transferring files (text, graphic images, sound, video, and other multimedia files) on the World Wide Web. As soon as a Web user opens their Web browser, the user is indirectly making use of HTTP. HTTP is an application protocol that runs on top of the TCP/IP suite of protocols (the foundation protocols for the Internet).
