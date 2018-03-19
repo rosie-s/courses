@@ -209,3 +209,28 @@ time_on_the_wires = 2 * one_Way_distance / optic_speed * ms_per_second  # [km]/[
 total_time_at_routers = total_time - time_on_the_wires
 print("\n***Time Spent at Routers***")
 print("Total time spent at routers from Birmingham -> Sundsvall (ms):", total_time_at_routers)
+
+###############################################
+#           Lesson 4 - Optional               #
+###############################################
+print("\n----Problem Set (Optional)----")
+
+
+###
+# Word Count
+###
+# Write a procedure, count_words, which takes as input a string
+# and returns the number of words in the string. You may consider words
+# as strings of characters separated by spaces.
+def count_words(input_string):
+    a = input_string.split()
+    return len(a)
+
+
+passage = ("The number of orderings of the 52 cards in a deck of cards "
+           "is so great that if every one of the almost 7 billion people alive "
+           "today dealt one ordering of the cards per second, it would take "
+           "2.5 * 10**40 times the age of the universe to order the cards in every "
+           "possible way bro.")
+print("\n***Word Count***")
+print("Length of 'passage' is:", count_words(passage))  # 56
