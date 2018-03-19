@@ -148,6 +148,7 @@ def crawl_web(seed):
             crawled.append(page)
     return index
 
+
 print("\n***Crawl the Web***")
 seeds = 'http://xkcd.com/353'
 print(crawl_web(seeds))
