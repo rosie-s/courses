@@ -234,3 +234,22 @@ passage = ("The number of orderings of the 52 cards in a deck of cards "
            "possible way bro.")
 print("\n***Word Count***")
 print("Length of 'passage' is:", count_words(passage))  # 56
+
+
+###
+# Latency
+###
+# Write a procedure, speed_fraction, which takes as its inputs the result of
+# a traceroute (in ms) and distance (in km) between two points. It should
+# return the speed the data travels as a decimal fraction of the speed of
+# light.
+
+
+def speed_fraction(result_traceroute, distance):
+    speed_of_light = 300000.  # km per second
+    return ((2.0 * distance) / result_traceroute) / (speed_of_light / 1000)
+
+
+print("\n***Latency***")
+print("speed_fraction(50, 5000):", speed_fraction(50, 5000))  # 0.666666666667
+print("speed_fraction(50,10000):", speed_fraction(50, 10000))  # 1.33333333333
