@@ -210,6 +210,7 @@ total_time_at_routers = total_time - time_on_the_wires
 print("\n***Time Spent at Routers***")
 print("Total time spent at routers from Birmingham -> Sundsvall (ms):", total_time_at_routers)
 
+
 ###############################################
 #           Lesson 4 - Optional               #
 ###############################################
@@ -219,9 +220,8 @@ print("\n----Problem Set (Optional)----")
 ###
 # Word Count
 ###
-# Write a procedure, count_words, which takes as input a string
-# and returns the number of words in the string. You may consider words
-# as strings of characters separated by spaces.
+# Write a procedure, count_words, which takes as input a string and returns the number of words in the string. 
+# You may consider words as strings of characters separated by spaces.
 def count_words(input_string):
     a = input_string.split()
     return len(a)
@@ -239,12 +239,8 @@ print("Length of 'passage' is:", count_words(passage))  # 56
 ###
 # Latency
 ###
-# Write a procedure, speed_fraction, which takes as its inputs the result of
-# a traceroute (in ms) and distance (in km) between two points. It should
-# return the speed the data travels as a decimal fraction of the speed of
-# light.
-
-
+# Write a procedure, speed_fraction, which takes as its inputs the result of a traceroute (in ms) and distance (in km)
+# between two points. It should return the speed the data travels as a decimal fraction of the speed of light.
 def speed_fraction(result_traceroute, distance):
     speed_of_light = 300000.  # km per second
     return ((2.0 * distance) / result_traceroute) / (speed_of_light / 1000)
