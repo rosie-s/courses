@@ -210,7 +210,6 @@ total_time_at_routers = total_time - time_on_the_wires
 print("\n***Time Spent at Routers***")
 print("Total time spent at routers from Birmingham -> Sundsvall (ms):", total_time_at_routers)
 
-
 ###############################################
 #           Lesson 4 - Optional               #
 ###############################################
@@ -249,3 +248,47 @@ def speed_fraction(result_traceroute, distance):
 print("\n***Latency***")
 print("speed_fraction(50, 5000):", speed_fraction(50, 5000))  # 0.666666666667
 print("speed_fraction(50,10000):", speed_fraction(50, 10000))  # 1.33333333333
+
+
+###
+# Converting Seconds
+###
+# Write a procedure, convert_seconds, which takes as input a non-negative
+# number of seconds and returns a string of the form
+# '<integer> hours, <integer> minutes, <number> seconds' but
+# where if <integer> is 1 for the number of hours or minutes,
+# then it should be hour/minute. Further, <number> may be an integer
+# or decimal, and if it is 1, then it should be followed by second.
+# You might need to use int() to turn a decimal into a float depending
+# on how you code this. int(3.0) gives 3
+#
+# Note that English uses the plural when talking about 0 items, so
+# it should be "0 minutes".
+#
+
+def convert_seconds(seconds):
+    minutes = int(seconds / 60)
+    seconds -= minutes * 60
+    hours = int(minutes / 60)
+    minutes -= int(hours * 60)
+
+    string_hours = " hours, "
+    string_minutes = " minutes, "
+    string_seconds = " seconds"
+
+    if hours == 1:
+        string_hours = " hour, "
+    if minutes == 1:
+        string_minutes = " minute, "
+    if seconds == 1:
+        string_seconds = " second"
+
+    return str(hours) + string_hours + str(minutes) + string_minutes + str(round(seconds, 2)) + string_seconds
+
+
+print("\n***Converting Seconds***")
+print("Convert 3661 seconds:\t", convert_seconds(3661))  # 1 hour, 1 minute, 1 second
+print("Convert 7325 seconds:\t", convert_seconds(7325))  # 2 hours, 2 minutes, 5 seconds
+print("Convert 7261.7 seconds:\t", convert_seconds(7261.7))  # 2 hours, 1 minute, 1.7 seconds
+print("Convert 0 seconds:\t\t", convert_seconds(0))  # 0 hours, 0 minutes, 0 seconds
+
