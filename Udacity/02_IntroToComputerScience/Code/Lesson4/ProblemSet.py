@@ -253,12 +253,13 @@ print("speed_fraction(50,10000):", speed_fraction(50, 10000))  # 1.33333333333
 ###
 # Converting Seconds
 ###
-# Write a procedure, convert_seconds, which takes as input a non-negative number of seconds and returns a string of the form
-# '<integer> hours, <integer> minutes, <number> seconds' but where if <integer> is 1 for the number of hours or minutes,
-# then it should be hour/minute. Further, <number> may be an integer or decimal, and if it is 1, then it should be followed
-# by second. You might need to use int() to turn a decimal into a float depending on how you code this. int(3.0) gives 3
+# Write a procedure, convert_seconds, which takes as input a non-negative number of seconds and returns a string of the
+# form '<integer> hours, <integer> minutes, <number> seconds' but where if <integer> is 1 for the number of hours or
+# minutes, then it should be hour/minute. Further, <number> may be an integer or decimal, and if it is 1, then it
+# should be followed by second. You might need to use int() to turn a decimal into a float depending on how you code
+# this. int(3.0) gives 3
 #
-# Note that English uses the plural when talking about 0 items, soit should be "0 minutes".
+# Note that English uses the plural when talking about 0 items, so it should be "0 minutes".
 def convert_seconds(seconds):
     minutes = int(seconds / 60)
     seconds -= minutes * 60
@@ -307,23 +308,23 @@ print("Convert 0 seconds:\t\t", convert_seconds(0))  # 0 hours, 0 minutes, 0 sec
 #
 # Often bandwidth is given in megabits (Mb) per second whereas file size is given in megabytes (MB).
 
-def unit_to_rate(unit):
-    unit_list = ['kb', 'kB', 'Mb', 'MB', 'Gb', 'GB', 'Tb', 'TB']
-    assert unit in unit_list
-    ind = unit_list.index(unit)
-    rate = 2 ** ((1 + ind / 2) * 10) * (8 if ind % 2 else 1)
-    return rate
-
-
 def download_time(file_size, unit_file, bandwidth, unit_bandwidth):
-    seconds = file_size * unit_to_rate(unit_file) * 1.0 / (bandwidth * unit_to_rate(unit_bandwidth))
+    unit_list = ['kb', 'kB', 'Mb', 'MB', 'Gb', 'GB', 'Tb', 'TB']
+    size = [2 ** 10, 2 ** 10 * 8., 2 ** 20, 2 ** 20 * 8., 2 ** 30, 2 ** 30 * 8., 2 ** 40, 2 ** 40 * 8.]
+    seconds = (file_size * size[unit_list.index(unit_file)]) / (bandwidth * size[unit_list.index(unit_bandwidth)])
     return convert_seconds(seconds)
 
 
 print("\n***Download Calculator***")
-print(download_time(1024, 'kB', 1, 'MB') #  0 hours, 0 minutes, 1 second
-print(download_time(1024, 'kB', 1, 'Mb')) # 0 hours, 0 minutes, 8 seconds  # 8.0 seconds is also acceptable
-print(download_time(13, 'GB', 5.6, 'MB')) # 0 hours, 39 minutes, 37.1428571429 seconds
-print(download_time(13, 'GB', 5.6, 'Mb')) # 5 hours, 16 minutes, 57.1428571429 seconds
-print(download_time(10, 'MB', 2, 'kB')) # 1 hour, 25 minutes, 20 seconds  # 20.0 seconds is also acceptable
-print(download_time(10, 'MB', 2, 'kb')) # 11 hours, 22 minutes, 40 seconds  # 40.0 seconds is also acceptable
+print("download_time(1024, 'kB', 1, 'MB') is:", download_time(1024, 'kB', 1, 'MB'))
+# 0 hours, 0 minutes, 1 second
+print("download_time(1024, 'kB', 1, 'Mb') is:", download_time(1024, 'kB', 1, 'Mb'))
+# 0 hours, 0 minutes, 8 seconds  # 8.0 seconds is also acceptable
+print("download_time(13, 'GB', 5.6, 'MB') is:", download_time(13, 'GB', 5.6, 'MB'))
+# 0 hours, 39 minutes, 37.1428571429 seconds
+print("download_time(13, 'GB', 5.6, 'Mb') is:", download_time(13, 'GB', 5.6, 'Mb'))
+# 5 hours, 16 minutes, 57.1428571429 seconds
+print("download_time(10, 'MB', 2, 'kB') is:", download_time(10, 'MB', 2, 'kB'))
+# 1 hour, 25 minutes, 20 seconds  # 20.0 seconds is also acceptable
+print("download_time(10, 'MB', 2, 'kb') is:", download_time(10, 'MB', 2, 'kb'))
+# 11 hours, 22 minutes, 40 seconds  # 40.0 seconds is also acceptable
