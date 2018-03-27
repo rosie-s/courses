@@ -188,11 +188,11 @@ def add_to_index(index, keyword, url):
 
 # Here is an example showing a sequence of interactions:
 print("\n***Counting Clicks***")
-index = crawl_web('http://www.udacity.com/cs101x/index.html')
-print("Look for 'is':", lookup(index, 'good'))
+index2 = crawl_web('http://www.udacity.com/cs101x/index.html')
+print("Look for 'is':", lookup(index2, 'good'))
 # [['http://www.udacity.com/cs101x/index.html', 0], ['http://www.udacity.com/cs101x/crawling.html', 0]]
-record_user_click(index, 'good', 'http://www.udacity.com/cs101x/crawling.html')
-print("Look for 'is':", lookup(index, 'good'))
+record_user_click(index2, 'good', 'http://www.udacity.com/cs101x/crawling.html')
+print("Look for 'is':", lookup(index2, 'good'))
 # [['http://www.udacity.com/cs101x/index.html', 0], ['http://www.udacity.com/cs101x/crawling.html', 1]]
 
 

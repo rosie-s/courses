@@ -76,18 +76,17 @@ def add_page_to_index(index, url, content):
         add_to_index(index, word, url)
 
 
-index = []
+index3 = []
 print("\n***Add Page to Index***")
-add_page_to_index(index, 'fake.text', "This is a test")
-print(index)  # [['This', ['fake.text']], ['is', ['fake.text']], ['a', ['fake.text']], ['test',['fake.text']]]
-add_page_to_index(index, 'not.text', "This is not a test")
-print(index)
+add_page_to_index(index3, 'fake.text', "This is a test")
+print(index3)  # [['This', ['fake.text']], ['is', ['fake.text']], ['a', ['fake.text']], ['test',['fake.text']]]
+add_page_to_index(index3, 'not.text', "This is not a test")
+print(index3)
 
 
 ###
 # Finishing the Web Crawler
 ###
-
 # Get Page
 def get_page(url):
     try:
