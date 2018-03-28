@@ -307,12 +307,14 @@ print("Convert 0 seconds:\t\t", convert_seconds(0))  # 0 hours, 0 minutes, 0 sec
 # print 2 ** 40 * 8  # one terabyte, TB
 #
 # Often bandwidth is given in megabits (Mb) per second whereas file size is given in megabytes (MB).
-
 def download_time(file_size, unit_file, bandwidth, unit_bandwidth):
     unit_list = ['kb', 'kB', 'Mb', 'MB', 'Gb', 'GB', 'Tb', 'TB']
     size = [2 ** 10, 2 ** 10 * 8., 2 ** 20, 2 ** 20 * 8., 2 ** 30, 2 ** 30 * 8., 2 ** 40, 2 ** 40 * 8.]
-    seconds = (file_size * size[unit_list.index(unit_file)]) / (bandwidth * size[unit_list.index(unit_bandwidth)])
-    return convert_seconds(seconds)
+    if unit_file in unit_list and unit_bandwidth in unit_list:
+        seconds = (file_size * size[unit_list.index(unit_file)]) / (bandwidth * size[unit_list.index(unit_bandwidth)])
+        return convert_seconds(seconds)
+    else:
+        return "Input Error"
 
 
 print("\n***Download Calculator***")
