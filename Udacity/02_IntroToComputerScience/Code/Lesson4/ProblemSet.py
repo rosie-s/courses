@@ -314,19 +314,19 @@ def download_time(file_size, unit_file, bandwidth, unit_bandwidth):
         seconds = (file_size * size[unit_list.index(unit_file)]) / (bandwidth * size[unit_list.index(unit_bandwidth)])
         return convert_seconds(seconds)
     else:
-        return "Input Error"
+        return "Error - Unit file or bandwidth is incorrect"
 
 
 print("\n***Download Calculator***")
 print("download_time(1024, 'kB', 1, 'MB') is:", download_time(1024, 'kB', 1, 'MB'))
 # 0 hours, 0 minutes, 1 second
 print("download_time(1024, 'kB', 1, 'Mb') is:", download_time(1024, 'kB', 1, 'Mb'))
-# 0 hours, 0 minutes, 8 seconds  # 8.0 seconds is also acceptable
+# 0 hours, 0 minutes, 8 / 8.0 seconds
 print("download_time(13, 'GB', 5.6, 'MB') is:", download_time(13, 'GB', 5.6, 'MB'))
 # 0 hours, 39 minutes, 37.1428571429 seconds
 print("download_time(13, 'GB', 5.6, 'Mb') is:", download_time(13, 'GB', 5.6, 'Mb'))
 # 5 hours, 16 minutes, 57.1428571429 seconds
 print("download_time(10, 'MB', 2, 'kB') is:", download_time(10, 'MB', 2, 'kB'))
-# 1 hour, 25 minutes, 20 seconds  # 20.0 seconds is also acceptable
+# 1 hour, 25 minutes, 20 / 20.0 seconds
 print("download_time(10, 'MB', 2, 'kb') is:", download_time(10, 'MB', 2, 'kb'))
-# 11 hours, 22 minutes, 40 seconds  # 40.0 seconds is also acceptable
+# 11 hours, 22 minutes, 40 / 40.0 seconds
