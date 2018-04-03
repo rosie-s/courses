@@ -26,3 +26,14 @@ Allows us to evaluate any string as though it were a python expression
 
 - e-05  
 8.3....e-05 = 0.000083.... seconds
+
+## Predicting Run Time
+```
+    n   |   Time
+10 ^ 5  | 0.005..
+10 ^ 6  | 0.05...
+10 ^ 7  | 0.5....
+10 ^ 8  | 5......
+10 ^ 9  | 50.....
+```
+
