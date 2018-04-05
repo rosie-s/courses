@@ -90,3 +90,14 @@ index1000 = make_big_index(1000)
 print("Time Execution: 'lookup(index1000, udacity)' :", time_execution('lookup(index1000, "udacity")'))
 print("Index 999 :", index1000[999])
 print("Index  -1 :", index1000[-1])
+
+###
+# Hash Function
+###
+
+print("\n***Hash Function***")
+print("ord 'a' :", ord('a'))
+print("ord 'A' :", ord('A'))
+print("ord 'B' :", ord('B'))
+print("ord 'b' :", ord('b'))
+print("chr ord 'u' :", chr(ord('u')))
