@@ -37,3 +37,21 @@ Allows us to evaluate any string as though it were a python expression
 10 ^ 9  | 50.....
 ```
 
+## Defining a Hash Function
+```
+          |             |
+String -> | Hash_String | -> Number
+b      -> |             |  0....b-1
+```
+
+### Ord
+- `ord(<one-letter string>) -> Number `
+
+### Chr
+- `ord(<Number>) -> <one-letter string> `
+- `chr(ord(a)) -> a`
+
+### Modulus Operator
+```
+<number> % <number> -> <remainder>
+```
