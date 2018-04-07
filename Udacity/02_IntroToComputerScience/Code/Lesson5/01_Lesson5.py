@@ -96,8 +96,14 @@ print("Index  -1 :", index1000[-1])
 ###
 
 print("\n***Hash Function***")
+# ord and chr
 print("ord 'a' :", ord('a'))
 print("ord 'A' :", ord('A'))
 print("ord 'B' :", ord('B'))
 print("ord 'b' :", ord('b'))
 print("chr ord 'u' :", chr(ord('u')))
+
+###
+# Modulus Operator
+print("\nModulus: (odr 'z'+ 3) % ord 'z' ( 'z' is:", ord('z'), ") :", (ord('z') + 3) % ord('z'))
+print("Modulus:  odr 'z'+ 3  % ord 'z' ( 'z' is:", ord('z'), ") :", ord('z') + 3 % ord('z'))
