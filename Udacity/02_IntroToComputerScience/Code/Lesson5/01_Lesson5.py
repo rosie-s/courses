@@ -2,6 +2,7 @@
 #     Lesson 5 - How Programs Run             #
 ###############################################
 import time
+import urllib.request
 
 
 ###
@@ -103,7 +104,39 @@ print("ord 'B' :", ord('B'))
 print("ord 'b' :", ord('b'))
 print("chr ord 'u' :", chr(ord('u')))
 
-###
 # Modulus Operator
 print("\nModulus: (odr 'z'+ 3) % ord 'z' ( 'z' is:", ord('z'), ") :", (ord('z') + 3) % ord('z'))
 print("Modulus:  odr 'z'+ 3  % ord 'z' ( 'z' is:", ord('z'), ") :", ord('z') + 3 % ord('z'))
+print("ord(str(3)):", ord(str(3)))
+
+
+# Bad Hash
+def bad_hash_string(keyword, buckets):
+    return ord(keyword[0]) % buckets
+
+
+# Error print("Bad hash - Empty string input:", bad_hash_string("", 100))
+
+# Test hash
+def test_hash_function(func, keys, size):
+    results = [0] * size
+    keys_used = []
+    for w in keys:
+        if w not in keys_used:
+            hv = func(w, size)
+            results[hv] += 1
+            keys_used.append(w)
+    return results
+
+
+# Get Page
+def get_page(url):
+    text = urllib.request.urlopen(url).read().decode('utf8')
+    return text
+
+
+print("\n*Bad Hash*")
+words = get_page('http://www.gutenberg.org/cache/epub/1661/pg1661.txt').split()
+print("Length of Words:", len(words))
+counts = test_hash_function(bad_hash_string, words, 12)
+print("Counts:", counts)
