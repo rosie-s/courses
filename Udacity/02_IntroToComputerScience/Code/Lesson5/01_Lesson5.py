@@ -140,3 +140,32 @@ words = get_page('http://www.gutenberg.org/cache/epub/1661/pg1661.txt').split()
 print("Length of Words:", len(words))
 counts = test_hash_function(bad_hash_string, words, 12)
 print("Counts:", counts)
+
+
+###
+# Better Hash Function
+###
+# Define a function, hash_string, that takes as inputs a keyword (string) and a number of buckets,
+# and returns a number representing the bucket for that keyword.
+
+def hash_string(keyword, buckets):
+    h = 0
+    for c in keyword:
+        h = (h + ord(c)) % buckets
+    return h
+
+
+print(hash_string('a', 12))
+# >>> 1
+
+print(hash_string('b', 12))
+# >>> 2
+
+print(hash_string('a', 13))
+# >>> 6
+
+print(hash_string('au', 12))
+# >>> 10
+
+print(hash_string('udacity', 12))
+# >>> 11
