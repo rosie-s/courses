@@ -158,20 +158,11 @@ def hash_string(keyword, buckets):
 print("\n*Good Hash*")
 
 hs = "Hash String "
-print(hs, 'a, 12 \t:', hash_string('a', 12))
-# >>> 1
-
-print(hs, 'b, 12 \t:', hash_string('b', 12))
-# >>> 2
-
-print(hs, 'a, 13 \t:', hash_string('a', 13))
-# >>> 6
-
-print(hs, 'au, 12 :', hash_string('au', 12))
-# >>> 10
-
-print(hs, 'udacity , 12 :', hash_string('udacity', 12))
-# >>> 11
+print(hs, 'a, 12 \t:', hash_string('a', 12)) # 1
+print(hs, 'b, 12 \t:', hash_string('b', 12)) # 2
+print(hs, 'a, 13 \t:', hash_string('a', 13)) # 6
+print(hs, 'au, 12 :', hash_string('au', 12)) # 10
+print(hs, 'udacity , 12 :', hash_string('udacity', 12)) # 11
 
 # Test
 counts = test_hash_function(hash_string, words, 12)
