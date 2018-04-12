@@ -39,13 +39,13 @@ Allows us to evaluate any string as though it were a python expression
 
 ## Defining a Hash Function
 ```
-          |             |
-String -> | Hash_String | -> Number
-b      -> |             |  0....b-1
+           |             |
+String  -> | Hash_String | -> Number
+buckets -> |             |      0....buckets-1
 ```
 
 ### Ord
-- `ord(<one-letter string>) -> Number `
+- `ord(<one-letter string>) -> number `
 
 ### Chr
 - `ord(<Number>) -> <one-letter string> `
