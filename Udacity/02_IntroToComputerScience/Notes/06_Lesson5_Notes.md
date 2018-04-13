@@ -41,17 +41,18 @@ Allows us to evaluate any string as though it were a python expression
 ```
            |             |
 String  -> | Hash_String | -> Number
-buckets -> |             |      0....buckets-1
+buckets -> |             | 0....buckets-1
 ```
 
-### Ord
+# Tips
+## Ord
 - `ord(<one-letter string>) -> number `
 
-### Chr
+## Chr
 - `ord(<Number>) -> <one-letter string> `
 - `chr(ord(a)) -> a`
 
-### Modulus Operator
+## Modulus
 ```
 <number> % <number> -> <remainder>
 ```
