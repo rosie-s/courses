@@ -35,7 +35,9 @@ print("Time Execution: spin_loop(1000)     :", time_execution('spin_loop(1000)')
 print("Time Execution: spin_loop(10000)    :", time_execution('spin_loop(10000)'))
 print("Time Execution: spin_loop(100000)   :", time_execution('spin_loop(100000)'))
 print("Time Execution: spin_loop(1000000)  :", time_execution('spin_loop(1000000)'))
-print("Time Execution: spin_loop(10000000) :", time_execution('spin_loop(10**7)')[1])
+
+
+# print("Time Execution: spin_loop(10000000) :", time_execution('spin_loop(10**7)')[1])
 
 
 ###
@@ -138,8 +140,10 @@ def get_page(url):
 print("\n*Bad Hash*")
 words = get_page('http://www.gutenberg.org/cache/epub/1661/pg1661.txt').split()
 print("Length of Words:", len(words))
-counts = test_hash_function(bad_hash_string, words, 12)
-print("Counts Bad:", counts)
+
+
+# counts = test_hash_function(bad_hash_string, words, 12)
+# print("Counts Bad:", counts)
 
 
 ###
@@ -164,6 +168,35 @@ print(hs, 'a, 13 \t:', hash_string('a', 13))  # 6
 print(hs, 'au, 12 :', hash_string('au', 12))  # 10
 print(hs, 'udacity , 12 :', hash_string('udacity', 12))  # 11
 
+
 # Test
-counts = test_hash_function(hash_string, words, 12)
-print("Counts Good:", counts)
+# counts = test_hash_function(hash_string, words, 12)
+# print("Counts Good:", counts)
+
+
+###
+# Creating an Empty Hash Table
+###
+# Define a procedure, make_hashtable,
+# that takes as input a number, nbuckets,
+# and returns an empty hash table with
+# nbuckets empty buckets.
+def make_hashtable_while(nbuckets):
+    i = 0
+    table = []
+    while i < nbuckets:
+        table.append([])
+        i = i + 1
+    return table
+
+
+def make_hashtable(nbuckets):
+    table = []
+    for unused in range(0, nbuckets):
+        table.append([])
+    return table
+
+
+print("\n*Empty Hash Table*")
+print("Empty Table (3):", make_hashtable_while(3))
+print("Empty Table (3):", make_hashtable(3))
