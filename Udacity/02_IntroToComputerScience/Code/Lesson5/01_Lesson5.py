@@ -177,10 +177,8 @@ print(hs, 'udacity , 12 :', hash_string('udacity', 12))  # 11
 ###
 # Creating an Empty Hash Table
 ###
-# Define a procedure, make_hashtable,
-# that takes as input a number, nbuckets,
-# and returns an empty hash table with
-# nbuckets empty buckets.
+# Define a procedure, make_hashtable, that takes as input a number, nbuckets, 
+# and returns an empty hash table with nbuckets empty buckets.
 def make_hashtable_while(nbuckets):
     i = 0
     table = []
@@ -198,17 +196,15 @@ def make_hashtable(nbuckets):
 
 
 print("\n*Empty Hash Table*")
-print("Empty Table (3):", make_hashtable_while(3))
+print("Empty Table - While loop (3):", make_hashtable_while(3))
 print("Empty Table (3):", make_hashtable(3))
 
 
 ###
 # Finding the Right Bucket
 ###
-# Define a procedure, hashtable_get_bucket,
-# that takes two inputs - a hashtable, and
-# a keyword, and returns the bucket where the
-# keyword could occur.
+# Define a procedure, hashtable_get_bucket,that takes two inputs - a hashtable, and a keyword,
+# and returns the bucket where the keyword could occur.
 def hashtable_get_bucket(htable, keyword):
     return htable[hash_string(keyword, len(htable))]
 
@@ -217,12 +213,6 @@ table = [[['Francis', 13], ['Ellis', 11]], [], [['Bill', 17], ['Zoe', 14]], [['C
          [['Louis', 29], ['Rochelle', 4], ['Nick', 2]]]
 
 print("\n*Finding the Right Bucket*")
-
-print("Bucket - Zoe:", hashtable_get_bucket(table, "Zoe"))
-# >>> [['Bill', 17], ['Zoe', 14]]
-
-print("Bucket - Brick:", hashtable_get_bucket(table, "Brick"))
-# >>> []
-
-print("Bucket - Lilith:", hashtable_get_bucket(table, "Lilith"))
-# >>> [['Louis', 29], ['Rochelle', 4], ['Nick', 2]]
+print("Zoe   :", hashtable_get_bucket(table, "Zoe")) # [['Bill', 17], ['Zoe', 14]]
+print("Brick :", hashtable_get_bucket(table, "Brick")) # []
+print("Lilith:", hashtable_get_bucket(table, "Lilith"))# [['Louis', 29], ['Rochelle', 4], ['Nick', 2]]
