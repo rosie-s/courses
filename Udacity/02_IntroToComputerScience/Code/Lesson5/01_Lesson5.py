@@ -35,8 +35,6 @@ print("Time Execution: spin_loop(1000)     :", time_execution('spin_loop(1000)')
 print("Time Execution: spin_loop(10000)    :", time_execution('spin_loop(10000)'))
 print("Time Execution: spin_loop(100000)   :", time_execution('spin_loop(100000)'))
 print("Time Execution: spin_loop(1000000)  :", time_execution('spin_loop(1000000)'))
-
-
 # print("Time Execution: spin_loop(10000000) :", time_execution('spin_loop(10**7)')[1])
 
 
@@ -140,8 +138,6 @@ def get_page(url):
 print("\n*Bad Hash*")
 words = get_page('http://www.gutenberg.org/cache/epub/1661/pg1661.txt').split()
 print("Length of Words:", len(words))
-
-
 # counts = test_hash_function(bad_hash_string, words, 12)
 # print("Counts Bad:", counts)
 
@@ -160,15 +156,12 @@ def hash_string(keyword, buckets):
 
 
 print("\n*Good Hash*")
-
 hs = "Hash String "
 print(hs, 'a, 12 \t:', hash_string('a', 12))  # 1
 print(hs, 'b, 12 \t:', hash_string('b', 12))  # 2
 print(hs, 'a, 13 \t:', hash_string('a', 13))  # 6
 print(hs, 'au, 12 :', hash_string('au', 12))  # 10
 print(hs, 'udacity , 12 :', hash_string('udacity', 12))  # 11
-
-
 # Test
 # counts = test_hash_function(hash_string, words, 12)
 # print("Counts Good:", counts)
@@ -196,8 +189,8 @@ def make_hashtable(nbuckets):
 
 
 print("\n*Empty Hash Table*")
-print("Empty Table - While loop (3):", make_hashtable_while(3))
-print("Empty Table (3):", make_hashtable(3))
+print("Using While loop (3):", make_hashtable_while(3))
+print("Using For Loop (3):", make_hashtable(3))
 
 
 ###
