@@ -45,14 +45,13 @@ buckets -> |             | 0....buckets-1
 ```
 
 # Tips
-## Ord
-- `ord(<one-letter string>) -> number `
+- Ord
+    - `ord(<one-letter string>) -> number `
 
-## Chr
-- `ord(<Number>) -> <one-letter string> `
-- `chr(ord(a)) -> a`
+- Chr
+    - `ord(<Number>) -> <one-letter string> `
+    - `chr(ord(a)) -> a`
 
-## Modulus
-```
-<number> % <number> -> <remainder>
-```
+- Modulus
+    - ` <number> % <number> -> <remainder>`
+
