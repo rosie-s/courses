@@ -1,16 +1,15 @@
 # Lesson 5 - _How Programs Run_
 
 ## Algorithm Analysis
-- Procedure  
+- Procedure
 Well-defined sequence of steps that can be executed _mechanically_
 - Guaranteed to always _finish_ and produce correct result
 
 ## Cost
-
 ```
 Inputs  -> | Algo 1 | -> Outputs
   ^
-Size -> Cost <- $ -> time, memory
+Size    ->  Cost  <-  $  -> time, memory
 ```
 
 ## Stopwatch
