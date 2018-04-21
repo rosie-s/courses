@@ -35,6 +35,8 @@ print("Time Execution: spin_loop(1000)     :", time_execution('spin_loop(1000)')
 print("Time Execution: spin_loop(10000)    :", time_execution('spin_loop(10000)'))
 print("Time Execution: spin_loop(100000)   :", time_execution('spin_loop(100000)'))
 print("Time Execution: spin_loop(1000000)  :", time_execution('spin_loop(1000000)'))
+
+
 # print("Time Execution: spin_loop(10000000) :", time_execution('spin_loop(10**7)')[1])
 
 
@@ -138,6 +140,8 @@ def get_page(url):
 print("\n*Bad Hash*")
 words = get_page('http://www.gutenberg.org/cache/epub/1661/pg1661.txt').split()
 print("Length of Words:", len(words))
+
+
 # counts = test_hash_function(bad_hash_string, words, 12)
 # print("Counts Bad:", counts)
 
@@ -162,6 +166,8 @@ print(hs, 'b, 12 \t:', hash_string('b', 12))  # 2
 print(hs, 'a, 13 \t:', hash_string('a', 13))  # 6
 print(hs, 'au, 12 :', hash_string('au', 12))  # 10
 print(hs, 'udacity , 12 :', hash_string('udacity', 12))  # 11
+
+
 # Test
 # counts = test_hash_function(hash_string, words, 12)
 # print("Counts Good:", counts)
@@ -206,6 +212,39 @@ table = [[['Francis', 13], ['Ellis', 11]], [], [['Bill', 17], ['Zoe', 14]], [['C
          [['Louis', 29], ['Rochelle', 4], ['Nick', 2]]]
 
 print("\n*Finding the Right Bucket*")
-print("Zoe   :", hashtable_get_bucket(table, "Zoe"))     # [['Bill', 17], ['Zoe', 14]]
-print("Brick :", hashtable_get_bucket(table, "Brick"))   # []
+print("Zoe   :", hashtable_get_bucket(table, "Zoe"))  # [['Bill', 17], ['Zoe', 14]]
+print("Brick :", hashtable_get_bucket(table, "Brick"))  # []
 print("Lilith:", hashtable_get_bucket(table, "Lilith"))  # [['Louis', 29], ['Rochelle', 4], ['Nick', 2]]
+
+
+###
+# Adding Keywords
+###
+# Define a procedure,
+#
+#    hashtable_add(htable,key,value)
+#
+# that adds the key to the hashtable (in
+# the correct bucket), with the correct
+# value and returns the new hashtable.
+
+def hashtable_add(htable, key, value):
+    bucket = hashtable_get_bucket(htable, key)
+    bucket.append([key, value])
+    return htable
+
+
+table = make_hashtable(5)
+hashtable_add(table, 'Bill', 17)
+hashtable_add(table, 'Coach', 4)
+hashtable_add(table, 'Ellis', 11)
+hashtable_add(table, 'Francis', 13)
+hashtable_add(table, 'Louis', 29)
+hashtable_add(table, 'Nick', 2)
+hashtable_add(table, 'Rochelle', 4)
+hashtable_add(table, 'Zoe', 14)
+
+print("\n*Adding Keywords*")
+print("Table: ", table)
+# [[['Ellis', 11], ['Francis', 13]], [], [['Bill', 17], ['Zoe', 14]],
+# [['Coach', 4]], [['Louis', 29], ['Nick', 2], ['Rochelle', 4]]]
