@@ -283,3 +283,24 @@ hashtable_update(table, 'Zed', 68)
 print("Updated table: \n", table)
 # [[['Ellis', 11], ['Francis', 13]], [['Zed', 68]], [['Bill', 42],
 # ['Zoe', 14]], [['Coach', 4]], [['Louis', 29], ['Nick', 2], ['Rochelle', 94]]]
+
+
+###
+# Dictionaries
+###
+elements = {'hydrogen':1, 'helium':2, 'carbon':6}
+
+print("\n***Dictionaries***")
+print("Dictionary:", elements)
+print("Hydrogen:",elements[hydrogen])
+print("Carbon:",elements[carbon])
+# Error - print("Lithium:",elements[lithium])
+print("Lithium:", 'lithium' in elements)
+
+elements['lithium'] = 3 # Add lithium
+elements['nitrogen'] = 8
+print("Lithium:",elements[lithium])
+print("Nitrogen Before:",elements[nitrogen])
+
+elements['nitrogen'] = 7 # Modify
+print("Nitrogen After:",elements[nitrogen])
