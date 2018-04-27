@@ -291,16 +291,18 @@ print("Updated table: \n", table)
 elements = {'hydrogen':1, 'helium':2, 'carbon':6}
 
 print("\n***Dictionaries***")
+
 print("Dictionary:", elements)
-print("Hydrogen:",elements[hydrogen])
-print("Carbon:",elements[carbon])
-# Error - print("Lithium:",elements[lithium])
+print("Hydrogen:", elements[hydrogen])
+print("Carbon:", elements[carbon])
+
+# Error - print("Lithium:", elements[lithium])
 print("Lithium:", 'lithium' in elements)
 
 elements['lithium'] = 3 # Add lithium
 elements['nitrogen'] = 8
-print("Lithium:",elements[lithium])
-print("Nitrogen Before:",elements[nitrogen])
+print("Lithium:", elements[lithium])
+print("Nitrogen Before:", elements[nitrogen])
 
 elements['nitrogen'] = 7 # Modify
-print("Nitrogen After:",elements[nitrogen])
+print("Nitrogen After:", elements[nitrogen])
