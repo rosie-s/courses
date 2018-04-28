@@ -43,25 +43,27 @@ String  -> | Hash_String | -> Number
 buckets -> |             | 0....buckets-1
 ```
 
-## Dictionaries
+## Dictionary
+Difference between String, List, and Dictionary:
+
 ```
-   String            List                   Dictionary
-      |                |                        |
- Immutable          Mutable                  Mutable
-      |                |                        |
-   'hello'        ['alpha',23]     {'hydrogen':1, 'helium':2}
-      |                |                        |
- Sequence of       List of                   Set of
- Charactes         Elements             <key,value> pairs
-      |                |                        |
-    s[i]             p[i]                      d[k]
- ith character   ith character        value associated with
-     in s            in p                     k in d
-      |                |                        |   
-                   p[i] = u                 d[k] = v
-                replace the value       update the value
-                  of ith element        associated with k
-                   of p with u               to be v        
+   String              List                   Dictionary
+      |                  |                        |
+ Immutable            Mutable                  Mutable
+      |                  |                        |
+   'hello'          ['alpha',23]     {'hydrogen':1, 'helium':2}
+      |                  |                        |
+ Sequence of         List of                   Set of
+ Charactes           Elements             <key,value> pairs
+      |                  |                        |
+    s[i]               p[i]                      d[k]
+ ith character     ith character        value associated with
+     in s              in p                     k in d
+      |                  |                        |   
+                     p[i] = u                 d[k] = v
+                  replace the value       update the value
+                    of ith element        associated with k
+                     of p with u               to be v        
 ```
 
 # Tips
