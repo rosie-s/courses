@@ -264,8 +264,8 @@ print ("Lookup: Zoe     -", hashtable_lookup(table, 'Zoe')) # 14
 ###
 # Update
 ###
-# Define a procedure,hashtable_update(htable,key,value) that updates the value associated with key. If key is already in the
-# table, change the value to the new value. Otherwise, add a new entry for the key and value.
+# Define a procedure,hashtable_update(htable,key,value) that updates the value associated with key.
+# If key is already in the table, change the value to the new value. Otherwise, add a new entry for the key and value.
 def hashtable_update(htable,key,value):
     bucket = hashtable_get_bucket(htable, key)
     for entry in bucket:
@@ -274,6 +274,7 @@ def hashtable_update(htable,key,value):
             return htable
     bucket.append([key,value])
     return htable
+
 
 print("\n*Lookup*")
 print("Table Before: \n", table)
@@ -293,16 +294,55 @@ elements = {'hydrogen':1, 'helium':2, 'carbon':6}
 print("\n***Dictionaries***")
 
 print("Dictionary:", elements)
-print("Hydrogen:", elements[hydrogen])
-print("Carbon:", elements[carbon])
+print("Hydrogen:", elements['hydrogen'])
+print("Carbon:", elements['carbon'])
 
-# Error - print("Lithium:", elements[lithium])
+# Error - print("Lithium:", elements['lithium'])
 print("Lithium:", 'lithium' in elements)
 
 elements['lithium'] = 3 # Add lithium
 elements['nitrogen'] = 8
-print("Lithium:", elements[lithium])
-print("Nitrogen Before:", elements[nitrogen])
+print("Lithium:", elements['lithium'])
+print("Nitrogen Before:", elements['nitrogen'])
 
 elements['nitrogen'] = 7 # Modify
-print("Nitrogen After:", elements[nitrogen])
+print("Nitrogen After:", elements['nitrogen'])
+
+###
+# Population
+###
+# Define a Dictionary, population,
+# that provides information
+# on the world's largest cities.
+# The key is the name of a city
+# (a string), and the associated
+# value is its population in
+# millions.
+
+#   Key     |   Value
+# Shanghai  |   17.8
+# Istanbul  |   13.3
+# Karachi   |   13.0
+# Mumbai    |   12.5
+
+population = {'Shanghai': 17.8, 'Istanbul': 13.3, 'Karachi': 13.0, 'Mumbai': 12.5}
+print("\n*Population*")
+print("Population Dictionary:", population)
+print('Shanghai:', population['Shanghai'])
+print('Istanbul:', population['Istanbul'])
+print('Mumbai:', population['Mumbai'])
+print('Karachi:', population['Karachi'])
+
+###
+# A Noble Gas
+###
+elements_two = {}
+elements['H'] = {'name': 'Hydrogen', 'number': 1, 'weight': 100794}
+elements['He'] = {'name': 'Helium', 'number': 2, 'weight': 4.002602, 'noble gas': True}
+
+print("\n*A Noble Gas*")
+print("Element['H'] :", elements['H'])
+print("Element['H']['name'] :", elements['H']['name'])
+print("Element['He'] :", elements['He'])
+print("Element['He']['weight'] :", elements['He']['weight'])
+print("Element['He']['noble gas'] :", elements['He']['noble gas'])
