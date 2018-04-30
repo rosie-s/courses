@@ -35,8 +35,6 @@ print("Time Execution: spin_loop(1000)     :", time_execution('spin_loop(1000)')
 print("Time Execution: spin_loop(10000)    :", time_execution('spin_loop(10000)'))
 print("Time Execution: spin_loop(100000)   :", time_execution('spin_loop(100000)'))
 print("Time Execution: spin_loop(1000000)  :", time_execution('spin_loop(1000000)'))
-
-
 # print("Time Execution: spin_loop(10000000) :", time_execution('spin_loop(10**7)')[1])
 
 
@@ -140,8 +138,6 @@ def get_page(url):
 print("\n*Bad Hash*")
 words = get_page('http://www.gutenberg.org/cache/epub/1661/pg1661.txt').split()
 print("Length of Words:", len(words))
-
-
 # counts = test_hash_function(bad_hash_string, words, 12)
 # print("Counts Bad:", counts)
 
@@ -311,14 +307,8 @@ print("Nitrogen After:", elements['nitrogen'])
 ###
 # Population
 ###
-# Define a Dictionary, population,
-# that provides information
-# on the world's largest cities.
-# The key is the name of a city
-# (a string), and the associated
-# value is its population in
-# millions.
-
+# Define a Dictionary, population, that provides information on the world's largest cities.
+# The key is the name of a city(a string), and the associated value is its population in millions
 #   Key     |   Value
 # Shanghai  |   17.8
 # Istanbul  |   13.3
