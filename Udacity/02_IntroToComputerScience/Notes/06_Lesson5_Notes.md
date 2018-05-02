@@ -66,16 +66,16 @@ Difference between String, List, and Dictionary:
                      of p with u               to be v        
 ```
 
-# Tips
-- Ord
-    - `ord(<one-letter string>) -> number `
+# Useful Procedures
+- Ord    
+`ord(<one-letter string>) -> number `
 
-- Chr
-    - `ord(<Number>) -> <one-letter string> `
-    - `chr(ord(a)) -> a`
+- Chr    
+`ord(<Number>) -> <one-letter string> `    
+`chr(ord(a)) -> a`
 
-- Modulus
-    - ` <number> % <number> -> <remainder>`
+- Modulus    
+` <number> % <number> -> <remainder>`
 
-- Range
-    - `range(<start>,<stop>) -> [<start>, <start> +1, ... <stop> -1]`
+- Range    
+`range(<start>,<stop>) -> [<start>, <start> +1, ... <stop> -1]`
