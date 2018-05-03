@@ -316,6 +316,7 @@ print("Nitrogen After:", elements['nitrogen'])
 # Mumbai    |   12.5
 
 population = {'Shanghai': 17.8, 'Istanbul': 13.3, 'Karachi': 13.0, 'Mumbai': 12.5}
+
 print("\n*Population*")
 print("Population Dictionary:", population)
 print('Shanghai:', population['Shanghai'])
@@ -336,3 +337,4 @@ print("Element['H']['name'] :", elements['H']['name'])
 print("Element['He'] :", elements['He'])
 print("Element['He']['weight'] :", elements['He']['weight'])
 print("Element['He']['noble gas'] :", elements['He']['noble gas'])
+# print("Element['H']['noble gas'] :", elements['H']['noble gas']) ERROR
