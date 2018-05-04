@@ -35,6 +35,8 @@ print("Time Execution: spin_loop(1000)     :", time_execution('spin_loop(1000)')
 print("Time Execution: spin_loop(10000)    :", time_execution('spin_loop(10000)'))
 print("Time Execution: spin_loop(100000)   :", time_execution('spin_loop(100000)'))
 print("Time Execution: spin_loop(1000000)  :", time_execution('spin_loop(1000000)'))
+
+
 # print("Time Execution: spin_loop(10000000) :", time_execution('spin_loop(10**7)')[1])
 
 
@@ -84,9 +86,9 @@ def make_big_index(size):
 
 
 print("\n***Make Big Index***")
-s = "Make Big Index:"
-print(s, 3, " :", make_big_index(3))
-print(s, 10, ":", make_big_index(10))
+string = "Make Big Index:"
+print(string, 3, " :", make_big_index(3))
+print(string, 10, ":", make_big_index(10))
 index1000 = make_big_index(1000)
 print("Time Execution: 'lookup(index1000, udacity)' :", time_execution('lookup(index1000, "udacity")'))
 print("Index 999 :", index1000[999])
@@ -136,8 +138,10 @@ def get_page(url):
 
 
 print("\n*Bad Hash*")
-words = get_page('http://www.gutenberg.org/cache/epub/1661/pg1661.txt').split()
-print("Length of Words:", len(words))
+word_count = get_page('http://www.gutenberg.org/cache/epub/1661/pg1661.txt').split()
+print("Length of Words:", len(word_count))
+
+
 # counts = test_hash_function(bad_hash_string, words, 12)
 # print("Counts Bad:", counts)
 
@@ -204,13 +208,13 @@ def hashtable_get_bucket(htable, keyword):
     return htable[hash_string(keyword, len(htable))]
 
 
-table = [[['Francis', 13], ['Ellis', 11]], [], [['Bill', 17], ['Zoe', 14]], [['Coach', 4]],
-         [['Louis', 29], ['Rochelle', 4], ['Nick', 2]]]
+table1 = [[['Francis', 13], ['Ellis', 11]], [], [['Bill', 17], ['Zoe', 14]], [['Coach', 4]],
+          [['Louis', 29], ['Rochelle', 4], ['Nick', 2]]]
 
 print("\n*Finding the Right Bucket*")
-print("Zoe   :", hashtable_get_bucket(table, "Zoe"))  # [['Bill', 17], ['Zoe', 14]]
-print("Brick :", hashtable_get_bucket(table, "Brick"))  # []
-print("Lilith:", hashtable_get_bucket(table, "Lilith"))  # [['Louis', 29], ['Rochelle', 4], ['Nick', 2]]
+print("Zoe   :", hashtable_get_bucket(table1, "Zoe"))  # [['Bill', 17], ['Zoe', 14]]
+print("Brick :", hashtable_get_bucket(table1, "Brick"))  # []
+print("Lilith:", hashtable_get_bucket(table1, "Lilith"))  # [['Louis', 29], ['Rochelle', 4], ['Nick', 2]]
 
 
 ###
@@ -224,17 +228,19 @@ def hashtable_add(htable, key, value):
     return htable
 
 
-table = make_hashtable(5)
-hashtable_add(table, 'Bill', 17)
-hashtable_add(table, 'Coach', 4)
-hashtable_add(table, 'Ellis', 11)
-hashtable_add(table, 'Francis', 13)
-hashtable_add(table, 'Louis', 29)
-hashtable_add(table, 'Nick', 2)
-hashtable_add(table, 'Rochelle', 4)
-hashtable_add(table, 'Zoe', 14)
+table2 = make_hashtable(5)
+hashtable_add(table2, 'Bill', 17)
+hashtable_add(table2, 'Coach', 4)
+hashtable_add(table2, 'Ellis', 11)
+hashtable_add(table2, 'Francis', 13)
+hashtable_add(table2, 'Louis', 29)
+hashtable_add(table2, 'Nick', 2)
+hashtable_add(table2, 'Rochelle', 4)
+hashtable_add(table2, 'Zoe', 14)
 print("\n*Adding Keywords*")
-print("Table: ", table)
+print("Table: ", table2)
+
+
 # [[['Ellis', 11], ['Francis', 13]], [], [['Bill', 17],
 # ['Zoe', 14]], [['Coach', 4]], [['Louis', 29], ['Nick', 2], ['Rochelle', 4]]]
 
@@ -251,10 +257,11 @@ def hashtable_lookup(htable, key):
             return entry[1]
     return None
 
+
 print("\n*Lookup*")
-print("Lookup: Francis -", hashtable_lookup(table, 'Francis')) # 13
-print ("Lookup: Louis   -", hashtable_lookup(table, 'Louis')) # 29
-print ("Lookup: Zoe     -", hashtable_lookup(table, 'Zoe')) # 14
+print("Lookup: Francis -", hashtable_lookup(table2, 'Francis'))  # 13
+print("Lookup: Louis   -", hashtable_lookup(table2, 'Louis'))  # 29
+print("Lookup: Zoe     -", hashtable_lookup(table2, 'Zoe'))  # 14
 
 
 ###
@@ -262,22 +269,22 @@ print ("Lookup: Zoe     -", hashtable_lookup(table, 'Zoe')) # 14
 ###
 # Define a procedure,hashtable_update(htable,key,value) that updates the value associated with key.
 # If key is already in the table, change the value to the new value. Otherwise, add a new entry for the key and value.
-def hashtable_update(htable,key,value):
+def hashtable_update(htable, key, value):
     bucket = hashtable_get_bucket(htable, key)
     for entry in bucket:
         if entry[0] == key:
             entry[1] = value
             return htable
-    bucket.append([key,value])
+    bucket.append([key, value])
     return htable
 
 
 print("\n*Lookup*")
-print("Table Before: \n", table)
-hashtable_update(table, 'Bill', 42)
-hashtable_update(table, 'Rochelle', 94)
-hashtable_update(table, 'Zed', 68)
-print("Updated table: \n", table)
+print("Table Before: \n", table2)
+hashtable_update(table2, 'Bill', 42)
+hashtable_update(table2, 'Rochelle', 94)
+hashtable_update(table2, 'Zed', 68)
+print("Updated table: \n", table2)
 # [[['Ellis', 11], ['Francis', 13]], [['Zed', 68]], [['Bill', 42],
 # ['Zoe', 14]], [['Coach', 4]], [['Louis', 29], ['Nick', 2], ['Rochelle', 94]]]
 
@@ -285,7 +292,7 @@ print("Updated table: \n", table)
 ###
 # Dictionaries
 ###
-elements = {'hydrogen':1, 'helium':2, 'carbon':6}
+elements = {'hydrogen': 1, 'helium': 2, 'carbon': 6}
 
 print("\n***Dictionaries***")
 
@@ -296,12 +303,12 @@ print("Carbon:", elements['carbon'])
 # Error - print("Lithium:", elements['lithium'])
 print("Lithium:", 'lithium' in elements)
 
-elements['lithium'] = 3 # Add lithium
+elements['lithium'] = 3  # Add lithium
 elements['nitrogen'] = 8
 print("Lithium:", elements['lithium'])
 print("Nitrogen Before:", elements['nitrogen'])
 
-elements['nitrogen'] = 7 # Modify
+elements['nitrogen'] = 7  # Modify
 print("Nitrogen After:", elements['nitrogen'])
 
 ###
@@ -327,14 +334,56 @@ print('Karachi:', population['Karachi'])
 ###
 # A Noble Gas
 ###
-elements_two = {}
-elements['H'] = {'name': 'Hydrogen', 'number': 1, 'weight': 100794}
-elements['He'] = {'name': 'Helium', 'number': 2, 'weight': 4.002602, 'noble gas': True}
+elements_two = {'H': {'name': 'Hydrogen', 'number': 1, 'weight': 100794},
+                'He': {'name': 'Helium', 'number': 2, 'weight': 4.002602, 'noble gas': True}}
 
 print("\n*A Noble Gas*")
-print("Element['H'] :", elements['H'])
-print("Element['H']['name'] :", elements['H']['name'])
-print("Element['He'] :", elements['He'])
-print("Element['He']['weight'] :", elements['He']['weight'])
-print("Element['He']['noble gas'] :", elements['He']['noble gas'])
+print("Element['H']               :", elements_two['H'])
+print("Element['H']['name']       :", elements_two['H']['name'])
+print("Element['He']              :", elements_two['He'])
+print("Element['He']['weight']    :", elements_two['He']['weight'])
+print("Element['He']['noble gas'] :", elements_two['He']['noble gas'])
+
+
 # print("Element['H']['noble gas'] :", elements['H']['noble gas']) ERROR
+
+
+###
+# Modify Search Engine
+###
+# Update
+def crawl_web(seed):
+    tocrawl = [seed]
+    crawled = []
+    index = []
+    while tocrawl:
+        page = tocrawl.pop()
+        if page not in crawled:
+            content = get_page(page)
+            add_page_to_index(index, page, content)
+            union(tocrawl, get_all_links(content))
+            crawled.append(page)
+    return index
+
+
+def add_page_to_index(index, url, content):
+    words = content.split()
+    for word in words:
+        add_to_index(index, word, url)
+
+
+# Update
+def add_to_index(index, keyword, url):
+    if keyword in index:
+        index[keyword].append(url)
+    else:
+        # not found, add new keyword to index
+        index[keyword] = [url]
+
+
+# Update
+def lookup(index, keyword):
+    if keyword in index:
+        return index[keyword]
+    else:
+        return None
