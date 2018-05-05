@@ -35,9 +35,7 @@ print("Time Execution: spin_loop(1000)     :", time_execution('spin_loop(1000)')
 print("Time Execution: spin_loop(10000)    :", time_execution('spin_loop(10000)'))
 print("Time Execution: spin_loop(100000)   :", time_execution('spin_loop(100000)'))
 print("Time Execution: spin_loop(1000000)  :", time_execution('spin_loop(1000000)'))
-
-
-# print("Time Execution: spin_loop(10000000) :", time_execution('spin_loop(10**7)')[1])
+print("Time Execution: spin_loop(10000000) :", time_execution('spin_loop(10**7)')[1])
 
 
 ###
@@ -94,6 +92,7 @@ print("Time Execution: 'lookup(index1000, udacity)' :", time_execution('lookup(i
 print("Index 999 :", index1000[999])
 print("Index  -1 :", index1000[-1])
 
+
 ###
 # Hash Function
 ###
@@ -140,10 +139,8 @@ def get_page(url):
 print("\n*Bad Hash*")
 word_count = get_page('http://www.gutenberg.org/cache/epub/1661/pg1661.txt').split()
 print("Length of Words:", len(word_count))
-
-
-# counts = test_hash_function(bad_hash_string, words, 12)
-# print("Counts Bad:", counts)
+counts = test_hash_function(bad_hash_string, words, 12)
+print("Counts Bad:", counts)
 
 
 ###
@@ -167,10 +164,9 @@ print(hs, 'a, 13 \t:', hash_string('a', 13))  # 6
 print(hs, 'au, 12 :', hash_string('au', 12))  # 10
 print(hs, 'udacity , 12 :', hash_string('udacity', 12))  # 11
 
-
 # Test
-# counts = test_hash_function(hash_string, words, 12)
-# print("Counts Good:", counts)
+counts = test_hash_function(hash_string, words, 12)
+print("Counts Good:", counts)
 
 
 ###
@@ -238,10 +234,7 @@ hashtable_add(table2, 'Nick', 2)
 hashtable_add(table2, 'Rochelle', 4)
 hashtable_add(table2, 'Zoe', 14)
 print("\n*Adding Keywords*")
-print("Table: ", table2)
-
-
-# [[['Ellis', 11], ['Francis', 13]], [], [['Bill', 17],
+print("Table: ", table2)  # [[['Ellis', 11], ['Francis', 13]], [], [['Bill', 17],
 # ['Zoe', 14]], [['Coach', 4]], [['Louis', 29], ['Nick', 2], ['Rochelle', 4]]]
 
 
@@ -284,8 +277,7 @@ print("Table Before: \n", table2)
 hashtable_update(table2, 'Bill', 42)
 hashtable_update(table2, 'Rochelle', 94)
 hashtable_update(table2, 'Zed', 68)
-print("Updated table: \n", table2)
-# [[['Ellis', 11], ['Francis', 13]], [['Zed', 68]], [['Bill', 42],
+print("Updated table: \n", table2)  # [[['Ellis', 11], ['Francis', 13]], [['Zed', 68]], [['Bill', 42],
 # ['Zoe', 14]], [['Coach', 4]], [['Louis', 29], ['Nick', 2], ['Rochelle', 94]]]
 
 
@@ -295,11 +287,9 @@ print("Updated table: \n", table2)
 elements = {'hydrogen': 1, 'helium': 2, 'carbon': 6}
 
 print("\n***Dictionaries***")
-
 print("Dictionary:", elements)
 print("Hydrogen:", elements['hydrogen'])
 print("Carbon:", elements['carbon'])
-
 # Error - print("Lithium:", elements['lithium'])
 print("Lithium:", 'lithium' in elements)
 
@@ -307,7 +297,6 @@ elements['lithium'] = 3  # Add lithium
 elements['nitrogen'] = 8
 print("Lithium:", elements['lithium'])
 print("Nitrogen Before:", elements['nitrogen'])
-
 elements['nitrogen'] = 7  # Modify
 print("Nitrogen After:", elements['nitrogen'])
 
@@ -343,8 +332,6 @@ print("Element['H']['name']       :", elements_two['H']['name'])
 print("Element['He']              :", elements_two['He'])
 print("Element['He']['weight']    :", elements_two['He']['weight'])
 print("Element['He']['noble gas'] :", elements_two['He']['noble gas'])
-
-
 # print("Element['H']['noble gas'] :", elements['H']['noble gas']) ERROR
 
 
@@ -364,12 +351,6 @@ def crawl_web(seed):
             union(tocrawl, get_all_links(content))
             crawled.append(page)
     return index
-
-
-def add_page_to_index(index, url, content):
-    words = content.split()
-    for word in words:
-        add_to_index(index, word, url)
 
 
 # Update
