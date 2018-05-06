@@ -20,9 +20,6 @@ start = time.clock() # processor time (in seconds)
         |
 stop  = time.clock()
 ```
-- Eval  
-Allows us to evaluate any string as though it were a python expression
-
 - e-05  
 8.3....e-05 = 0.000083.... seconds
 
@@ -79,3 +76,6 @@ Difference between String, List, and Dictionary:
 
 - Range    
 `range(<start>,<stop>) -> [<start>, <start> +1, ... <stop> -1]`
+
+- Eval  
+Allows us to evaluate any string as though it were a python expression
