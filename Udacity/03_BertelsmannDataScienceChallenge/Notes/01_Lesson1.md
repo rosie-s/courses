@@ -51,3 +51,5 @@ who is receiving which treatment.
 |:------:|:-------------------------|
 |µ       | Mean of a **population** |
 |x&#772; | Mean of a **sample**     |
+|N       | Population size          |
+|_n_     | Sample size              |
