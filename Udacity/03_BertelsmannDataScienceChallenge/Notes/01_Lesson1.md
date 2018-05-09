@@ -45,11 +45,3 @@ to them. (e.g. a Sugar pill)
 - **_Blinding:_** Blinding is a technique used to reduce bias. Double blinding
 ensures that both those administering treatments and those receiving treatments do not know
 who is receiving which treatment.
-
-# Symbols
-|Symbols | Meaning                  |
-|:------:|:-------------------------|
-|µ       | Mean of a **population** |
-|x&#772; | Mean of a **sample**     |
-|N       | Population size          |
-|_n_     | Sample size              |
