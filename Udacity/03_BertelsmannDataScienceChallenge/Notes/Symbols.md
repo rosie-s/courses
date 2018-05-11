@@ -7,7 +7,7 @@ Symbols for various sample statistics and the corresponding population parameter
 | Sample            | Population | Description             |
 |:-----------------:|:----------:|:------------------------|
 | &#119899;         | &#119873;  | Size / Number of members|
-| &#119909;&#772;   | &#120583;  | Mean                    |
+| x&#772;           | &#120583;  | Mean                    |
 | &#119901;&#770;   | &#119901;  | Proportion              |
 
 
