@@ -1,10 +1,8 @@
 # Lesson 4 - _Variability_
 
-## Box Plots and the IQR
+## Box Plots and The IQR
 
-A box plot is a great way to show the 5 number summary of a data set in a visually appealing
-way. The 5 number summary consists of the minimum, first quartile, median, third quartile, and
-the maximum
+A box plot is a great way to show the 5 number summary of a data set. The 5 number summary consists of the minimum, first quartile, median, third quartile, and the maximum.
 
 - **_Interquartile range:_** The Interquartile range (IQR) is the distance between
 the 1st quartile and 3rd quartile and gives us the range of the middle 50% of our data.
