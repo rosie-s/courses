@@ -20,8 +20,7 @@ The IQR is easily found by computing: Q3 - Q1
 
 - **_Standard Deviation:_** The standard deviation is the square root of the
 variance and is used to measure distance from the mean.
-
-  _- In a normal distribution 65% of the data lies within 1 standard deviation from the mean,
+     -  _In a normal distribution 65% of the data lies within 1 standard deviation from the mean,
 95% within 2 standard deviations, and 99.7% within 3 standard deviations._
 
 ### Bessel’s Correction
@@ -29,4 +28,4 @@ variance and is used to measure distance from the mean.
 variance, and some (but not all) of the bias in the estimation of the population standard
 deviation. To apply Bessel’s correction we multiply the variance by n/n-1
 
-  _- Use Bessel’s correction primarily to estimate the population standard deviation._
+     -  _Use Bessel’s correction primarily to estimate the population standard deviation._
