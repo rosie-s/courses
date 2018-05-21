@@ -1,7 +1,7 @@
 # Lesson 5 - _Standardizing_
 
 ## Z score
-Standard Score. Given an observed value x, the Z score finds the number of Standard deviations x is away from the mean.
+- **_Standard Score:_** Given an observed value x, the Z score finds the number of Standard deviations x is away from the mean.
 
 ### Standard Normal Curve
 
@@ -30,7 +30,7 @@ are each 1 standard deviation or 0.02 meters away in both directions.
 Next we should compute the standard score (i.e. z score) for Barnes’ height. Since μ = 2.00,
 sDev = 0.02, and x = 2.03 we can find the z-score
 
-_x-μ/sDev = 2.03-2.00/0.02 = 0.03/0.02 = 1.5_
+- _x-μ/sDev = 2.03-2.00/0.02 = 0.03/0.02 = 1.5_
 
 _Finding 1.5 as the z score tells us that Barnes’ height is 1.5 standard deviations from the mean, 
 that is 1.5sDev + μ = Barnes’ Height_
@@ -43,7 +43,7 @@ Harrison Barnes. Which of the two is taller in their respective league?
 To find Tyler Myers standard score we can use the information: μ = 1.86, sDev = 0.06, and
 x = 2.03. This results in the standard score:
 
-_x-μ/sDev = 2.03-1.86/0.06 = 0.17/0.06 = 2.833_
+- _x-μ/sDev = 2.03-1.86/0.06 = 0.17/0.06 = 2.833_
 
 Comparing the two z-scores we see that Tyler Myers score of 2.833 is larger than Barnes’ score of
 1.5. This tells us that there are more hockey players shorter than Myers than there are basketball
