@@ -5,7 +5,6 @@
 
 ### Standard Normal Curve
 
-The standard normal curve is the curve we will be using for most problems in this section.
 This curve is the resulting distribution we get when we standardize our scores. We will use
 this distribution along with the Z table to compute percentages above, below, or in between
 observations in later sections.
@@ -24,7 +23,7 @@ heights.
 
 ![NBA](../Images/05NBA.PNG)
 
-Figure 5.2: Notice we place the mean height 2.00 right in the middle and make tick marks that
+_Figure 5.2:_ Notice we place the mean height 2.00 right in the middle and make tick marks that
 are each 1 standard deviation or 0.02 meters away in both directions.
 
 Next we should compute the standard score (i.e. z score) for Barnes’ height. Since μ = 2.00,
