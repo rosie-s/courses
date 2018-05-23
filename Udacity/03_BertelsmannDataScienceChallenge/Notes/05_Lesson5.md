@@ -9,6 +9,8 @@ This curve is the resulting distribution we get when we standardize our scores. 
 this distribution along with the Z table to compute percentages above, below, or in between
 observations in later sections.
 
+- _Figure 5.1: Standard Normal Curve_
+
 ![The Standard Normal Curve](../Images/05StandardCurve.PNG)
 
 ## Examples
@@ -21,6 +23,7 @@ meters. How many standard deviations from the mean is Barnes’ height?
 First we should sketch the normal curve that represents the distribution of basketball player
 heights.
 
+- _Figure 5.2: Distribution of player heights in the NBA_
 ![NBA](../Images/05NBA.PNG)
 
 _Figure 5.2:_ Notice we place the mean height 2.00 right in the middle and make tick marks that
