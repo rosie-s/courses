@@ -13,6 +13,9 @@ multiplying the proportion by 100.
 - **_Histogram:_**  A graphical representation of the distribution of data, discrete intervals (bins) are decided 
 upon to form widths for our boxes.
 
+  - _Figiure 2.1: Sample of a Histogram_
+  
+![Sample of a Histogram](https://analyse-it.com/docs/user-guide/distribution/images/Histogram.png)
 ### Skewed Distribution
 - **_Positive Skew:_** A positive skew is when outliers are present along the right most end of the distribution.
 
