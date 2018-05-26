@@ -1,7 +1,8 @@
 # Lesson 5 - _Standardizing_
 
 ## Z score
-- **_Standard Score:_** Given an observed value x, the Z score finds the number of Standard deviations x is away from the mean.
+- **_Standard Score:_** Given an observed value _x_, the Z score finds the number of Standard 
+deviations _x_ is away from the mean.
 
 ### Standard Normal Curve
 
