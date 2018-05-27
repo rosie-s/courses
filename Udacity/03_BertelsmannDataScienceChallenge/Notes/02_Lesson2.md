@@ -20,3 +20,7 @@ upon to form widths for our boxes.
 - **_Positive Skew:_** A positive skew is when outliers are present along the right most end of the distribution.
 
 - **_Negative Skew:_** A negative skew is when outliers are present along the left most end of the distribution.
+
+  - _Figiure 2.2: Skewed Distribution_
+  
+![Skewed Distribution](http://www.statisticshowto.com/wp-content/uploads/2014/02/pearson-mode-skewness.jpg)
