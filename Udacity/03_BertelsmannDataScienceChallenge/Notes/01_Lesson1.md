@@ -17,6 +17,10 @@ it is no longer a construct.
 - **_Parameter vs Statistic:_** A _parameter_ defines a characteristic of the
 population whereas a _statistic_ defines a characteristic of the sample.    
 
+  - _Figiure 1.1: Population vs Sample_
+
+![Population vs Sample](https://www.snapsurveys.com/blog/wp-content/uploads/2011/08/target-population.jpg)
+
 ## Experimentation
 - **_Treatment:_** In an experiment, the manner in which researchers handle subjects
 is called a treatment. Researchers are specifically interested in how different treatments
