@@ -13,19 +13,18 @@ it is no longer a construct.
 - **_Population:_** All the individuals in a group.   
 
 - **_Sample:_** Some of the individuals in a group. 
-
-  - _Figiure 1.1: Population vs Sample_
-
-![Population vs Sample](https://www.snapsurveys.com/blog/wp-content/uploads/2011/08/target-population.jpg)
+<p align="center">
+    <img align="center" alt="Population vs Sample" src=https://www.snapsurveys.com/blog/wp-content/uploads/2011/08/target-population.jpg><br/>
+Figure 1.1: Population vs Sample
+</p>
 
 - **_Parameter vs Statistic:_** A _parameter_ defines a characteristic of the
 population whereas a _statistic_ defines a characteristic of the sample.    
-
-  - _Figiure 1.2: Parameter vs Statistic_
+<p align="center">
+    <img align="center" width="400" height="400" alt="Parameter vs Statistic" src=https://qph.fs.quoracdn.net/main-qimg-058791361f10bc9a0339823e1e01d3ec> <br/>
+Figure 1.2: Parameter vs Statistic
+</p>
   
-![Parameter vs Statistic](https://qph.fs.quoracdn.net/main-qimg-058791361f10bc9a0339823e1e01d3ec)
-
-
 ## Experimentation
 - **_Treatment:_** In an experiment, the manner in which researchers handle subjects
 is called a treatment. Researchers are specifically interested in how different treatments
