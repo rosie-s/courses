@@ -21,7 +21,7 @@ Figure 1.1: Population vs Sample
 - **_Parameter vs Statistic:_** A _parameter_ defines a characteristic of the
 population whereas a _statistic_ defines a characteristic of the sample.    
 <p align="center">
-    <img align="center" width="400" height="400" alt="Parameter vs Statistic" src=https://qph.fs.quoracdn.net/main-qimg-058791361f10bc9a0339823e1e01d3ec> <br/>
+    <img align="center" width="200" height="200" alt="Parameter vs Statistic" src=https://qph.fs.quoracdn.net/main-qimg-058791361f10bc9a0339823e1e01d3ec> <br/>
 Figure 1.2: Parameter vs Statistic
 </p>
   
