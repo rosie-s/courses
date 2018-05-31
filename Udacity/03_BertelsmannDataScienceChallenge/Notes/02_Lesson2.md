@@ -17,7 +17,6 @@ upon to form widths for our boxes.
 Figiure 2.1: Sample of a Histogram
 </p>
   
-![Sample of a Histogram](https://analyse-it.com/docs/user-guide/distribution/images/Histogram.png)
 ### Skewed Distribution
 - **_Positive Skew:_** A positive skew is when outliers are present along the right most end of the distribution.
 
