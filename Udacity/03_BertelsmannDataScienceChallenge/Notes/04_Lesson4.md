@@ -8,10 +8,10 @@ A box plot is a great way to show the 5 number summary of a data set. The 5 numb
 the 1st quartile and 3rd quartile and gives us the range of the middle 50% of our data.
 The IQR is easily found by computing: Q3 - Q1
 
-    - _Figiure 4.1: A simple boxplot_
-
-![A simple boxplot](https://d2gne97vdumgn3.cloudfront.net/api/file/STem3CnrQSS47G6ePhZp)
-
+<p align="center">
+    <img align="center" alt="A simple boxplot" src=https://d2gne97vdumgn3.cloudfront.net/api/file/STem3CnrQSS47G6ePhZp><br/>
+Figiure 4.1: A simple boxplot
+</p>
 
 ### Finding outliers
 -  **_How to identify outliers:_** You can use the IQR to identify outliers:
