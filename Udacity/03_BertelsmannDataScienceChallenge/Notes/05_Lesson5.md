@@ -26,7 +26,7 @@ First we should sketch the normal curve that represents the distribution of bask
 heights.
 
 <p align="center">
-    <img align="center" alt="NBA" src=../Images/05NBA.PNG><br/>
+    <img align="center" width=500 alt="NBA" src=../Images/05NBA.PNG><br/>
 Figure 5.2: Distribution of player heights in the NBA
 </p>
 
