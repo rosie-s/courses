@@ -18,3 +18,8 @@ If two numbers are in the middle then the median is the average of the two.
 
    -  _The mode is robust to outliers as well._    
    -  _In the normal distribution the mean = median = mod_
+
+<p align="center">
+    <img align="center" width=200 height=400 alt="Mean, Median, and Mode" src=http://3.bp.blogspot.com/-iMj23TxC41k/U3RqLSxS73I/AAAAAAAABOc/m-RQYJgLrlo/s1600/Untitled.jpg><br/>
+Figure 3.1: Mean, Median, and Mode
+</p>
