@@ -22,6 +22,6 @@ Figiure 2.1: Sample of a Histogram
 
 - **_Negative Skew:_** A negative skew is when outliers are present along the left most end of the distribution.
 <p align="center">
-    <img align="center" alt="Skewed Distribution" src=http://www.statisticshowto.com/wp-content/uploads/2014/02/pearson-mode-skewness.jpg><br/>
+    <img align="center" alt="Skewed Distribution" src=https://qph.fs.quoracdn.net/main-qimg-5fc78a3359ad31c9c457dd4825813185-c><br/>
 Figiure 2.2: Skewed Distribution
 </p>
