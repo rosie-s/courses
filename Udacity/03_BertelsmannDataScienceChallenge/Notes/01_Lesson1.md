@@ -14,7 +14,7 @@ it is no longer a construct.
 
 - **_Sample:_** Some of the individuals in a group. 
 <p align="center">
-    <img align="center" alt="Population vs Sample" src=https://www.snapsurveys.com/blog/wp-content/uploads/2011/08/target-population.jpg><br/>
+    <img align="center" width="600" height="400" alt="Population vs Sample" src=https://i.ytimg.com/vi/YOsyax70clQ/maxresdefault.jpg><br/>
 Figure 1.1: Population vs Sample
 </p>
 
