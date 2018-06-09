@@ -11,7 +11,7 @@ this distribution along with the Z table to compute percentages above, below, or
 observations in later sections.
 
 <p align="center">
-    <img align="center" alt="The Standard Normal Curve" src=../Images/05StandardCurve.PNG><br/>
+    <img align="center" alt="The Standard Normal Curve" src=http://www.oswego.edu/~srp/stats/images/z.gif><br/>
 Figure 5.1: Standard Normal Curve
 </p>
 
