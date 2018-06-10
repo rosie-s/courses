@@ -6,9 +6,7 @@ deviations _x_ is away from the mean.
 
 ### Standard Normal Curve
 
-This curve is the resulting distribution we get when we standardize our scores. We will use
-this distribution along with the Z table to compute percentages above, below, or in between
-observations in later sections.
+This curve is the resulting distribution we get when we standardize our scores.
 
 <p align="center">
     <img align="center" alt="The Standard Normal Curve" src=http://www.oswego.edu/~srp/stats/images/z.gif><br/>
