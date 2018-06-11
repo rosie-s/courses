@@ -6,7 +6,7 @@
 can be defined and measured in many different ways. 
     
 - **_Operational Definition:_** The operational definition of a construct is the
-unit of measurement we are using for the construct. Once we operationally define something
+unit of measurement used for the construct. Once we operationally define something
 it is no longer a construct.
 
 ## Population vs Sample
