@@ -18,9 +18,9 @@ Figiure 2.1: Sample of a Histogram
 </p>
   
 ### Skewed Distribution
-- **_Positive Skew:_** A positive skew is when outliers are present along the right most end of the distribution.
+- **_Positive Skew:_** When outliers are present along the _right_ most end of the distribution.
 
-- **_Negative Skew:_** A negative skew is when outliers are present along the left most end of the distribution.
+- **_Negative Skew:_** When outliers are present along the _left_ most end of the distribution.
 <p align="center">
     <img align="center" alt="Skewed Distribution" src=https://qph.fs.quoracdn.net/main-qimg-5fc78a3359ad31c9c457dd4825813185-c><br/>
 Figiure 2.2: Skewed Distribution
