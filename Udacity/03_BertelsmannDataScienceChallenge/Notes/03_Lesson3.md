@@ -14,7 +14,7 @@ If two numbers are in the middle then the median is the average of the two.
  
    The median is robust to outliers, therefore an outlier will not affect the value of the median._
 
-- **_Mode:_** The mode of a data set is the data point that occurs the most frequently in the data set.
+- **_Mode:_** The data point that occurs the most frequently in the data set.
 
    -  _The mode is robust to outliers as well._    
    -  _In the normal distribution the mean = median = mod_
