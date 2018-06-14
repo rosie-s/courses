@@ -4,7 +4,7 @@
 
 A box plot is a great way to show the 5 number summary of a data set. The 5 number summary consists of the minimum, first quartile, median, third quartile, and the maximum.
 
-- **_Interquartile range:_** The Interquartile range (IQR) is the distance between
+- **_Interquartile range:_** The IQR is the distance between
 the 1st quartile and 3rd quartile and gives us the range of the middle 50% of our data.
 The IQR is easily found by computing: Q3 - Q1
 
@@ -21,8 +21,7 @@ Figiure 4.1: A simple boxplot
 ## Variance and Standard Deviation
 - **_Variance:_** The variance is the average of the squared differences from the mean. 
 
-- **_Standard Deviation:_** The standard deviation is the square root of the
-variance and is used to measure distance from the mean.
+- **_Standard Deviation:_** The square root of the variance and is used to measure distance from the mean.
      -  _In a normal distribution 65% of the data lies within 1 standard deviation from the mean,
 95% within 2 standard deviations, and 99.7% within 3 standard deviations._
 
