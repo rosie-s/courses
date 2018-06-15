@@ -5,8 +5,7 @@
 - **_Construct:_** Anything that is difficult to measure because it
 can be defined and measured in many different ways. 
     
-- **_Operational Definition:_** The operational definition of a construct is the
-unit of measurement used for the construct. Once we operationally define something
+- **_Operational Definition:_** The unit of measurement used for a construct. Once we operationally define something
 it is no longer a construct.
 
 ## Population vs Sample
