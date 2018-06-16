@@ -1,7 +1,7 @@
 # Lesson 2 - _Visualizing Data_
 
 ## Frequency
-- **_Frequency:_**  The frequency of a data set is the number of times a certain outcome occurs.
+- **_Frequency:_**  The number of times a certain outcome occurs.
 
 - **_Relative Frequency:_** To compute relative frequency, one obtains a frequency count for the total population and 
 a frequency count for a subgroup of the population.
