@@ -4,8 +4,7 @@
 
 A box plot is a great way to show the 5 number summary of a data set. The 5 number summary consists of the minimum, first quartile, median, third quartile, and the maximum.
 
-- **_Interquartile range:_** The IQR is the distance between
-the 1st quartile and 3rd quartile and gives us the range of the middle 50% of our data.
+- **_Interquartile range:_** The distance between the 1st quartile and 3rd quartile, it gives us the range of the middle 50% of our data.
 The IQR is easily found by computing: Q3 - Q1
 
 <p align="center">
