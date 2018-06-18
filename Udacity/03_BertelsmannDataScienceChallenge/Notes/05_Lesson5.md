@@ -9,7 +9,7 @@ deviations _x_ is away from the mean.
 This curve is the resulting distribution we get when we standardize our scores.
 
 <p align="center">
-    <img align="center" alt="The Standard Normal Curve" src=http://www.oswego.edu/~srp/stats/images/z.gif><br/>
+    <img align="center" alt="The Standard Normal Curve" src=../Images/05StandardCurve.PNG><br/>
 Figure 5.1: Standard Normal Curve
 </p>
 
