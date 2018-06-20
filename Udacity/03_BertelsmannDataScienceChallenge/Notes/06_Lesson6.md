@@ -2,13 +2,12 @@
 
 ## Probability Distribution Function
 
-- **_Probability Distribution Function:_** The probability distribution function is a normal curve with an area of 1 beneath it, to represent the cumulative frequency of values.
+- **_Probability Distribution Function:_** A normal curve with an area of 1 beneath it, to represent the cumulative frequency of values.
 
 <p align="center">
     <img align="center" alt="Curve" src=../Images/06Curve.PNG><br/>
 Figure 6.1: The area beneath the curve is 1.
 </p>
-
 
 ### Finding the probability
 We can use the PDF to find the probability of specific measurements occurring. The following
