@@ -27,7 +27,7 @@ Now we need to use the z-score table to find the proportion below a z-score of 1
 -  _The z-table only shows the proportion below. In this instance we are trying to find the orange area._
 
 <p align="center">
-    <img align="center" alt="Shaded Area" src=../Images/06Shaded.PNG><br/>
+    <img align="center" width=400 alt="Shaded Area" src=../Images/06Shaded.PNG><br/>
 Figure 6.2: 85% is the shaded area.
 </p>
 
