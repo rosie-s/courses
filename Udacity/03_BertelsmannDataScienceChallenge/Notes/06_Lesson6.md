@@ -2,12 +2,18 @@
 
 ## Probability Distribution Function
 
-- **_Probability Distribution Function:_** A normal curve with an area of 1 beneath it, to represent the cumulative frequency of values.
+- **_Probability Distribution Function:_** A normal curve with an area of 1 beneath it, to represent the cumulative 
+frequency of values.
 
 <p align="center">
     <img align="center" width=500 alt="Curve" src=../Images/06Curve.PNG><br/>
 Figure 6.1: The area beneath the curve is 1.
 </p>
+
+- **_Horizontal Asymptote:_** A horizontal asymptote is a y-value on a graph which a function approaches but does
+ not actually reach.
+
+-  _Area = Probability of randomly selecting less than x = Proportion in sample/Population with scores less than x_
 
 ### Finding the probability
 We can use the PDF to find the probability of specific measurements occurring. The following
