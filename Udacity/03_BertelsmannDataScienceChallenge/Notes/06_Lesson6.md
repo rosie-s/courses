@@ -10,8 +10,12 @@ frequency of values.
 Figure 6.1: The area beneath the curve is 1.
 </p>
 
-- **_Horizontal Asymptote:_** A horizontal asymptote is a y-value on a graph which a function approaches but does
- not actually reach.
+- **_Horizontal Asymptote:_** A y-value on a graph which a function approaches but does not actually reach.
+
+<p align="center">
+    <img align="center" alt="Curve" src=https://www.freemathhelp.com/images/lessons/asymp4.png><br/>
+Figure 6.2: Horizontal Asymptote.
+</p>
 
 -  _Area = Probability of randomly selecting less than x = Proportion in sample/Population with scores less than x_
 
