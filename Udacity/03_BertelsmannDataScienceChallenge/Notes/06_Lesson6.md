@@ -13,7 +13,7 @@ Figure 6.1: The area beneath the curve is 1.
 - **_Horizontal Asymptote:_** A y-value on a graph which a function approaches but does not actually reach.
 
 <p align="center">
-    <img align="center" alt="Curve" src=https://www.freemathhelp.com/images/lessons/asymp4.png><br/>
+    <img align="center" alt="Horizontal Asymptote" src=https://www.freemathhelp.com/images/lessons/asymp4.png><br/>
 Figure 6.2: Horizontal Asymptote.
 </p>
 
