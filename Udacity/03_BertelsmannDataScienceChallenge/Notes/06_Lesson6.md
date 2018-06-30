@@ -11,10 +11,11 @@ Figure 6.1: The area beneath the curve is 1.
 </p>
 
 - **_Horizontal Asymptote:_** A y-value on a graph which a function approaches but does not actually reach.
+- **_Vertical Asymptote:_** A x-value on a graph which a function approaches but does not actually reach.
 
 <p align="center">
-    <img align="center" alt="Horizontal Asymptote" width=300 src=https://www.freemathhelp.com/images/lessons/asymp4.png><br/>
-Figure 6.2: Horizontal Asymptote.
+    <img align="center" alt="Horizontal and Vertical Asymptote" width=300 src=https://cramster-image.s3.amazonaws.com/definitions/alg-4-img-1.png><br/>
+Figure 6.2: Horizontal and Vertical Asymptote.
 </p>
 
 -  _Area = Probability of randomly selecting less than x = Proportion in sample/Population with scores less than x_
