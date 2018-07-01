@@ -39,7 +39,7 @@ Now we need to use the z-score table to find the proportion below a z-score of 1
 
 <p align="center">
     <img align="center" width=400 alt="Shaded Area" src=../Images/06Shaded.PNG><br/>
-Figure 6.2: 85% is the shaded area.
+Figure 6.3: 85% is the shaded area.
 </p>
 
 To use the z-table we start in the left most column and find the first two digits of our z-score
@@ -59,7 +59,7 @@ of students that are shorter than Anne.
 
 <p align="center">
     <img align="center" alt="ZTable" src=../Images/06ZTable.PNG><br/>
-Figure 6.3: Using the z-table for 1.33. 
+Figure 6.4: Using the z-table for 1.33. 
 </p>
 
 This means that Margie is taller than 90.82% of her classmates.
