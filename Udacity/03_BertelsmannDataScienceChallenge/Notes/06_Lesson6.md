@@ -14,7 +14,7 @@ Figure 6.1: The area beneath the curve is 1.
 - **_Vertical Asymptote:_** A x-value on a graph which a function approaches but does not actually reach.
 
 <p align="center">
-    <img align="center" alt="Horizontal and Vertical Asymptote" width=300 src=https://cramster-image.s3.amazonaws.com/definitions/alg-4-img-1.png><br/>
+    <img align="center" alt="Horizontal and Vertical Asymptote" width=300 src=http://image.mathcaptain.com/cms/images/83/asymptote.PNG><br/>
 Figure 6.2: Horizontal and Vertical Asymptote.
 </p>
 
