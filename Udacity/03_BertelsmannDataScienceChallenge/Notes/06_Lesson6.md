@@ -31,7 +31,7 @@ who stands at 2.00 meters.
 
 To solve this problem the first thing we need to find is our z-score:
 
- - _z=x-μ/sDev = 2.05 - 1.85 / 0.15= 1.3_
+ - _z = x-μ / sDev = 2.05 - 1.85 / 0.15 = 1.3_
  
 Now we need to use the z-score table to find the proportion below a z-score of 1.33.
 
@@ -50,7 +50,7 @@ column intersect is our proportion below that z-score.
 Margie also wants to know what percent of students are taller than her. Since
 the area under the normal curve is 1 we can find that proportion:
 
-- _1-0.9082= 0.0918 = 9.18%_
+- _1 - 0.9082 = 0.0918 = 9.18%_
 
 #### Example 6.3
 Anne only measures 1.87 meters. What proportion of classmates are between Anne and Margies heights.
@@ -64,7 +64,7 @@ Figure 6.4: Using the z-table for 1.33.
 
 This means that Margie is taller than 90.82% of her classmates.
 
-- _1.87-1.85/0.15 = 0.13_
+- _1.87 - 1.85 / 0.15 = 0.13_
 
 If we use the z-table we see that this z-score corresponds with a proportion of 0.5517 or
 55.17%. So to get the proportion in between the two we subtract the two proportions from each
