@@ -25,9 +25,8 @@ We can use the PDF to find the probability of specific measurements occurring. T
 examples illustrate how to find the area below, above, and between particular observations.
 
 #### Example 6.1 
-The average height of students at a private university is 1.85 meters with a
-standard deviation of 0.15 meters. What percentage of students are shorter or as tall as Margie
-who stands at 2.00 meters.
+The average height of students at a private university is 1.85 meters with a standard deviation of 0.15 meters. 
+What percentage of students are shorter or as tall as Margie who stands at 2.00 meters.
 
 To solve this problem the first thing we need to find is our z-score:
 
