@@ -18,7 +18,7 @@ Figure 6.1: The area beneath the curve is 1.
 Figure 6.2: Horizontal and Vertical Asymptote.
 </p>
 
--  _Area = Probability of randomly selecting less than x = Proportion in sample/Population with scores less than x_
+-  _Area = Probability of randomly selecting less than x = Proportion in sample / Population with scores less than x_
 
 ### Finding the probability
 We can use the PDF to find the probability of specific measurements occurring. The following
@@ -68,4 +68,4 @@ This means that Margie is taller than 90.82% of her classmates.
 If we use the z-table we see that this z-score corresponds with a proportion of 0.5517 or
 55.17%. So to get the proportion in between the two we subtract the two proportions from each
 other. That is the proportion of people who’s height’s are between Anne and Margies height is
-90.82-55.17 = 35.65%.
+90.82 - 55.17 = 35.65%.
