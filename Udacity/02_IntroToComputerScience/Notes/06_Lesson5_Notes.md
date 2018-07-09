@@ -78,4 +78,4 @@ Difference between String, List, and Dictionary:
 `range(<start>,<stop>) -> [<start>, <start> +1, ... <stop> -1]`
 
 - Eval  
-Allows us to evaluate any string as though it were a python expression
+Evaluate any string as though it were a python expression
