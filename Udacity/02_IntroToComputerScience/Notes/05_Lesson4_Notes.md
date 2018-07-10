@@ -20,7 +20,7 @@ def get_page(url):
 ```
 
 ## Networks
-> A **network** is a group of entities that can communicate, even though they are not all directly connected
+> A group of entities that can communicate, even though they are not all directly connected
 
 ### Making a Network
 - Way to encode and interpret messages:  
@@ -55,4 +55,4 @@ Mbps
 
 ## Protocol Used
 HTTP - Hypertext Transfer Protocol 
->  HTTP is the set of rules for transferring files (text, graphic images, sound, video, and other multimedia files) on the World Wide Web. As soon as a Web user opens their Web browser, the user is indirectly making use of HTTP. HTTP is an application protocol that runs on top of the TCP/IP suite of protocols (the foundation protocols for the Internet).
+>  The set of rules for transferring files (text, graphic images, sound, video, and other multimedia files) on the World Wide Web. As soon as a Web user opens their Web browser, the user is indirectly making use of HTTP. HTTP is an application protocol that runs on top of the TCP/IP suite of protocols (the foundation protocols for the Internet).
