@@ -6,7 +6,7 @@
 frequency of values.
 
 <p align="center">
-    <img align="center" alt="Curve" src=../Images/06Curve.PNG><br/>
+    <img align="center" height=250 alt="Curve" src=../Images/06Curve.PNG><br/>
 Figure 6.1: The area beneath the curve is 1.
 </p>
 
