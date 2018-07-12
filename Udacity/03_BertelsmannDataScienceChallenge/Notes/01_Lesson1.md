@@ -37,7 +37,7 @@ Researchers are specifically interested in how different treatments might yield 
 
 - **_Treatment Group:_** The group of a study that receives varying levels of the independent variable. These groups are used to measure the effect of a treatment.
 
--**_Control Group:_** The group of a study that receives no treatment. This group is used as a baseline when comparing treatment groups.    
+- **_Control Group:_** The group of a study that receives no treatment. This group is used as a baseline when comparing treatment groups.    
 - **_Placebo:_** Something given to subjects in the control group so they think
 they are getting the treatment, when in reality they are getting something that causes no effect to them. (e.g. a Sugar pill)
 
