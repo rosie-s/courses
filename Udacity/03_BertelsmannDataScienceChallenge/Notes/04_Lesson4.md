@@ -18,7 +18,7 @@ Figiure 4.1: A simple boxplot
     2. Lower outliers: Q1 - 1.5 (IQR)
 
 ## Variance and Standard Deviation
-- **_Variance:_** The variance is the average of the squared differences from the mean. 
+- **_Variance:_** The average of the squared differences from the mean. 
 
 - **_Standard Deviation:_** The square root of the variance and is used to measure distance from the mean.
      -  _In a normal distribution 65% of the data lies within 1 standard deviation from the mean,
