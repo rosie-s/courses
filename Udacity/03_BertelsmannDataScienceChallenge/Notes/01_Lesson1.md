@@ -41,6 +41,6 @@ Researchers are specifically interested in how different treatments might yield 
 - **_Placebo:_** Something given to subjects in the control group so they think
 they are getting the treatment, when in reality they are getting something that causes no effect to them. (e.g. a Sugar pill)
 
-- **_Blinding:_** Blinding is a technique used to reduce bias. Double blinding
+- **_Blinding:_** A technique used to reduce bias. Double blinding
 ensures that both those administering treatments and those receiving treatments do not know
 who is receiving which treatment.
