@@ -2,7 +2,7 @@
 
 ## Mean, Median and Mode
 
-- **_Mean:_** The numerical average and can be computed by dividing the sum of all the 
+- **_Mean:_** The numerical average, it can be computed by dividing the sum of all the 
 data points by the number of data points
 
   -  _The mean is heavily affected by outliers, therefore we say the mean is not a robust measurement._
