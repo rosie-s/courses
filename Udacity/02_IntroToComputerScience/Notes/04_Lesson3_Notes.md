@@ -28,7 +28,7 @@ beatles = [['John', 1940],
 
 ## Mutation
 - Mutation _modifies_ an existing object
-- Mutation affects the value of other objects
+- Mutation _affects_ the value of other objects
 ``` python
 s = 'Hello'                         p = ['H', 'e', 'l', 'l', 'o']
 s = 'Yello'                         p[0] = 'Y'
@@ -38,7 +38,7 @@ s = s + 'w' #s is now Yellow        p is now ['Y', 'e', 'l', 'l', 'o']  - Didn't
 ```
 
 ## Aliasing
-2 different ways to refer to the same object
+2 different ways to refer to the same object:
 - If 2 variable names (p , q) refer to the same object, any change made to the object p refers to also affects
 the value that q refers to. 
 - If the value in the first position of p is changed, that also changes the value q refers to. 
