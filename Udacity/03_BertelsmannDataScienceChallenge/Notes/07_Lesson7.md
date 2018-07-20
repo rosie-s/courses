@@ -7,4 +7,4 @@ The Central Limit Theorem is used to help us understand the following facts rega
 2. the _standard_ deviation of the sample means is always equal to the standard error (i.e. SE = sd/square root of n)
 3. the _distribution_ of sample means will become increasingly more normal as the sample size, n, increases.
 
-- **_Sampling Distribution:_** The sampling distribution of a statistic is the distribution of that statistic. It may be considered as the distribution of the statistic for all possible samples from the same population of a given size.
+- **_Sampling Distribution:_** The distribution of that statistic. It may be considered as the distribution of the statistic for all possible samples from the same population of a given size.
