@@ -2,7 +2,7 @@
 
 ## Central Limit Theorem
 
-The Central Limit Theorem is used to help us understand the following facts regardless of whether the population distribution is normal or not:
+The CLT is used to help us understand the following facts regardless of whether the population distribution is normal or not:
 1. the _mean_ of the sample means is the same as the population mean
 2. the _standard_ deviation of the sample means is always equal to the standard error (i.e. SE = sd/square root of n)
 3. the _distribution_ of sample means will become increasingly more normal as the sample size, n, increases.
