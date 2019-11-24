@@ -1,26 +1,28 @@
 #include <iostream>
 
+void PrintLogo()
+{
+    // Print logo to the terminal                                                                                    
+    std::cout << R"(
+                      _______   _       _       __   __
+                     |__   __| (_)     | |      \ \ / /
+                        | |_ __ _ _ __ | | ___   \ V / 
+                        | | '__| | '_ \| |/ _ \   > <  
+                        | | |  | | |_) | |  __/  / . \ 
+                        |_|_|  |_| .__/|_|\___| /_/ \_\
+                                 | |                   
+                                 |_|                   
+                    )" << std::endl;
+}
+
 void PrintIntroduction()
 {
-    // Print welcome messages to the terminal                                                                                    
-    std::cout << R"(
-                    .----------------.  .----------------.  .----------------.  .----------------.  .----------------.  .----------------.   .----------------. 
-                    | .--------------. || .--------------. || .--------------. || .--------------. || .--------------. || .--------------. | | .--------------. |
-                    | |  _________   | || |  _______     | || |     _____    | || |   ______     | || |   _____      | || |  _________   | | | |  ____  ____  | |
-                    | | |  _   _  |  | || | |_   __ \    | || |    |_   _|   | || |  |_   __ \   | || |  |_   _|     | || | |_   ___  |  | | | | |_  _||_  _| | |
-                    | | |_/ | | \_|  | || |   | |__) |   | || |      | |     | || |    | |__) |  | || |    | |       | || |   | |_  \_|  | | | |   \ \  / /   | |
-                    | |     | |      | || |   |  __ /    | || |      | |     | || |    |  ___/   | || |    | |   _   | || |   |  _|  _   | | | |    > `' <    | |
-                    | |    _| |_     | || |  _| |  \ \_  | || |     _| |_    | || |   _| |_      | || |   _| |__/ |  | || |  _| |___/ |  | | | |  _/ /'`\ \_  | |
-                    | |   |_____|    | || | |____| |___| | || |    |_____|   | || |  |_____|     | || |  |________|  | || | |_________|  | | | | |____||____| | |
-                    | |              | || |              | || |              | || |              | || |              | || |              | | | |              | |
-                    | '--------------' || '--------------' || '--------------' || '--------------' || '--------------' || '--------------' | | '--------------' |
-                    '----------------'  '----------------'  '----------------'  '----------------'  '----------------'  '----------------'   '----------------' 
-                    )" << std::endl; 
-    std::cout << "You are a secret agent breaking into a secure server room....\n";
+    // Print welcome messages to the terminal
+    std::cout << "\n\nYou are a secret agent breaking into a secure server room....\n";
     std::cout << "Enter the correct code to continue!\n\n";
 }
 
-void PlayGame()
+bool PlayGame()
 {
     PrintIntroduction();
 
@@ -47,15 +49,25 @@ void PlayGame()
     if (GuessSum == CodeSum && GuessProduct == CodeProduct)
     {
         std::cout << "\nYou Win!";
+        return true;
     }
     else
     {
         std::cout << "\nYou Lose!";
+        return false;
     }
 }
 
 int main()
-{
-    PlayGame();
+{        
+    
+    PrintLogo();
+
+    while(true)
+    {
+        bool bLevelComplete = PlayGame();
+        std::cin.clear(); // Clears any errors
+        std::cin.ignore(); // Discards the buffer
+    }
     return 0;
 }
