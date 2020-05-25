@@ -5,7 +5,8 @@ import java.util.ArrayList;
 public class Application {
 
     public static void main(String[] args) {
-        
+
+        // Make previous exercise generic
         Parking<Car> carParking = new Parking("Car", "1");
         Parking<Truck> truckParking = new Parking("Truck", "2");
         Parking allParking = new Parking("All", "1");
@@ -42,7 +43,6 @@ public class Application {
         System.out.println("Parking Trucks: " + truckParking.vehicleList.size());
 
         System.out.println(allParking.getVehicleList().size() + " vehicles, Unregistered total cost is: " + allParking.calculateTotalPrice() + "EUR");
-
-
+        
     }
 }
