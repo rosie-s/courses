@@ -12,10 +12,6 @@ public abstract class Vehicle {
     public Vehicle(String brand) {
         this.brand = brand;
         this.ID = count++;
-    }
-
-    {
         System.out.println(this.getClass().getSimpleName() +" " + brand + " created with ID: " + ID);
     }
-
 }

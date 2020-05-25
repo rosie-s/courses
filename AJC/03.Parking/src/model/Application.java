@@ -5,8 +5,6 @@ import java.util.ArrayList;
 public class Application {
 
     public static void main(String[] args) {
-        // write your code here
-
         Parking aParking = new Parking("Name", "Code");
         aParking.add(new RegisteredCar("Toyota"));
         aParking.add(new RegisteredCar("Audi"));
@@ -17,7 +15,5 @@ public class Application {
         aParking.add(new UnregisteredTruck("Tesla"));
         aParking.add(new UnregisteredTruck("Porsche"));
         System.out.println(aParking.getVehicleList().size() + " vehicles, Unregistered total cost is: " + aParking.calculateTotalPrice() + "EUR");
-
-
-    }
+  }
 }
