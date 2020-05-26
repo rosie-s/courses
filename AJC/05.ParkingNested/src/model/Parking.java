@@ -14,17 +14,10 @@ public class Parking<T> {
         this.code = code;
         this.vehicleList = new ArrayList<>();
 
-        // Toll gate in
-        String tollGatesInID = code + "#" + "door-" + this.tollGates.size();
-        TollGate tollGateIn = new TollGate(tollGatesInID, true, Orientation.WEST, Direction.IN);
-        tollGates.add(tollGateIn);
+        this.tollGates.add(new TollGate(Orientation.WEST, Direction.IN));
+        this.tollGates.add(new TollGate(Orientation.EAST, Direction.OUT));
 
-        //Toll gate out
-        String tollGatesOutID = code + "#" + "door-" + this.tollGates.size();
-        TollGate tollGateOut = new TollGate(tollGatesOutID, true, Orientation.EAST, Direction.OUT);
-        tollGates.add(tollGateOut);
-
-        System.out.println("Jean Jaures " + name+ " gates");
+        System.out.println("Jean Jaures " + name + " gates");
         for (TollGate tollGate : tollGates) {
             System.out.println("--Gate: " + tollGate.id);
         }
@@ -52,13 +45,13 @@ public class Parking<T> {
 
     public class TollGate {
         public String id;
-        public boolean enable = true;
-        private Orientation orientation;
-        private Direction direction;
 
-        public TollGate(String id, boolean enable, Orientation orientation, Direction direction) {
-            this.id = id;
-            this.enable = enable;
+        boolean enable = true;
+        Orientation orientation;
+        Direction direction;
+
+        public TollGate(Orientation orientation, Direction direction) {
+            this.id = Parking.this.code.toUpperCase() + "#door-" + Parking.this.tollGates.size();
             this.orientation = orientation;
             this.direction = direction;
         }
