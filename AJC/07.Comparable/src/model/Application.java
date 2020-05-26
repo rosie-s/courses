@@ -39,7 +39,20 @@ public class Application {
             System.out.println(p.name + " - " + p.vehicleList.size());
         }
 
-        System.out.println("\nSorting using Comparator: ");
+        // Lambda
+        System.out.println("\nSorting using Lambda: ");
+        Collections.sort(parking, (o1, o2) -> {
+            if (o1.calculateTotalPrice() > o2.calculateTotalPrice())
+                return 1;
+            else if (o1.calculateTotalPrice() < o2.calculateTotalPrice())
+                return -1;
+            return 0;
+        });
+        for (Parking p : parking) {
+            System.out.println(p.name + " - " + p.calculateTotalPrice() + "EUR");
+        }
+
+        /*System.out.println("\nSorting using Comparator: ");
         Collections.sort(parking, new Comparator<Parking>() {
             @Override
             public int compare(Parking o1, Parking o2) {
@@ -52,7 +65,6 @@ public class Application {
         });
         for (Parking p : parking) {
             System.out.println(p.name + " - " + p.calculateTotalPrice() + "EUR");
-        }
-        
+        }*/
     }
 }
