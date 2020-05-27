@@ -35,4 +35,14 @@ public abstract class Vehicle implements Cloneable {
     public int hashCode() {
         return Objects.hash(plate);
     }
+
+    @Override
+    public String toString() {
+        return "Vehicle{" +
+                "id=" + ID +
+                ", brand='" + brand + '\'' +
+                ", gaz=" + gaz +
+                ", plate='" + plate + '\'' +
+                '}';
+    }
 }

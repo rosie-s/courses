@@ -30,6 +30,7 @@ public class VehicleCache {
         }
 
         System.out.println("Loaded vehicles");
+
         for (Vehicle v: vehicleList){
             VehicleCache.vehicleHashtable.put(v.plate, (Vehicle) v.clone());
         }

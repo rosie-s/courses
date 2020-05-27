@@ -11,5 +11,6 @@ public class Application {
         System.out.println(VehicleCache.getVehicle("0002"));
         System.out.println(VehicleCache.getVehicle("0003"));
         System.out.println(VehicleCache.getVehicle("0004"));
+        System.out.println(VehicleCache.getVehicle("0005"));
     }
 }
