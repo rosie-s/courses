@@ -1,0 +1,28 @@
+package parking;
+
+import com.sun.org.apache.xerces.internal.jaxp.validation.StAXValidatorHelper;
+import parking.abstractFactory.VehicleFactory;
+import parking.abstractFactory.VehicleType;
+import parking.model.CarSingleton;
+import printer.model.Printer;
+import printer.model.PrinterCentralizer;
+
+public class Application {
+
+    public static void main(String[] args) {
+        // Car
+        VehicleFactory car = VehicleFactory.getFactory(VehicleType.CAR);
+        car.createRegisteredVehicle("Toyota", "0001");
+        car.createUnregisteredVehicle("Ferrari", "0002");
+
+        // Truck
+        VehicleFactory truck = VehicleFactory.getFactory(VehicleType.TRUCK);
+        truck.createRegisteredVehicle("Man", "0003");
+        truck.createUnregisteredVehicle("Ram", "0004");
+
+        CarSingleton c1 = CarSingleton.getInstance();
+        CarSingleton c2 = CarSingleton.getInstance();
+        System.out.println("Should be true: " + (c1 == c2));
+
+    }
+}
