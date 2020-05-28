@@ -1,6 +1,6 @@
 package pattern.factory;
 
-import parking.model.Vehicle;
+import model.parking.Vehicle;
 
 public abstract class VehicleFactory {
 

@@ -1,8 +1,10 @@
 package pattern.prototype;
 
-import parking.model.*;
+import model.parking.*;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Hashtable;
+import java.util.List;
 
 public class VehicleCache {
 

@@ -6,15 +6,15 @@ import pattern.adapter.TransactionInfo;
 
 public class CardReaderProxy implements TransactionInfo {
 
-    public static int attempt= 0;
+    public static int attempt = 0;
     private CardReader cardReader = new CardReader();
 
     @Override
     public void startTransaction(Card card) {
-        if (attempt < 3){
+        if (attempt < 3) {
             cardReader.startTransaction(card);
             attempt++;
-        } else{
+        } else {
             System.out.println("Too many attempts");
         }
     }

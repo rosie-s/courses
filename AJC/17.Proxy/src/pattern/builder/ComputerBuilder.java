@@ -1,6 +1,6 @@
 package pattern.builder;
 
-import printer.model.Computer;
+import model.printer.Computer;
 
 public class ComputerBuilder {
     Computer computer;

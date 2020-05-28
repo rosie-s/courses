@@ -1,9 +1,9 @@
 package pattern.factory;
 
 
-import parking.model.RegisteredCar;
-import parking.model.UnregisteredCar;
-import parking.model.Vehicle;
+import model.parking.RegisteredCar;
+import model.parking.UnregisteredCar;
+import model.parking.Vehicle;
 
 public class TruckFactory extends VehicleFactory {
 
