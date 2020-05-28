@@ -1,5 +1,5 @@
 package pattern.adapter;
 
 public interface TransactionInfo {
-    public void startTransaction(Card card);
+    public boolean startTransaction(Card card);
 }

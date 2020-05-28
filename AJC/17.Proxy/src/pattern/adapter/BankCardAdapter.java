@@ -12,4 +12,9 @@ public class BankCardAdapter implements Card {
         System.out.println("Call start transaction method");
         bankCard.startTransactionWithBank();
     }
+
+    @Override
+    public String getCode() {
+        return null;
+    }
 }

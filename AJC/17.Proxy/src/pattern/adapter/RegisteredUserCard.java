@@ -7,4 +7,9 @@ public class RegisteredUserCard implements Card {
         System.out.println("Connection with registered user card");
 
     }
+
+    @Override
+    public String getCode() {
+        return null;
+    }
 }

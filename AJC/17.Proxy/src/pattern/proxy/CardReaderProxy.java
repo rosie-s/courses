@@ -7,15 +7,21 @@ import pattern.adapter.TransactionInfo;
 public class CardReaderProxy implements TransactionInfo {
 
     public static int attempt = 0;
-    private CardReader cardReader = new CardReader();
+    CardReader cardReader = new CardReader();
+    private String accountNumber;
 
     @Override
-    public void startTransaction(Card card) {
-        if (attempt < 3) {
-            cardReader.startTransaction(card);
-            attempt++;
-        } else {
+    public boolean startTransaction(Card card) {
+        String accountNumber = card.getCode();
+        attempt = this.accountNumber == accountNumber ? attempt + 1 : 1;
+        this.accountNumber = accountNumber;
+        if (attempt > 3) {
             System.out.println("Too many attempts");
+            return false;
         }
+        card.connect();
+        return true;
+
     }
+
 }
