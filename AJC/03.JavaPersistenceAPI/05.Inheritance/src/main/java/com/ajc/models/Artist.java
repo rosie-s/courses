@@ -7,15 +7,6 @@ import java.util.List;
 @Entity
 @Table(name="artist_table")
 public class Artist extends Person{
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private long id;
-
-    @Column(name ="fName")
-    private String firstName;
-
-    @Column(name ="lName")
-    private String lastName;
 
     @Column(name ="bName")
     private String bandName;
