@@ -12,7 +12,7 @@ public class SacemRegistration {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     public long id;
 
-    @Column(unique = true, name = "fName")
+    @Column(unique = true)
     public String code;
 
     @Temporal(TemporalType.DATE)
