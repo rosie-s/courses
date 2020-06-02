@@ -70,7 +70,7 @@ public class Entry {
 
             //Query
 
-            Query query = em.createQuery(" from Artist a where a.favouriteInstrument.instrumentType = :iType");
+            Query query = em.createNamedQuery("getFavInstrumentString");
             query.setParameter("iType", InstrumentType.STRING);
 
             List<Artist> artists = query.getResultList();

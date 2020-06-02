@@ -6,6 +6,7 @@ import java.util.List;
 
 @Entity
 @Table(name="artist_table")
+@NamedQuery(name="getFavInstrumentString", query="from Artist a where a.favouriteInstrument.instrumentType = :iType")
 public class Artist extends Person{
 
     @Column(name ="bandName")
