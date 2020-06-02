@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="13.CascadeEager" />
+        <module name="05.Inheritance" />
+        <module name="04.Relationships" />
+        <module name="06.EmbeddedId" />
+        <module name="02.ArtistMapping" />
+        <module name="11.Link" />
+        <module name="03.ArtistMapping" />
+        <module name="10.Merge" />
+        <module name="08.FindMedia" />
+        <module name="02.Artist" />
+        <module name="12.MultipleLink" />
+        <module name="07.InitializeArtist" />
+        <module name="01.JPAConfiguration" />
+        <module name="09.Delete" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
