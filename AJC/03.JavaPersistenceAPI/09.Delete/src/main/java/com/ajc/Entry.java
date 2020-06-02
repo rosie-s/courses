@@ -26,7 +26,7 @@ public class Entry {
 
         try {
             transaction.begin();
-            
+
             System.out.println("*** Before Persist ***");
             System.out.println("Contains Artist: " + em.contains(artist));
             System.out.println("Contains Media: " + em.contains(media));
@@ -35,21 +35,18 @@ public class Entry {
             System.out.println("*** Persist ***");
             em.persist(artist);
             em.persist(media);
-            em.persist(manager);
 
             System.out.println("Contains Artist: " + em.contains(artist));
             System.out.println("Contains Media: " + em.contains(media));
-            System.out.println("Contains Manager: " + em.contains(manager));
             transaction.commit();
-
+            em.close();
 
             em = emf.createEntityManager();
             System.out.println("Find Media: \n" + em.find(Media.class, mediaId));
-
             // Remove
             System.out.println("Remove manager");;
             em.remove(manager);
-            em.close();
+            
         } catch (Exception e) {
             e.printStackTrace();
             transaction.rollback();
