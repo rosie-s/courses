@@ -9,10 +9,10 @@ public class Person {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
-    @Column(name = "fName")
+    @Column(name = "first_name")
     private String firstName;
 
-    @Column(name = "lName")
+    @Column(name = "last_Name")
     private String lastName;
 
     public Person(String firstName, String lastName) {

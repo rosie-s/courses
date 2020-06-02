@@ -1,9 +1,6 @@
 package com.ajc;
 
-import com.ajc.models.Artist;
-import com.ajc.models.Manager;
-import com.ajc.models.Media;
-import com.ajc.models.MediaId;
+import com.ajc.models.*;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -13,6 +10,7 @@ import java.util.Date;
 
 public class Entry {
     public static void main(String[] args) {
+
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("music");
         EntityManager em = emf.createEntityManager();
         EntityTransaction transaction = em.getTransaction();
@@ -24,24 +22,28 @@ public class Entry {
             Date date = new Date(2005, 03, 8);
 
             Artist artist = new Artist("Gerard", "Way", "My Chemical Romance");
-            Media media = new Media("Three Cheers for Sweet Revenge", date);
+            MediaId mediaId = new MediaId("Three Cheers for Sweet Revenge",MediaType.CD);
+            Media media = new Media(mediaId, date);
 
-            System.out.println(em.contains(artist));
-            System.out.printf("Persist");
+            System.out.println("*** Before Persist ***");
+            System.out.println("Contains Artist: " + em.contains(artist));
+            System.out.println("Contains Media: " + em.contains(media));
+
+            System.out.println("*** Persist ***");
             em.persist(artist);
             em.persist(media);
 
-            System.out.println(em.contains(artist));
+            System.out.println("Contains Artist: " + em.contains(artist));
+            System.out.println("Contains Media: " + em.contains(media));
             transaction.commit();
 
             em.close();
             em = emf.createEntityManager();
-
-            System.out.println(em.find(Media.class, 1));
-
+            System.out.println("Find Media: \n" + em.find(Media.class, mediaId));
 
         } catch (Exception e) {
-            //transaction.rollback();
+            e.printStackTrace();
+            transaction.rollback();
         } finally {
             em.close();
             emf.close();

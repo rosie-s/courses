@@ -8,9 +8,10 @@ import java.util.List;
 @Table(name="artist_table")
 public class Artist extends Person{
 
-    @Column(name ="bName")
+    @Column(name ="bandName")
     private String bandName;
 
+    @Column(name ="band_size")
     private int size;
 
     @ManyToOne
@@ -23,7 +24,7 @@ public class Artist extends Person{
     private Instrument favouriteInstrument;
 
     @ManyToMany
-    @JoinTable( name="art_inst",
+    @JoinTable( name="artist_instruments",
             joinColumns = @JoinColumn(name="art_id"),
             inverseJoinColumns = @JoinColumn(name="ins_id"))
     private List<Instrument> playableInstruments = new ArrayList<>();

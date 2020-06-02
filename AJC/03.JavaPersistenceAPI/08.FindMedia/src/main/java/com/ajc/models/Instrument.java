@@ -11,10 +11,11 @@ public class Instrument {
     @GeneratedValue(strategy = GenerationType.AUTO)
     public long id;
 
-    @Column(name = "iName")
+    @Column(name = "instrument")
     public String name;
 
     @Enumerated(EnumType.STRING)
+    @Column(name ="instrument_type")
     private InstrumentType instrumentType;
 
     @ManyToMany(mappedBy = "playableInstruments")

@@ -10,9 +10,10 @@ import java.util.List;
 public class SacemRegistration {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name ="sacem_id")
     public long id;
 
-    @Column(unique = true)
+    @Column(unique = true, name = "sacem_code")
     public String code;
 
     @Temporal(TemporalType.DATE)

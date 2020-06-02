@@ -15,4 +15,12 @@ public class MediaId implements Serializable {
 
     public MediaId() {
     }
+
+    @Override
+    public String toString() {
+        return "MediaId{" +
+                "name='" + name + '\'' +
+                ", mediaType=" + mediaType +
+                '}';
+    }
 }
