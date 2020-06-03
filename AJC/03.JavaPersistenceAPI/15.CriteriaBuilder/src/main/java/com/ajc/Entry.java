@@ -3,9 +3,7 @@ package com.ajc;
 import com.ajc.models.*;
 
 import javax.persistence.*;
-import javax.persistence.criteria.CriteriaBuilder;
-import javax.persistence.criteria.CriteriaQuery;
-import javax.persistence.criteria.Root;
+import javax.persistence.criteria.*;
 import java.util.Date;
 import java.util.List;
 
@@ -73,12 +71,19 @@ public class Entry {
             //Query
 
             CriteriaBuilder cb = em.getCriteriaBuilder();
-            CriteriaQuery<Artist> query = cb.createQuery(Artist.class);
-            Root<Artist> r = query.from(Artist.class) ;
-            query.select(r);
-            Query q = em.createQuery(query);
 
+            CriteriaQuery<Artist> query = cb.createQuery(Artist.class);
+            Root<Artist> artistRoot = query.from(Artist.class) ;
+            Join<Artist, Instrument> artistInstrumentJoin = artistRoot.join("favouriteInstrument");
+
+            ParameterExpression<InstrumentType> parameterExpression = cb.parameter(InstrumentType.class);
+            // query.select(artistRoot).where(cb.equal(artistRoot.get("firstName"), parameterExpression));
+            query.select(artistRoot).where(cb.equal(artistInstrumentJoin.get("instrumentType"), parameterExpression));
+
+            Query q = em.createQuery(query);
+            q.setParameter(parameterExpression, InstrumentType.STRING);
             List<Artist> artists = q.getResultList();
+
             System.out.println("Artist Size: " + artists.size());
 
             transaction.commit();
