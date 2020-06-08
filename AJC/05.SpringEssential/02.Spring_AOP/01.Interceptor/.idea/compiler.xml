@@ -8,10 +8,10 @@
         <outputRelativeToContentRoot value="true" />
         <module name="03.Annotations" />
         <module name="05.Configuration" />
-        <module name="01.Interceptor" />
+        <module name="04.UsingQualifier" />
         <module name="02.SpringConstructor" />
         <module name="01.SpringTraining" />
-        <module name="04.UsingQualifier" />
+        <module name="01.Interceptor" />
       </profile>
     </annotationProcessing>
   </component>
