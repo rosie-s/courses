@@ -11,10 +11,5 @@
        http://www.springframework.org/schema/context/spring-context.xsd">
 
     <context:component-scan base-package="com.music"/>
-    <bean id="guitar" class="com.music.Guitar"/>
 
-    <!--<bean id="guitarist" class="com.music.Guitarist">
-        <property name="instrument" ref="guitar"/>
-        <constructor-arg index="0" ref="guitar"/>
-    </bean>-->
 </beans>
