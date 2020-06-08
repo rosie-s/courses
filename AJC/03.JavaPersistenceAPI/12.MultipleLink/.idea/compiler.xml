@@ -10,12 +10,12 @@
         <module name="12.MultipleLink" />
         <module name="03.ArtistMapping" />
         <module name="08.FindMedia" />
-        <module name="11.Link" />
         <module name="10.Merge" />
+        <module name="07.InitializeArtist" />
         <module name="02.ArtistMapping" />
         <module name="09.Delete" />
         <module name="05.Inheritance" />
-        <module name="07.InitializeArtist" />
+        <module name="11.Link" />
         <module name="06.EmbeddedId" />
         <module name="01.JPAConfiguration" />
         <module name="02.Artist" />
