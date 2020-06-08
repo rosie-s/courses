@@ -21,8 +21,8 @@ public class Wizard extends CharacterPlayer {
     @Column(name = "magic_level")
     private int magic;
 
-    public Wizard(CharacterPlayer characterJohn, int magic) {
-        this.magic = magic;
+    public Wizard(String name, int health, int strength, int level) {
+        super(name, health, strength, level);
     }
 }
 

@@ -12,7 +12,7 @@ import javax.persistence.*;
 @Getter
 @ToString
 @NoArgsConstructor
-@Table(name = "spell_table")
+@Table(name = "level_element")
 public class LevelElement {
 
     @EmbeddedId

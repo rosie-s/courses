@@ -15,9 +15,6 @@ import java.util.List;
 @NoArgsConstructor
 @Table(name = "item_table")
 public class Item extends LevelElement {
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    public int id;
 
     @Getter
     @Column(name = "durability")
@@ -25,15 +22,18 @@ public class Item extends LevelElement {
 
     @Getter
     @Enumerated(EnumType.STRING)
-    @Column(name ="colour")
+    @Column(name = "colour")
     private Colour colour;
 
     @Getter
-    @ManyToMany(mappedBy = "items" , fetch = FetchType.EAGER)
+    @ManyToMany
+    @JoinTable(name = "character_items")
+    //@ManyToMany(mappedBy = "items", fetch = FetchType.EAGER)
     List<CharacterPlayer> characterItems = new ArrayList<>();
 
-    public Item(int durability, Colour colour) {
+    public Item(String name, int level, int durability, Colour colour) {
         this.durability = durability;
         this.colour = colour;
+        this.id = new LevelId(name, level);
     }
 }

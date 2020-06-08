@@ -21,7 +21,7 @@ public class Orc extends CharacterPlayer {
     @Column(name = "rage_level")
     private int rage;
 
-    public Orc(CharacterPlayer character, int rage) {
-        this.rage = rage;
+    public Orc(String name, int health, int strength, int level) {
+        super(name, health, strength, level);
     }
 }

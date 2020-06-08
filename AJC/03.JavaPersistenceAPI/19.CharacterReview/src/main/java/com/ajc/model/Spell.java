@@ -6,6 +6,8 @@ import lombok.Setter;
 import lombok.ToString;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Setter
@@ -13,9 +15,6 @@ import javax.persistence.*;
 @NoArgsConstructor
 @Table(name = "spell_table")
 public class Spell extends LevelElement {
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    public int id;
 
     @Getter
     @Column(name = "cost")
@@ -25,8 +24,15 @@ public class Spell extends LevelElement {
     @Column(name = "damage")
     private  int damage;
 
-    public Spell(int cost, int damage) {
+    @Getter
+    @ManyToMany
+    @JoinTable(name = "character_spells")
+    List<CharacterPlayer> characterSpells = new ArrayList<>();
+
+    public Spell(String name, int level, int cost, int damage) {
         this.cost = cost;
         this.damage = damage;
+        this.id = new LevelId(name, level);
+
     }
 }

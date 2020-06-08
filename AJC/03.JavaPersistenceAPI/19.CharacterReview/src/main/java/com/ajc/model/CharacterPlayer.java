@@ -33,12 +33,15 @@ public class CharacterPlayer {
     @Column(name = "level")
     private int level;
 
-    @ManyToOne (cascade = CascadeType.ALL)
+    @ManyToOne
     private User user;
 
-    @ManyToMany (cascade = CascadeType.ALL)
-    @JoinTable( name="character_items")
+    @ManyToMany(mappedBy = "characterSpells")
+    private List<Spell> spells = new ArrayList<>();
+
+    @ManyToMany(mappedBy = "characterItems")
     private List<Item> items = new ArrayList<>();
+
 
     public CharacterPlayer(String name, int health, int strength, int level) {
         this.name = name;
@@ -49,13 +52,15 @@ public class CharacterPlayer {
 
     @Override
     public String toString() {
-        return "Character{" +
+        return "CharacterPlayer{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", health=" + health +
                 ", strength=" + strength +
                 ", level=" + level +
                 ", user=" + user +
+                ", items=" + items +
+                ", spells=" + spells +
                 '}';
     }
 }

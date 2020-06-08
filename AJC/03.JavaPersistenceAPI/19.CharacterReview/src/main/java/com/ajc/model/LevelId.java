@@ -17,6 +17,7 @@ public class LevelId implements Serializable {
     private  String name;
     private int level;
 
+
     public LevelId(String name, int level) {
         this.name = name;
         this.level = level;
