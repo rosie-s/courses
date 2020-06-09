@@ -11,7 +11,7 @@ import org.springframework.format.annotation.DateTimeFormat;
 @Table(name = "Products")
 @NamedQueries({
         @NamedQuery(name = "Product.findByDescriptionContaining",
-                query = "select p from Product p where lower(p.description) like CONCAT(:word,'%')"
+                query = "select p from Product p where lower(p.description) like concat('%',:word,'%')"
                         )})
 public class Product {
     @Id
