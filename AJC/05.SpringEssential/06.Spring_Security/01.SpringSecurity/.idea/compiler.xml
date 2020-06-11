@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="08.HibernateValidation" />
+        <module name="05.MapAllMethods" />
+        <module name="01.SpringWebApp" />
+        <module name="01.SpringSecurity" />
+        <module name="03.Parameters" />
+        <module name="02.Controller" />
+        <module name="07.Validation" />
+        <module name="04.PathVariables" />
+        <module name="06.DataBinding" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
