@@ -7,6 +7,8 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<c:url var="addUser" value="${request.contextPath}/user/add"/>
+<c:url var="addProduct" value="${request.contextPath}/product/add"/>
 
 <html>
 <head>
@@ -15,6 +17,10 @@
 <body>
 <h1 style="color: darkgreen">This is the home page</h1>
 <h2 style="color: mediumvioletred"> Hello ${user}</h2>
+
+<li><a href="${addUser}"> Add a User</a></li>
+<li><a href="${addProduct}"> Add a Product</a></li>
+
 
 </body>
 </html>
