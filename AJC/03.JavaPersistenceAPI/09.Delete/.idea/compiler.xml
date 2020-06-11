@@ -9,10 +9,10 @@
         <module name="04.Relationships" />
         <module name="03.ArtistMapping" />
         <module name="08.FindMedia" />
-        <module name="07.InitializeArtist" />
+        <module name="02.ArtistMapping" />
         <module name="09.Delete" />
         <module name="05.Inheritance" />
-        <module name="02.ArtistMapping" />
+        <module name="07.InitializeArtist" />
         <module name="06.EmbeddedId" />
         <module name="01.JPAConfiguration" />
         <module name="02.Artist" />
