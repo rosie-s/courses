@@ -1,4 +1,6 @@
 <h3 style="color: blueviolet"> Product List </h3>
 List of Products
-<app-product> </app-product>
-<app-product> </app-product>
+<app-product [productName]="bike.name" [productType]="bike.toString"></app-product>
+<app-product [productName]="car.name" [productType]="car.toString"></app-product>
+<app-product productName="Television" productType="Television" (outputElement)="getSize($event)"></app-product>
+
