@@ -21,7 +21,9 @@ export class AppComponent {
       this.theColour = 'red';
     }
   }
-
+  displayText(e) {
+    alert("You rebel!! I said " + e.target.innerHTML)
+  }
   toggleDetails(){
     if (this.thePerson == this.thePerson){
       this.thePerson = this.thePerson2;
@@ -33,4 +35,6 @@ export class AppComponent {
   popup() {
     this.theColour = this.theValue;
   }
+
+
 }
