@@ -10,6 +10,8 @@ export class ProductListComponent implements OnInit {
   bike = new Product(1, "Bike", "Ducatti");
   car = new Product(5, "Car", "Lamborghini");
 
+  productClicked: string;
+
   constructor() {
   }
 
@@ -18,6 +20,9 @@ export class ProductListComponent implements OnInit {
 
   getSize(value: number) {
     console.log(value);
+  }
+  setClicked (product : string){
+    this.productClicked = product;
   }
 
 }

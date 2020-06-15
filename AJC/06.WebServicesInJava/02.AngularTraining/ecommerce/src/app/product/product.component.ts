@@ -17,6 +17,9 @@ export class ProductComponent implements OnInit {
   @Output()
   outputElement = new EventEmitter<number>()
 
+  @Output()
+  outputProduct: EventEmitter<string> = new EventEmitter();
+
   constructor() {
   }
 
@@ -27,6 +30,6 @@ export class ProductComponent implements OnInit {
   @HostListener('click')
   sendMessage() {
     this.outputElement.emit(this.productName.length);
+    this.outputProduct.emit(this.productType.toString());
   }
-
 }

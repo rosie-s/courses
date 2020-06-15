@@ -1,6 +1,7 @@
 <h3 style="color: blueviolet"> Product List </h3>
 List of Products
-<app-product [productName]="bike.name" [productType]="bike.toString"></app-product>
-<app-product [productName]="car.name" [productType]="car.toString"></app-product>
+<div style="background-color: deeppink;border: 1px solid black"> You have selected: {{productClicked}}</div>
+<app-product [productName]="bike.name" [productType]="bike.toString" (outputProduct)="setClicked($event)" ></app-product>
+<app-product [productName]="car.name" [productType]="car.toString"  (outputProduct)="setClicked($event)"></app-product>
 <app-product productName="Television" productType="Television" (outputElement)="getSize($event)"></app-product>
 
