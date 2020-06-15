@@ -1,4 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {Supplier} from "./supplier.model";
 
 @Component({
   selector: 'app-supplier',
@@ -11,7 +12,7 @@ export class SupplierComponent implements OnInit {
   supplierName: string;
 
   @Input()
-  supplierType: string;
+  supplier: Supplier;
 
   constructor() { }
 

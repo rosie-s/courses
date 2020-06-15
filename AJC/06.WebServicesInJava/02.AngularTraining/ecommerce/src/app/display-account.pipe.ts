@@ -8,7 +8,7 @@ export class DisplayAccountPipe implements PipeTransform {
   transform(value: string, length: number): string {
 
     if (value.length == length) {
-      return "Bank account: " + value.substr(0, 4).padEnd(12, '*')
+      return value.substr(0, 4).padEnd(12, '*');
     } else {
       return "Incorrect account number";
     }
