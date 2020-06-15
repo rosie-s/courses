@@ -1,0 +1,21 @@
+import {Component, Input, OnInit} from '@angular/core';
+
+@Component({
+  selector: 'app-supplier',
+  templateUrl: './supplier.component.html',
+  styleUrls: ['./supplier.component.css']
+})
+export class SupplierComponent implements OnInit {
+
+  @Input()
+  supplierName: string;
+
+  @Input()
+  supplierType: string;
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+}
