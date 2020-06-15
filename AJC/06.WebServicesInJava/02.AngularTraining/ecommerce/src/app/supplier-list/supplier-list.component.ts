@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Supplier} from "../supplier/supplier.model";
 
 @Component({
@@ -12,9 +12,13 @@ export class SupplierListComponent implements OnInit {
   supplier2 = new Supplier("Company2", "AB1231458674")
   supplier3 = new Supplier("Company3", "123456789")
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
 
+  allSuppliers() {
+    return [this.supplier1, this.supplier2, this.supplier3]
+  }
 }

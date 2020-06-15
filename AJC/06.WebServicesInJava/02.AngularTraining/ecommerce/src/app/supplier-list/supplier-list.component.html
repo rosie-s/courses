@@ -1,8 +1,9 @@
 <h3 style="color: darkgreen"> Supplier List </h3>
-List of suppliers
-<app-supplier [supplierName]="supplier1.companyName" [supplier]=" supplier1"></app-supplier>
-<app-supplier [supplierName]="supplier2.companyName" [supplier]="supplier2"></app-supplier>
-<app-supplier [supplierName]="supplier3.companyName" [supplier]="supplier3"></app-supplier>
-
-
-
+<section *ngIf="allSuppliers().length > 0">
+  <h4 style="color: seagreen"> List of suppliers</h4>
+  <ul>
+    <li *ngFor="let s of allSuppliers()">
+      <app-supplier [supplierName]="s.companyName" [supplier]="s"></app-supplier>
+      {{s.toString}}</li>
+  </ul>
+</section>

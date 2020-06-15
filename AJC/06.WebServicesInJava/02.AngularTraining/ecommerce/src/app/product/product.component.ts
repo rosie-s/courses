@@ -1,4 +1,5 @@
 import {Component, EventEmitter, HostListener, Input, OnInit, Output} from '@angular/core';
+import {Product} from "./product.model";
 
 @Component({
   selector: 'app-product',
@@ -8,13 +9,16 @@ import {Component, EventEmitter, HostListener, Input, OnInit, Output} from '@ang
 export class ProductComponent implements OnInit {
 
   @Input()
-  productType: string
+  productType: string;
 
   @Input()
-  productName: string
+  productName: string;
+
+  @Input()
+  product: Product;
 
   @Output()
-  outputElement = new EventEmitter<number>()
+  outputElement = new EventEmitter<number>();
 
   @Output()
   outputProduct: EventEmitter<string> = new EventEmitter();

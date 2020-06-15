@@ -1,7 +1,14 @@
 <h3 style="color: blueviolet"> Product List </h3>
-List of Products
-<div style="background-color: deeppink;border: 1px solid black"> You have selected: {{productClicked}}</div>
-<app-product [productName]="bike.name" [productType]="bike.toString" (outputProduct)="setClicked($event)" ></app-product>
-<app-product [productName]="car.name" [productType]="car.toString"  (outputProduct)="setClicked($event)"></app-product>
-<app-product productName="Television" productType="Television" (outputElement)="getSize($event)"></app-product>
+<ng-container *ngIf="clicked==true">
+  <div style="background-color: deeppink;border: 1px solid black"> You have selected: {{productClicked}}</div>
+</ng-container>
+<app-product [productName]="car.name" [productType]="car.toString" (outputProduct)="setClicked($event)"></app-product>
 
+<section *ngIf="allProducts().length > 0">
+  <h4 style="color: mediumvioletred"> List of Products</h4>
+  <ul>
+    <li *ngFor="let product of allProducts()">
+      <app-product [productName]="product.name" [product]="product"></app-product>
+      {{product.toString}}</li>
+  </ul>
+</section>
