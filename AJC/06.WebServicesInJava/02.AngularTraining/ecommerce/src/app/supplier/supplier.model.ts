@@ -26,7 +26,7 @@ export class Supplier {
 
   get toString() : string
   {
-    return "{" + this._companyName + ", bank account: " + this._accNumber + "}"
+    return "{" + this._companyName + ", bank account: " + this._accNumber + "}";
   }
 
 }

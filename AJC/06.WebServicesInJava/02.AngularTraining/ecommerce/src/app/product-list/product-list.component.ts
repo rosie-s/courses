@@ -10,9 +10,12 @@ export class ProductListComponent implements OnInit {
   bike = new Product(1, "Bike", "Ducatti");
   car = new Product(5, "Car", "Lamborghini");
   television = new Product(2, "Television", "A big tv")
-  productClicked: string;
 
+  productClicked: string;
   clicked: boolean
+
+  productList : Array<Product> = [this.bike, this.car, this.television];
+  public productFind: "pL";
 
   constructor() {
   }
@@ -32,5 +35,9 @@ export class ProductListComponent implements OnInit {
   allProducts() {
     return [this.bike, this.car, this.television];
 
+  }
+
+  public search(){
+    return this.productList.filter(p => p.name.indexOf(this.productFind) !== -1);
   }
 }

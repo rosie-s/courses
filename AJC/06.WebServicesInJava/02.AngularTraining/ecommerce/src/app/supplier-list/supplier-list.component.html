@@ -4,6 +4,14 @@
   <ul>
     <li *ngFor="let s of allSuppliers()">
       <app-supplier [supplierName]="s.companyName" [supplier]="s"></app-supplier>
-      {{s.toString}}</li>
+    </li>
   </ul>
 </section>
+
+<p> Search
+  <input type=text placeholder="Filter Product" [(ngModel)]="supplierFind" (input)="search()"></p>
+<ul>
+  <li *ngFor="let supplier of search()">
+    <app-supplier [supplierName]="supplier.companyName" [supplier]="supplier"></app-supplier>
+  </li>
+</ul>

@@ -9,6 +9,15 @@
   <ul>
     <li *ngFor="let product of allProducts()">
       <app-product [productName]="product.name" [product]="product"></app-product>
-      {{product.toString}}</li>
+      </li>
   </ul>
 </section>
+
+<p> Search
+  <input type=text placeholder="Filter Product" [(ngModel)]="productFind" (input)="search()"></p>
+<ul>
+  <li *ngFor="let product of search()">
+    <app-product [productName]="product.name" [product]="product"></app-product>
+  </li>
+</ul>
+

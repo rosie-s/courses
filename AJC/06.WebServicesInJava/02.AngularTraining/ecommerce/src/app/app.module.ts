@@ -8,6 +8,8 @@ import { ProductComponent } from './product/product.component';
 import { SupplierComponent } from './supplier/supplier.component';
 import { SupplierListComponent } from './supplier-list/supplier-list.component';
 import { DisplayAccountPipe } from './display-account.pipe';
+import {FormsModule} from "@angular/forms";
+import { ShowPriceDirective } from './show-price.directive';
 
 @NgModule({
   declarations: [
@@ -17,10 +19,12 @@ import { DisplayAccountPipe } from './display-account.pipe';
     ProductComponent,
     SupplierComponent,
     SupplierListComponent,
-    DisplayAccountPipe
+    DisplayAccountPipe,
+    ShowPriceDirective
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

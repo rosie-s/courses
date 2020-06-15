@@ -36,7 +36,7 @@ export class Product {
   }
 
   get toString(): string {
-    return "{Id: " + this.$id + ", Name: " + this.$name + ", Desc:" + this.$description + "}"
+    return "{Id: " + this.$id + ", Name: " + this.$name + ", Desc:" + this.$description + "}";
   }
 
 
