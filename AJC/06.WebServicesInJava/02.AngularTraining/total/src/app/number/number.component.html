@@ -1,4 +1,15 @@
-<h3 style="padding-left: 3em">{{theInit}}</h3>
-<button (click)="add()"> Add</button>
-<button (click)="reset()"> Reset</button>
-<button (click)="subtract()">Sub</button>
+<section></section>
+<section>
+  <div class="example-button-row">
+    <p style="padding-left: 75px">
+      <button mat-raised-button disabled>{{theInit}} </button>
+    </p>
+  </div>
+</section>
+<section>
+  <div class="example-button-row">
+    <button mat-raised-button color="accent" (click)="add()">Add</button>
+    <button mat-raised-button color="warn" (click)="reset()">Reset</button>
+    <button mat-raised-button color="primary" (click)="subtract()">Sub</button>
+  </div>
+</section>
